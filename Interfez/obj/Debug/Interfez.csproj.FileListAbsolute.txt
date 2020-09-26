@@ -1,0 +1,13 @@
+C:\Users\matia\source\repos\Los_birreros\Interfez\bin\Debug\Interfez.exe.config
+C:\Users\matia\source\repos\Los_birreros\Interfez\bin\Debug\Interfez.exe
+C:\Users\matia\source\repos\Los_birreros\Interfez\bin\Debug\Interfez.pdb
+C:\Users\matia\source\repos\Los_birreros\Interfez\obj\Debug\Interfez.Form1.resources
+C:\Users\matia\source\repos\Los_birreros\Interfez\obj\Debug\Interfez.Properties.Resources.resources
+C:\Users\matia\source\repos\Los_birreros\Interfez\obj\Debug\Interfez.csproj.GenerateResource.cache
+C:\Users\matia\source\repos\Los_birreros\Interfez\obj\Debug\Interfez.csproj.CoreCompileInputs.cache
+C:\Users\matia\source\repos\Los_birreros\Interfez\obj\Debug\Interfez.exe
+C:\Users\matia\source\repos\Los_birreros\Interfez\obj\Debug\Interfez.pdb
+C:\Users\matia\source\repos\Los_birreros\Interfez\bin\Debug\CapaNegocio2.dll
+C:\Users\matia\source\repos\Los_birreros\Interfez\bin\Debug\CapaNegocio2.pdb
+C:\Users\matia\source\repos\Los_birreros\Interfez\obj\Debug\Interfez.csprojAssemblyReference.cache
+C:\Users\matia\source\repos\Los_birreros\Interfez\obj\Debug\Interfez.csproj.CopyComplete
