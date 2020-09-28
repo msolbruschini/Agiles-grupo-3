@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CapaNegocio2;
+using System;
 using System.Windows.Forms;
-using CapaNegocio2;
 
 
 namespace Interfez
@@ -57,15 +50,23 @@ namespace Interfez
 
         }
 
+         private void Form1_Load(object sender, EventArgs e)
+        {
+            /*groupBox1.Width = (int)(this.Width * 0.6);
+            //groupBox1.Width = 30;*/
+        }
 
+       private void Form1_Resize(object sender, EventArgs e)
+        {
+            /*groupBox1.Width = (int)(this.Width * 0.6);
+            //groupBox1.Width = 30;
+            //panel1.Width= (int)(groupBox1.Width * 0.3);
+            panel2.Width = (int)(groupBox1.Width * 0.3);
+            panel3.Width = (int)(groupBox1.Width * 0.3);
+            panel4.Width = (int)(groupBox1.Width * 0.3);
 
-        
-
-
-
-
-
-
-
+            Console.WriteLine("Form: " + this.Size.Width);
+            Console.WriteLine("box: " + groupBox1.Size.Width);*/
+        }
+        }
     }
-}

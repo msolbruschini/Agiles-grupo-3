@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfez", "Interfez\Interfez.csproj", "{25F18188-F4C7-47EC-868D-24852EF14F94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaz", "Interfez\Interfaz.csproj", "{25F18188-F4C7-47EC-868D-24852EF14F94}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaNegocio2", "CapaNegocio2\CapaNegocio2.csproj", "{B646413C-BBE1-420D-8025-F5766946DDC6}"
 EndProject

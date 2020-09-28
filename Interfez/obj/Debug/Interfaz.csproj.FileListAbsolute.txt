@@ -1,0 +1,13 @@
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirrerosParcial\Agiles-grupo-3\Interfez\bin\Debug\Interfez.exe.config
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirrerosParcial\Agiles-grupo-3\Interfez\bin\Debug\Interfez.exe
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirrerosParcial\Agiles-grupo-3\Interfez\bin\Debug\Interfez.pdb
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirrerosParcial\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.dll
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirrerosParcial\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.pdb
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirrerosParcial\Agiles-grupo-3\Interfez\obj\Debug\Interfaz.csprojAssemblyReference.cache
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirrerosParcial\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Form1.resources
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirrerosParcial\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Properties.Resources.resources
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirrerosParcial\Agiles-grupo-3\Interfez\obj\Debug\Interfaz.csproj.GenerateResource.cache
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirrerosParcial\Agiles-grupo-3\Interfez\obj\Debug\Interfaz.csproj.CoreCompileInputs.cache
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirrerosParcial\Agiles-grupo-3\Interfez\obj\Debug\Interfaz.csproj.CopyComplete
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirrerosParcial\Agiles-grupo-3\Interfez\obj\Debug\Interfez.exe
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirrerosParcial\Agiles-grupo-3\Interfez\obj\Debug\Interfez.pdb
