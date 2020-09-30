@@ -118,6 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="AgregarProducto.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABGdBTUEAALGPC/xhBQAAATRJREFUOE+9
+        k6FOA0EQQE9UIBAVCEQFAlGBQCARTSoQSCQC0c9AIBEIJAKBrKhAIvkEJBKBQCIQCAS8d7k52GW3AQQv
+        eWn2rjM3O7vT/AcrOMWjzl0c4I9Zw3N8xffMZzzBVVzKGB/QoDke4hZu4D4u0Hd3uI5FfPGIT2hQjT18
+        QZMVK7tCt7Pdrj6xN/oVe2ZlbjPBat7wrF2l3Hbm3KA9Sw7AXvgF+5FTSzRDY5JqLdGHgS8jgV/VWEeg
+        LTDGbfZEomjeAdYS+U5GaIyV9RTL7IgEOV5WY/zt8Z748LRdpdQSXaKn7AQkXKMnlx+/W4ntBDvof52A
+        b2yivbhHK6wxQS+tE+A4FbFH0dxjNLkM0V5coC1wAhynpRjsNg3IdTtOQHXOSrg9T9OroV7aXyX4A03z
+        AeVyUhcao+CSAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="panel8.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAIAAAD2HxkiAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -279,4 +290,10 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="colorDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
 </root>

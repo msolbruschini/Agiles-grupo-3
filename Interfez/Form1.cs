@@ -1,5 +1,6 @@
 ﻿using CapaNegocio2;
 using System;
+//using System.Windows;
 using System.Windows.Forms;
 
 
@@ -24,7 +25,7 @@ namespace Interfez
 
 
 
-        private void BotonCrearPedido_Click(object sender, EventArgs e)
+        /*private void BotonCrearPedido_Click(object sender, EventArgs e)
         {
             
             if (label1.Text == "Nuevo texto")
@@ -38,7 +39,7 @@ namespace Interfez
 
 
 
-            int numero = Int32.Parse( textBox1.Text );
+            //int numero = Int32.Parse( textoNombre.Text );
 
             ClasedePrueba cdp = new ClasedePrueba();
             Class1 claseP = new Class1();
@@ -48,7 +49,7 @@ namespace Interfez
 
 
 
-        }
+        }*/
 
          private void Form1_Load(object sender, EventArgs e)
         {
@@ -68,5 +69,20 @@ namespace Interfez
             Console.WriteLine("Form: " + this.Size.Width);
             Console.WriteLine("box: " + groupBox1.Size.Width);*/
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CrearPedido_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("¡Pedido Creado!");
+        }
+    }
     }

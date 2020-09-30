@@ -29,9 +29,18 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.BotonCrearPedido = new System.Windows.Forms.Button();
+            this.EliminarPedido = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.AgregarProducto = new System.Windows.Forms.Button();
+            this.EditarPedido = new System.Windows.Forms.Button();
+            this.CrearPedido = new System.Windows.Forms.Button();
+            this.textoProducto = new System.Windows.Forms.ComboBox();
+            this.textoNombre = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textoPrecio = new System.Windows.Forms.TextBox();
+            this.textoCantidad = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -52,12 +61,7 @@
             this.mesa5 = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.mesa6 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -71,16 +75,16 @@
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // BotonCrearPedido
+            // EliminarPedido
             // 
-            this.BotonCrearPedido.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BotonCrearPedido.Location = new System.Drawing.Point(79, 339);
-            this.BotonCrearPedido.Name = "BotonCrearPedido";
-            this.BotonCrearPedido.Size = new System.Drawing.Size(248, 46);
-            this.BotonCrearPedido.TabIndex = 0;
-            this.BotonCrearPedido.Text = "Crear Pedido";
-            this.BotonCrearPedido.UseVisualStyleBackColor = true;
-            this.BotonCrearPedido.Click += new System.EventHandler(this.BotonCrearPedido_Click);
+            this.EliminarPedido.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EliminarPedido.Location = new System.Drawing.Point(104, 351);
+            this.EliminarPedido.Name = "EliminarPedido";
+            this.EliminarPedido.Size = new System.Drawing.Size(166, 46);
+            this.EliminarPedido.TabIndex = 0;
+            this.EliminarPedido.Text = "Eliminar Pedido";
+            this.EliminarPedido.UseVisualStyleBackColor = true;
+            //this.EliminarPedido.Click += new System.EventHandler(this.BotonCrearPedido_Click);
             // 
             // label1
             // 
@@ -94,21 +98,124 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.textBox7);
+            this.panel1.Controls.Add(this.AgregarProducto);
+            this.panel1.Controls.Add(this.EditarPedido);
+            this.panel1.Controls.Add(this.CrearPedido);
+            this.panel1.Controls.Add(this.textoProducto);
+            this.panel1.Controls.Add(this.textoNombre);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.textoPrecio);
+            this.panel1.Controls.Add(this.textoCantidad);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.BotonCrearPedido);
+            this.panel1.Controls.Add(this.EliminarPedido);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(374, 418);
             this.panel1.TabIndex = 2;
+            // 
+            // AgregarProducto
+            // 
+            this.AgregarProducto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AgregarProducto.BackgroundImage")));
+            this.AgregarProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AgregarProducto.Location = new System.Drawing.Point(333, 123);
+            this.AgregarProducto.Name = "AgregarProducto";
+            this.AgregarProducto.Size = new System.Drawing.Size(25, 25);
+            this.AgregarProducto.TabIndex = 14;
+            this.AgregarProducto.UseVisualStyleBackColor = true;
+            this.AgregarProducto.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // EditarPedido
+            // 
+            this.EditarPedido.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditarPedido.Location = new System.Drawing.Point(104, 299);
+            this.EditarPedido.Name = "EditarPedido";
+            this.EditarPedido.Size = new System.Drawing.Size(166, 46);
+            this.EditarPedido.TabIndex = 13;
+            this.EditarPedido.Text = "Editar Pedido";
+            this.EditarPedido.UseVisualStyleBackColor = true;
+            this.EditarPedido.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // CrearPedido
+            // 
+            this.CrearPedido.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CrearPedido.Location = new System.Drawing.Point(104, 247);
+            this.CrearPedido.Name = "CrearPedido";
+            this.CrearPedido.Size = new System.Drawing.Size(166, 46);
+            this.CrearPedido.TabIndex = 12;
+            this.CrearPedido.Text = "Crear Pedido";
+            this.CrearPedido.UseVisualStyleBackColor = true;
+            this.CrearPedido.Click += new System.EventHandler(this.CrearPedido_Click);
+            // 
+            // textoProducto
+            // 
+            this.textoProducto.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textoProducto.FormattingEnabled = true;
+            this.textoProducto.Items.AddRange(new object[] {
+            "Cerveza Negra",
+            "Cerveza Rubia",
+            "Cerveza Honey",
+            "Fernet",
+            "Coca Cola",
+            "Campari",
+            "Gancia",
+            "Papas fritas",
+            "Rabas",
+            "Pizza",
+            "Hamburguesas",
+            "Pancho"});
+            this.textoProducto.Location = new System.Drawing.Point(124, 123);
+            this.textoProducto.Name = "textoProducto";
+            this.textoProducto.Size = new System.Drawing.Size(203, 25);
+            this.textoProducto.TabIndex = 11;
+            // 
+            // textoNombre
+            // 
+            this.textoNombre.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textoNombre.Location = new System.Drawing.Point(124, 88);
+            this.textoNombre.Name = "textoNombre";
+            this.textoNombre.Size = new System.Drawing.Size(203, 23);
+            this.textoNombre.TabIndex = 9;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(35, 88);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 20);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Nombre";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(197, 160);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(73, 20);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Cantidad";
+            // 
+            // textoPrecio
+            // 
+            this.textoPrecio.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textoPrecio.Location = new System.Drawing.Point(94, 159);
+            this.textoPrecio.Name = "textoPrecio";
+            this.textoPrecio.Size = new System.Drawing.Size(97, 23);
+            this.textoPrecio.TabIndex = 6;
+            // 
+            // textoCantidad
+            // 
+            this.textoCantidad.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textoCantidad.Location = new System.Drawing.Point(276, 158);
+            this.textoCantidad.Name = "textoCantidad";
+            this.textoCantidad.Size = new System.Drawing.Size(51, 23);
+            this.textoCantidad.TabIndex = 5;
             // 
             // label3
             // 
@@ -326,68 +433,6 @@
             this.mesa6.Text = "6";
             this.mesa6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(276, 160);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(51, 20);
-            this.textBox4.TabIndex = 5;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(94, 159);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(97, 20);
-            this.textBox6.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(197, 160);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 20);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Cantidad";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(35, 88);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 20);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Nombre";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(124, 88);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(203, 20);
-            this.textBox7.TabIndex = 9;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Cerveza Negra",
-            "Cerveza Rubia",
-            "Cerveza Honey",
-            "Fernet",
-            "Coca Cola",
-            "Campari",
-            "Gancia",
-            "Papas fritas",
-            "Rabas",
-            "Pizza",
-            "Hamburguesas",
-            "Pancho"});
-            this.comboBox1.Location = new System.Drawing.Point(124, 125);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(203, 21);
-            this.comboBox1.TabIndex = 11;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -422,7 +467,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button BotonCrearPedido;
+        private System.Windows.Forms.Button EliminarPedido;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -445,12 +490,16 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox mesa5;
         private System.Windows.Forms.TextBox mesa6;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.ComboBox textoProducto;
+        private System.Windows.Forms.TextBox textoNombre;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textoPrecio;
+        private System.Windows.Forms.TextBox textoCantidad;
+        private System.Windows.Forms.Button EditarPedido;
+        private System.Windows.Forms.Button CrearPedido;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.Button AgregarProducto;
     }
 }
 
