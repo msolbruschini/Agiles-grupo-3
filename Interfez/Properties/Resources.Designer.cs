@@ -63,6 +63,16 @@ namespace Interfez.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cerv {
+            get {
+                object obj = ResourceManager.GetObject("cerv", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cerveceria {
             get {
                 object obj = ResourceManager.GetObject("cerveceria", resourceCulture);
