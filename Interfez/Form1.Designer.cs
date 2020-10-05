@@ -62,6 +62,11 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.mesa6 = new System.Windows.Forms.TextBox();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textDireccion = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -73,31 +78,40 @@
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // EliminarPedido
             // 
             this.EliminarPedido.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EliminarPedido.Location = new System.Drawing.Point(104, 351);
+            this.EliminarPedido.Location = new System.Drawing.Point(104, 376);
             this.EliminarPedido.Name = "EliminarPedido";
-            this.EliminarPedido.Size = new System.Drawing.Size(166, 46);
+            this.EliminarPedido.Size = new System.Drawing.Size(166, 37);
             this.EliminarPedido.TabIndex = 0;
             this.EliminarPedido.Text = "Eliminar Pedido";
             this.EliminarPedido.UseVisualStyleBackColor = true;
-            //this.EliminarPedido.Click += new System.EventHandler(this.BotonCrearPedido_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 14);
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 42F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Image = global::Interfez.Properties.Resources.cerveceria;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Location = new System.Drawing.Point(113, -3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 37);
+            this.label1.Size = new System.Drawing.Size(188, 67);
             this.label1.TabIndex = 1;
             this.label1.Text = "Pedidos";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.textDireccion);
+            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.AgregarProducto);
             this.panel1.Controls.Add(this.EditarPedido);
             this.panel1.Controls.Add(this.CrearPedido);
@@ -111,6 +125,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.EliminarPedido);
             this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
@@ -122,7 +137,7 @@
             this.AgregarProducto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AgregarProducto.BackgroundImage")));
             this.AgregarProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.AgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AgregarProducto.Location = new System.Drawing.Point(333, 123);
+            this.AgregarProducto.Location = new System.Drawing.Point(333, 107);
             this.AgregarProducto.Name = "AgregarProducto";
             this.AgregarProducto.Size = new System.Drawing.Size(25, 25);
             this.AgregarProducto.TabIndex = 14;
@@ -132,9 +147,9 @@
             // EditarPedido
             // 
             this.EditarPedido.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditarPedido.Location = new System.Drawing.Point(104, 299);
+            this.EditarPedido.Location = new System.Drawing.Point(104, 334);
             this.EditarPedido.Name = "EditarPedido";
-            this.EditarPedido.Size = new System.Drawing.Size(166, 46);
+            this.EditarPedido.Size = new System.Drawing.Size(166, 36);
             this.EditarPedido.TabIndex = 13;
             this.EditarPedido.Text = "Editar Pedido";
             this.EditarPedido.UseVisualStyleBackColor = true;
@@ -143,9 +158,9 @@
             // CrearPedido
             // 
             this.CrearPedido.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CrearPedido.Location = new System.Drawing.Point(104, 247);
+            this.CrearPedido.Location = new System.Drawing.Point(104, 293);
             this.CrearPedido.Name = "CrearPedido";
-            this.CrearPedido.Size = new System.Drawing.Size(166, 46);
+            this.CrearPedido.Size = new System.Drawing.Size(166, 35);
             this.CrearPedido.TabIndex = 12;
             this.CrearPedido.Text = "Crear Pedido";
             this.CrearPedido.UseVisualStyleBackColor = true;
@@ -168,7 +183,7 @@
             "Pizza",
             "Hamburguesas",
             "Pancho"});
-            this.textoProducto.Location = new System.Drawing.Point(124, 123);
+            this.textoProducto.Location = new System.Drawing.Point(124, 107);
             this.textoProducto.Name = "textoProducto";
             this.textoProducto.Size = new System.Drawing.Size(203, 25);
             this.textoProducto.TabIndex = 11;
@@ -176,26 +191,26 @@
             // textoNombre
             // 
             this.textoNombre.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textoNombre.Location = new System.Drawing.Point(124, 88);
+            this.textoNombre.HideSelection = false;
+            this.textoNombre.Location = new System.Drawing.Point(124, 74);
             this.textoNombre.Name = "textoNombre";
             this.textoNombre.Size = new System.Drawing.Size(203, 23);
             this.textoNombre.TabIndex = 9;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(35, 88);
+            this.label5.Location = new System.Drawing.Point(23, 77);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 20);
+            this.label5.Size = new System.Drawing.Size(81, 25);
             this.label5.TabIndex = 8;
             this.label5.Text = "Nombre";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(197, 160);
+            this.label4.Location = new System.Drawing.Point(19, 192);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 20);
             this.label4.TabIndex = 7;
@@ -204,36 +219,34 @@
             // textoPrecio
             // 
             this.textoPrecio.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textoPrecio.Location = new System.Drawing.Point(94, 159);
+            this.textoPrecio.Location = new System.Drawing.Point(250, 189);
             this.textoPrecio.Name = "textoPrecio";
-            this.textoPrecio.Size = new System.Drawing.Size(97, 23);
+            this.textoPrecio.Size = new System.Drawing.Size(77, 23);
             this.textoPrecio.TabIndex = 6;
             // 
             // textoCantidad
             // 
             this.textoCantidad.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textoCantidad.Location = new System.Drawing.Point(276, 158);
+            this.textoCantidad.Location = new System.Drawing.Point(98, 189);
             this.textoCantidad.Name = "textoCantidad";
-            this.textoCantidad.Size = new System.Drawing.Size(51, 23);
+            this.textoCantidad.Size = new System.Drawing.Size(54, 23);
             this.textoCantidad.TabIndex = 5;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(35, 158);
+            this.label3.Location = new System.Drawing.Point(171, 192);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 20);
+            this.label3.Size = new System.Drawing.Size(73, 20);
             this.label3.TabIndex = 4;
             this.label3.Text = "Precio";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(35, 123);
+            this.label2.Location = new System.Drawing.Point(23, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 20);
+            this.label2.Size = new System.Drawing.Size(81, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Producto";
             // 
@@ -433,6 +446,56 @@
             this.mesa6.Text = "6";
             this.mesa6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = global::Interfez.Properties.Resources.cerveceria;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(496, 418);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(23, 141);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(82, 25);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Dirección";
+            // 
+            // textDireccion
+            // 
+            this.textDireccion.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textDireccion.HideSelection = false;
+            this.textDireccion.Location = new System.Drawing.Point(124, 143);
+            this.textDireccion.Name = "textDireccion";
+            this.textDireccion.Size = new System.Drawing.Size(203, 23);
+            this.textDireccion.TabIndex = 18;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "En preparación",
+            "Listo",
+            "Entregado"});
+            this.comboBox1.Location = new System.Drawing.Point(98, 232);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(82, 21);
+            this.comboBox1.TabIndex = 19;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(19, 233);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(73, 20);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "Estado";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -461,6 +524,7 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -500,6 +564,11 @@
         private System.Windows.Forms.Button CrearPedido;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Button AgregarProducto;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textDireccion;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 
