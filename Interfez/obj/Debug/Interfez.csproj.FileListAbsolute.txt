@@ -53,3 +53,18 @@ C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\Interfez\obj\Debug\
 C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CopyComplete
 C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\Interfez\obj\Debug\Interfez.exe
 C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\Interfez\obj\Debug\Interfez.pdb
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\Interfez.exe.config
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\Interfez.exe
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\Interfez.pdb
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.dll
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.pdb
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csprojAssemblyReference.cache
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Form1.resources
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Inicio.resources
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Properties.Resources.resources
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Stock.resources
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.GenerateResource.cache
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CoreCompileInputs.cache
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CopyComplete
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.exe
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.pdb

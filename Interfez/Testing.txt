@@ -1,0 +1,4 @@
+﻿Cerveza| Cantidad|Precio | Codigo
+Roja | 30 lts | 120 | #bc1234
+Rubia | 10 lts | 100 | #mc1234
+Negra | 20 lts | 150 | #fc1234
