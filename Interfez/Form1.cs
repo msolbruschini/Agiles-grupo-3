@@ -1,5 +1,8 @@
 ﻿using CapaNegocio2;
 using System;
+using System.Collections;
+using System.Data;
+using System.Linq;
 //using System.Windows;
 using System.Windows.Forms;
 
@@ -11,16 +14,17 @@ namespace Interfez
         string texto = "Cerveza";
         int cantidad = 7;
         bool valido = true;
-
+        DataTable pedido = new DataTable();
         
-
-
-
-
-
+        
+        
         public Form1()
         {
             InitializeComponent();
+            pedido.Columns.Add("Producto");
+            pedido.Columns.Add("Cantidad");
+            pedido.Columns.Add("Precio");
+
         }
 
 
@@ -55,6 +59,8 @@ namespace Interfez
         {
             /*groupBox1.Width = (int)(this.Width * 0.6);
             //groupBox1.Width = 30;*/
+            textDireccion.Enabled = false;
+
         }
 
        private void Form1_Resize(object sender, EventArgs e)
@@ -70,39 +76,96 @@ namespace Interfez
             Console.WriteLine("box: " + groupBox1.Size.Width);*/
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void CrearPedido_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("¡Pedido Creado!");
+            //MessageBox.Show("¡Pedido Creado!");
+            string nombre = textoNombre.Text;
+            string direccion;
+            if (checkBox2.Checked)
+            {
+                direccion = textDireccion.Text;
+            }
+            else
+            {
+                direccion = "Retira en persona";
+            }
+            string estado = comboEstado.Text;
+            string pagado = "no";
+            if (checkBox1.Checked)
+            {
+                pagado = "si";
+            }
+            int productosContador = pedido.Rows.Count;
+            
+            string productosTexto = " ";
+            int productosPrecioFinal = 0;
+            for (int i = 0; i < productosContador; i++ )
+            {
+
+                string cant = pedido.Rows[i]["Cantidad"].ToString();
+                string precio = pedido.Rows[i]["Precio"].ToString();
+                productosPrecioFinal = productosPrecioFinal + ( Int32.Parse(precio) * Int32.Parse(cant) );
+                
+                
+                productosTexto = String.Concat(pedido.Rows[i]["Producto"].ToString() + " ");
+                
+
+
+
+                MessageBox.Show(productosTexto);
+
+            }
+            MessageBox.Show(productosTexto);
+
+            MessageBox.Show("PEDIDO CREADO \n"
+                + "Nombre: "
+                + nombre
+                + "\n"
+                + "Entrega: "
+                + direccion
+                + "\n"
+                + "Pagado: "
+                + pagado
+                + "\n"
+                + "Estado: "
+                + estado
+                + "\n"
+                //+ "PEDIDOS: \n"
+                //+ listBox1.Text.ToString()
+                + "TOTAL: "
+                + productosPrecioFinal
+                
+                );
+            
+
+
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox2.Checked == true)
+            {
+                textDireccion.Enabled = true;
+            }
+            else
+            {
+                textDireccion.Enabled = false;
+            }
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void AgregarProducto_Click(object sender, EventArgs e)
         {
+            pedido.Rows.Add(textoProducto.Text, textoCantidad.Text, textoPrecio.Text);
+            listBox1.Items.Add(textoCantidad.Text + "  " + textoProducto.Text + "  " + textoPrecio.Text);
+            textoPrecio.Text = "";
+            textoCantidad.Text = "";
+            textoProducto.Text = "";
+            
 
-        }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            //MessageBox.Show("Producto: " + pedido.Rows[0]["Producto"].ToString());
         }
     }
     }
