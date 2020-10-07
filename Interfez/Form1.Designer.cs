@@ -29,8 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.EliminarPedido = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.mesa5 = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.mesa6 = new System.Windows.Forms.TextBox();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.panel1 = new System.Windows.Forms.Panel();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -49,29 +65,10 @@
             this.textoCantidad = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.EliminarPedido = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.mesa5 = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.mesa6 = new System.Windows.Forms.TextBox();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -82,33 +79,200 @@
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // EliminarPedido
+            // dataGridView1
             // 
-            this.EliminarPedido.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EliminarPedido.Location = new System.Drawing.Point(104, 376);
-            this.EliminarPedido.Name = "EliminarPedido";
-            this.EliminarPedido.Size = new System.Drawing.Size(166, 37);
-            this.EliminarPedido.TabIndex = 0;
-            this.EliminarPedido.Text = "Eliminar Pedido";
-            this.EliminarPedido.UseVisualStyleBackColor = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(400, 232);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(384, 189);
+            this.dataGridView1.TabIndex = 3;
             // 
-            // label1
+            // tabControl1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 42F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(112, 4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 67);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Pedidos";
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(800, 450);
+            this.tabControl1.TabIndex = 5;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.listBox1);
+            this.tabPage1.Controls.Add(this.panel1);
+            this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(792, 424);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Pedidos";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(400, 7);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(384, 212);
+            this.listBox1.TabIndex = 4;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.groupBox1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(792, 424);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Mapa de mesas";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.groupBox1.Controls.Add(this.panel9);
+            this.groupBox1.Controls.Add(this.panel8);
+            this.groupBox1.Controls.Add(this.panel7);
+            this.groupBox1.Controls.Add(this.panel2);
+            this.groupBox1.Controls.Add(this.panel6);
+            this.groupBox1.Controls.Add(this.panel5);
+            this.groupBox1.Controls.Add(this.panel3);
+            this.groupBox1.Controls.Add(this.panel4);
+            this.groupBox1.Location = new System.Drawing.Point(8, 6);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(541, 417);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Mapa de mesas";
+            // 
+            // panel9
+            // 
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Controls.Add(this.textBox2);
+            this.panel9.Location = new System.Drawing.Point(122, 322);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(193, 51);
+            this.panel9.TabIndex = 3;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox2.Enabled = false;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(0, 0);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(191, 49);
+            this.textBox2.TabIndex = 0;
+            this.textBox2.Text = "3";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel2
+            // 
+            this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Location = new System.Drawing.Point(380, 25);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(85, 51);
+            this.panel2.TabIndex = 2;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox3.Enabled = false;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(0, 0);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(83, 53);
+            this.textBox3.TabIndex = 0;
+            this.textBox3.Text = "4";
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel6
+            // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Location = new System.Drawing.Point(380, 347);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(85, 51);
+            this.panel6.TabIndex = 2;
+            // 
+            // panel5
+            // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.textBox5);
+            this.panel5.Location = new System.Drawing.Point(380, 274);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(85, 51);
+            this.panel5.TabIndex = 1;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox5.Enabled = false;
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(0, 0);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(83, 53);
+            this.textBox5.TabIndex = 2;
+            this.textBox5.Text = "7";
+            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel3
+            // 
+            this.panel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.mesa5);
+            this.panel3.Location = new System.Drawing.Point(380, 110);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(85, 51);
+            this.panel3.TabIndex = 0;
+            // 
+            // mesa5
+            // 
+            this.mesa5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mesa5.Enabled = false;
+            this.mesa5.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mesa5.Location = new System.Drawing.Point(0, 0);
+            this.mesa5.Name = "mesa5";
+            this.mesa5.Size = new System.Drawing.Size(83, 53);
+            this.mesa5.TabIndex = 1;
+            this.mesa5.Text = "5";
+            this.mesa5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel4
+            // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.mesa6);
+            this.panel4.Location = new System.Drawing.Point(380, 194);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(85, 51);
+            this.panel4.TabIndex = 1;
+            // 
+            // mesa6
+            // 
+            this.mesa6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mesa6.Enabled = false;
+            this.mesa6.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mesa6.Location = new System.Drawing.Point(0, 0);
+            this.mesa6.Name = "mesa6";
+            this.mesa6.Size = new System.Drawing.Size(83, 53);
+            this.mesa6.TabIndex = 1;
+            this.mesa6.Text = "6";
+            this.mesa6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::Interfez.Properties.Resources.cervjp;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.Controls.Add(this.checkBox2);
             this.panel1.Controls.Add(this.checkBox1);
             this.panel1.Controls.Add(this.label7);
@@ -128,7 +292,6 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.EliminarPedido);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
@@ -311,108 +474,28 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Producto";
             // 
-            // pictureBox1
+            // EliminarPedido
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = global::Interfez.Properties.Resources.cerv;
-            this.pictureBox1.Location = new System.Drawing.Point(-21, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(412, 453);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
+            this.EliminarPedido.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EliminarPedido.Location = new System.Drawing.Point(104, 376);
+            this.EliminarPedido.Name = "EliminarPedido";
+            this.EliminarPedido.Size = new System.Drawing.Size(166, 37);
+            this.EliminarPedido.TabIndex = 0;
+            this.EliminarPedido.Text = "Eliminar Pedido";
+            this.EliminarPedido.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // label1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(400, 232);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(384, 189);
-            this.dataGridView1.TabIndex = 3;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(800, 450);
-            this.tabControl1.TabIndex = 5;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.listBox1);
-            this.tabPage1.Controls.Add(this.panel1);
-            this.tabPage1.Controls.Add(this.dataGridView1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(792, 424);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Pedidos";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(400, 7);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(384, 212);
-            this.listBox1.TabIndex = 4;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.groupBox1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(792, 424);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Mapa de mesas";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.groupBox1.Controls.Add(this.panel9);
-            this.groupBox1.Controls.Add(this.panel8);
-            this.groupBox1.Controls.Add(this.panel7);
-            this.groupBox1.Controls.Add(this.panel2);
-            this.groupBox1.Controls.Add(this.panel6);
-            this.groupBox1.Controls.Add(this.panel5);
-            this.groupBox1.Controls.Add(this.panel3);
-            this.groupBox1.Controls.Add(this.panel4);
-            this.groupBox1.Location = new System.Drawing.Point(8, 6);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(541, 417);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Mapa de mesas";
-            // 
-            // panel9
-            // 
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.textBox2);
-            this.panel9.Location = new System.Drawing.Point(122, 322);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(193, 51);
-            this.panel9.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(0, 0);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(191, 49);
-            this.textBox2.TabIndex = 0;
-            this.textBox2.Text = "3";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 42F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Location = new System.Drawing.Point(112, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(188, 67);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Pedidos";
             // 
             // panel8
             // 
@@ -432,100 +515,6 @@
             this.panel7.Size = new System.Drawing.Size(103, 88);
             this.panel7.TabIndex = 3;
             // 
-            // panel2
-            // 
-            this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Location = new System.Drawing.Point(380, 25);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(85, 51);
-            this.panel2.TabIndex = 2;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Enabled = false;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(0, 0);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(83, 53);
-            this.textBox3.TabIndex = 0;
-            this.textBox3.Text = "4";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel6
-            // 
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Location = new System.Drawing.Point(380, 347);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(85, 51);
-            this.panel6.TabIndex = 2;
-            // 
-            // panel5
-            // 
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.textBox5);
-            this.panel5.Location = new System.Drawing.Point(380, 274);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(85, 51);
-            this.panel5.TabIndex = 1;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Enabled = false;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(0, 0);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(83, 53);
-            this.textBox5.TabIndex = 2;
-            this.textBox5.Text = "7";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel3
-            // 
-            this.panel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.mesa5);
-            this.panel3.Location = new System.Drawing.Point(380, 110);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(85, 51);
-            this.panel3.TabIndex = 0;
-            // 
-            // mesa5
-            // 
-            this.mesa5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mesa5.Enabled = false;
-            this.mesa5.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mesa5.Location = new System.Drawing.Point(0, 0);
-            this.mesa5.Name = "mesa5";
-            this.mesa5.Size = new System.Drawing.Size(83, 53);
-            this.mesa5.TabIndex = 1;
-            this.mesa5.Text = "5";
-            this.mesa5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel4
-            // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.mesa6);
-            this.panel4.Location = new System.Drawing.Point(380, 194);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(85, 51);
-            this.panel4.TabIndex = 1;
-            // 
-            // mesa6
-            // 
-            this.mesa6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mesa6.Enabled = false;
-            this.mesa6.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mesa6.Location = new System.Drawing.Point(0, 0);
-            this.mesa6.Name = "mesa6";
-            this.mesa6.Size = new System.Drawing.Size(83, 53);
-            this.mesa6.TabIndex = 1;
-            this.mesa6.Text = "6";
-            this.mesa6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -534,12 +523,8 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Principal";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Resize += new System.EventHandler(this.Form1_Resize);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -555,6 +540,8 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -594,7 +581,6 @@
         private System.Windows.Forms.Button CrearPedido;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Button AgregarProducto;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textDireccion;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;

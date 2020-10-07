@@ -112,7 +112,7 @@ namespace Interfez
 
 
 
-                MessageBox.Show(productosTexto);
+                //MessageBox.Show(productosTexto);
 
             }
             MessageBox.Show(productosTexto);
