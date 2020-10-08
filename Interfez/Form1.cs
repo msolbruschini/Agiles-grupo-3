@@ -58,11 +58,15 @@ namespace Interfez
         //Agrega un producto al mismo pedido
         private void AgregarProducto_Click(object sender, EventArgs e)
         {
-            pedido.Rows.Add(textoProducto.Text, textoCantidad.Text, textoPrecio.Text);
-            listBox1.Items.Add(textoCantidad.Text + "  " + textoProducto.Text + "  " + textoPrecio.Text);
-            textoPrecio.Text = "";
-            textoCantidad.Text = "";
-            textoProducto.Text = "";
+            if (ValidarProducto(textoProducto.Text, textoCantidad.Text, textoPrecio.Text))
+            {
+                pedido.Rows.Add(textoProducto.Text, textoCantidad.Text, textoPrecio.Text);
+                listBox1.Items.Add(textoCantidad.Text + "  " + textoProducto.Text + "  " + textoPrecio.Text);
+                textoPrecio.Text = "";
+                textoCantidad.Text = "";
+                textoProducto.Text = "";
+            }
+            
 
 
 
@@ -73,7 +77,7 @@ namespace Interfez
         //Cierra el pedido
         private void CrearPedido_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("¡Pedido Creado!");
+            
             string nombre = textoNombre.Text;
             string direccion;
             if (checkBox2.Checked)
@@ -90,50 +94,100 @@ namespace Interfez
             {
                 pagado = "si";
             }
-            int productosContador = pedido.Rows.Count;
 
-            string productosTexto = " ";
-            int productosPrecioFinal = 0;
-            for (int i = 0; i < productosContador; i++)
+            if (ValidarPedido(nombre, direccion, estado))
             {
+                //Cuenta la cantidad de productos sumados al pedido para recorrer la lista de productos
+                int productosContador = pedido.Rows.Count;
+                //Toma un producto y lo pone en un texto (después de mostrará por pantalla)
+                string productosTexto = " ";
+                //Cuenta todo para el precio final
+                int productosPrecioFinal = 0;
 
-                string cant = pedido.Rows[i]["Cantidad"].ToString();
-                string precio = pedido.Rows[i]["Precio"].ToString();
-                productosPrecioFinal = productosPrecioFinal + (Int32.Parse(precio) * Int32.Parse(cant));
+                for (int i = 0; i < productosContador; i++)
+                {
+                    string cant = pedido.Rows[i]["Cantidad"].ToString();
+                    string precio = pedido.Rows[i]["Precio"].ToString();
+                    productosPrecioFinal = productosPrecioFinal + (Int32.Parse(precio) * Int32.Parse(cant));
 
 
-                productosTexto = String.Concat(pedido.Rows[i]["Producto"].ToString() + " ");
+                    productosTexto = String.Concat(pedido.Rows[i]["Producto"].ToString() + " ");
+                }
+                
 
+                MessageBox.Show("PEDIDO CREADO \n"
+                    + "Nombre: "
+                    + nombre
+                    + "\n"
+                    + "Entrega: "
+                    + direccion
+                    + "\n"
+                    + "Pagado: "
+                    + pagado
+                    + "\n"
+                    + "Estado: "
+                    + estado
+                    + "\n"
+                    //+ "PEDIDOS: \n"
+                    //+ listBox1.Text.ToString()
+                    + "TOTAL: "
+                    + productosPrecioFinal
 
-
-
-                //MessageBox.Show(productosTexto);
-
+                    );
             }
-            MessageBox.Show(productosTexto);
 
-            MessageBox.Show("PEDIDO CREADO \n"
-                + "Nombre: "
-                + nombre
-                + "\n"
-                + "Entrega: "
-                + direccion
-                + "\n"
-                + "Pagado: "
-                + pagado
-                + "\n"
-                + "Estado: "
-                + estado
-                + "\n"
-                //+ "PEDIDOS: \n"
-                //+ listBox1.Text.ToString()
-                + "TOTAL: "
-                + productosPrecioFinal
-
-                );
+            
 
 
 
+        }
+
+
+
+
+        //VALIDADORES
+        //Valida los campos antes de crear pedido
+        public bool ValidarPedido (string nombre, string direccion, string estado)
+        {
+            bool exito = true;
+            if (nombre == "")
+            {
+                MessageBox.Show("Completá el nombre");
+                exito = false;
+            }
+            else if ( (checkBox2.Checked) && (direccion == "") )
+            {
+                MessageBox.Show("Completá la dirección o desmarcá la casilla de 'entrega'");
+                exito = false;
+            }
+            else if(estado == "")
+            {
+                MessageBox.Show("Completá el estado del producto");
+                exito = false;
+            }
+            return exito;
+        }
+
+        //Valida los campos antes de crear un producto
+        public bool ValidarProducto (string producto, string cantidad, string precio)
+        {
+            bool exito = true;
+            if(producto == "")
+            {
+                MessageBox.Show("Completá el producto");
+                exito = false;
+            }
+            else if (Int32.TryParse(cantidad, out int cant) == false)
+            {
+                MessageBox.Show("Agregá la cantidad");
+                exito = false;
+            }
+            else if (Int32.TryParse(precio, out int prec) == false)
+            {
+                MessageBox.Show("Agregá el precio");
+                exito = false;
+            }
+            return exito;
         }
 
 
