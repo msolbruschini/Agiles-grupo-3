@@ -54,28 +54,23 @@ namespace Interfez
 
 
         }*/
-
-         private void Form1_Load(object sender, EventArgs e)
+        //BOTONES
+        //Agrega un producto al mismo pedido
+        private void AgregarProducto_Click(object sender, EventArgs e)
         {
-            /*groupBox1.Width = (int)(this.Width * 0.6);
-            //groupBox1.Width = 30;*/
-            textDireccion.Enabled = false;
+            pedido.Rows.Add(textoProducto.Text, textoCantidad.Text, textoPrecio.Text);
+            listBox1.Items.Add(textoCantidad.Text + "  " + textoProducto.Text + "  " + textoPrecio.Text);
+            textoPrecio.Text = "";
+            textoCantidad.Text = "";
+            textoProducto.Text = "";
 
+
+
+
+            //MessageBox.Show("Producto: " + pedido.Rows[0]["Producto"].ToString());
         }
 
-       private void Form1_Resize(object sender, EventArgs e)
-        {
-            /*groupBox1.Width = (int)(this.Width * 0.6);
-            //groupBox1.Width = 30;
-            //panel1.Width= (int)(groupBox1.Width * 0.3);
-            panel2.Width = (int)(groupBox1.Width * 0.3);
-            panel3.Width = (int)(groupBox1.Width * 0.3);
-            panel4.Width = (int)(groupBox1.Width * 0.3);
-
-            Console.WriteLine("Form: " + this.Size.Width);
-            Console.WriteLine("box: " + groupBox1.Size.Width);*/
-        }
-
+        //Cierra el pedido
         private void CrearPedido_Click(object sender, EventArgs e)
         {
             //MessageBox.Show("¡Pedido Creado!");
@@ -96,19 +91,19 @@ namespace Interfez
                 pagado = "si";
             }
             int productosContador = pedido.Rows.Count;
-            
+
             string productosTexto = " ";
             int productosPrecioFinal = 0;
-            for (int i = 0; i < productosContador; i++ )
+            for (int i = 0; i < productosContador; i++)
             {
 
                 string cant = pedido.Rows[i]["Cantidad"].ToString();
                 string precio = pedido.Rows[i]["Precio"].ToString();
-                productosPrecioFinal = productosPrecioFinal + ( Int32.Parse(precio) * Int32.Parse(cant) );
-                
-                
+                productosPrecioFinal = productosPrecioFinal + (Int32.Parse(precio) * Int32.Parse(cant));
+
+
                 productosTexto = String.Concat(pedido.Rows[i]["Producto"].ToString() + " ");
-                
+
 
 
 
@@ -134,13 +129,41 @@ namespace Interfez
                 //+ listBox1.Text.ToString()
                 + "TOTAL: "
                 + productosPrecioFinal
-                
+
                 );
-            
+
 
 
         }
 
+
+
+
+
+
+
+
+        //Otras funcionalidades
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            /*groupBox1.Width = (int)(this.Width * 0.6);
+            //groupBox1.Width = 30;*/
+            textDireccion.Enabled = false;
+
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            /*groupBox1.Width = (int)(this.Width * 0.6);
+            //groupBox1.Width = 30;
+            //panel1.Width= (int)(groupBox1.Width * 0.3);
+            panel2.Width = (int)(groupBox1.Width * 0.3);
+            panel3.Width = (int)(groupBox1.Width * 0.3);
+            panel4.Width = (int)(groupBox1.Width * 0.3);
+
+            Console.WriteLine("Form: " + this.Size.Width);
+            Console.WriteLine("box: " + groupBox1.Size.Width);*/
+        }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
@@ -154,18 +177,6 @@ namespace Interfez
             }
         }
 
-        private void AgregarProducto_Click(object sender, EventArgs e)
-        {
-            pedido.Rows.Add(textoProducto.Text, textoCantidad.Text, textoPrecio.Text);
-            listBox1.Items.Add(textoCantidad.Text + "  " + textoProducto.Text + "  " + textoPrecio.Text);
-            textoPrecio.Text = "";
-            textoCantidad.Text = "";
-            textoProducto.Text = "";
-            
-
-
-
-            //MessageBox.Show("Producto: " + pedido.Rows[0]["Producto"].ToString());
-        }
+        
     }
     }
