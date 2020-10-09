@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.usu = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.errorUsu = new System.Windows.Forms.Label();
             this.IniciarSesion = new System.Windows.Forms.Button();
             this.textPass = new System.Windows.Forms.TextBox();
             this.textUsu = new System.Windows.Forms.TextBox();
@@ -45,7 +46,7 @@
             this.usu.AutoSize = true;
             this.usu.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usu.ForeColor = System.Drawing.Color.Black;
-            this.usu.Location = new System.Drawing.Point(29, 24);
+            this.usu.Location = new System.Drawing.Point(32, 34);
             this.usu.Name = "usu";
             this.usu.Size = new System.Drawing.Size(82, 25);
             this.usu.TabIndex = 0;
@@ -54,6 +55,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.errorUsu);
             this.panel1.Controls.Add(this.IniciarSesion);
             this.panel1.Controls.Add(this.textPass);
             this.panel1.Controls.Add(this.textUsu);
@@ -61,8 +63,20 @@
             this.panel1.Controls.Add(this.usu);
             this.panel1.Location = new System.Drawing.Point(32, 257);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(416, 185);
+            this.panel1.Size = new System.Drawing.Size(416, 223);
             this.panel1.TabIndex = 1;
+            // 
+            // errorUsu
+            // 
+            this.errorUsu.AutoSize = true;
+            this.errorUsu.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorUsu.ForeColor = System.Drawing.Color.Firebrick;
+            this.errorUsu.Location = new System.Drawing.Point(33, 129);
+            this.errorUsu.Name = "errorUsu";
+            this.errorUsu.Size = new System.Drawing.Size(281, 21);
+            this.errorUsu.TabIndex = 4;
+            this.errorUsu.Text = "*El Usuario o Contraseña incorrecta";
+            this.errorUsu.Visible = false;
             // 
             // IniciarSesion
             // 
@@ -73,7 +87,7 @@
             this.IniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.IniciarSesion.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IniciarSesion.ForeColor = System.Drawing.Color.Black;
-            this.IniciarSesion.Location = new System.Drawing.Point(140, 131);
+            this.IniciarSesion.Location = new System.Drawing.Point(135, 169);
             this.IniciarSesion.Name = "IniciarSesion";
             this.IniciarSesion.Size = new System.Drawing.Size(148, 39);
             this.IniciarSesion.TabIndex = 3;
@@ -85,8 +99,9 @@
             // 
             this.textPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.textPass.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textPass.Location = new System.Drawing.Point(162, 78);
+            this.textPass.Location = new System.Drawing.Point(165, 88);
             this.textPass.Name = "textPass";
+            this.textPass.PasswordChar = '*';
             this.textPass.Size = new System.Drawing.Size(217, 29);
             this.textPass.TabIndex = 2;
             // 
@@ -95,7 +110,7 @@
             this.textUsu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.textUsu.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textUsu.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textUsu.Location = new System.Drawing.Point(162, 20);
+            this.textUsu.Location = new System.Drawing.Point(165, 30);
             this.textUsu.Name = "textUsu";
             this.textUsu.Size = new System.Drawing.Size(217, 29);
             this.textUsu.TabIndex = 1;
@@ -105,7 +120,7 @@
             this.pass.AutoSize = true;
             this.pass.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pass.ForeColor = System.Drawing.Color.Black;
-            this.pass.Location = new System.Drawing.Point(29, 78);
+            this.pass.Location = new System.Drawing.Point(32, 88);
             this.pass.Name = "pass";
             this.pass.Size = new System.Drawing.Size(117, 25);
             this.pass.TabIndex = 1;
@@ -121,7 +136,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Inicio
             // 
@@ -153,5 +167,6 @@
         private System.Windows.Forms.Label pass;
         private System.Windows.Forms.Button IniciarSesion;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label errorUsu;
     }
 }

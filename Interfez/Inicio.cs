@@ -21,19 +21,22 @@ namespace Interfez
         {
             if(textUsu.Text == "Admin" && textPass.Text == "123456")
             {
-
+                Relleno rell = new Relleno();
+                this.Hide();
+                rell.ShowDialog();
+                
             }
-            Relleno rell = new Relleno();
-            this.Hide();
-            rell.ShowDialog();
-            
-            
-            
-        }
+            else
+            {
+                errorUsu.Visible = true;
+                
+            }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
+
+
 
         }
+
+        
     }
 }
