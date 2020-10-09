@@ -23,6 +23,12 @@ namespace Interfez
             {
 
             }
+            Relleno rell = new Relleno();
+            this.Hide();
+            rell.ShowDialog();
+            
+            
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

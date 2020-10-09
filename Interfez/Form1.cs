@@ -231,6 +231,12 @@ namespace Interfez
             }
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Relleno rell = new Relleno();
+            
+            this.Hide();
+            rell.ShowDialog();
+        }
     }
     }

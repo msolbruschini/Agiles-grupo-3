@@ -16,3 +16,9 @@ C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\CapaNegocio2\obj\De
 C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\CapaNegocio2\obj\Debug\CapaNegocio2.csproj.CoreCompileInputs.cache
 C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\CapaNegocio2\obj\Debug\CapaNegocio2.dll
 C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\CapaNegocio2\obj\Debug\CapaNegocio2.pdb
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\CapaNegocio2\bin\Debug\CapaNegocio2.dll
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\CapaNegocio2\bin\Debug\CapaNegocio2.pdb
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\CapaNegocio2\obj\Debug\CapaNegocio2.csprojAssemblyReference.cache
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\CapaNegocio2\obj\Debug\CapaNegocio2.csproj.CoreCompileInputs.cache
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\CapaNegocio2\obj\Debug\CapaNegocio2.dll
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\CapaNegocio2\obj\Debug\CapaNegocio2.pdb

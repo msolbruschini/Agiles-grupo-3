@@ -76,6 +76,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Relleno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relleno.Designer.cs">
+      <DependentUpon>Relleno.cs</DependentUpon>
+    </Compile>
     <Compile Include="Stock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,14 +101,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <EmbeddedResource Include="Relleno.resx">
+      <DependentUpon>Relleno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Stock.resx">
       <DependentUpon>Stock.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,6 +151,11 @@
     <None Include="Resources\cervjp.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Logooo.jpg" />
+    <None Include="Resources\Logooo1.jpg" />
+    <None Include="Resources\login.jpg" />
+    <None Include="Resources\login1.jpg" />
+    <None Include="Resources\losBirreros.jpg" />
     <Content Include="Testing.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
