@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 //using System.Windows;
 using System.Windows.Forms;
@@ -203,6 +204,20 @@ namespace Interfez
             /*groupBox1.Width = (int)(this.Width * 0.6);
             //groupBox1.Width = 30;*/
             textDireccion.Enabled = false;
+            ControlExtension.Draggable(panel3, true);
+            ControlExtension.Draggable(panel10, true);
+            ControlExtension.Draggable(panel11, true);
+            ControlExtension.Draggable(panel4, true);
+            ControlExtension.Draggable(panel5, true);
+            ControlExtension.Draggable(panel6, true);
+            ControlExtension.Draggable(panel7, true);
+            ControlExtension.Draggable(panel8, true);
+            ControlExtension.Draggable(panel2, true);
+            ControlExtension.Draggable(panel3, true);
+            ControlExtension.Draggable(panel4, true);
+            ControlExtension.Draggable(panel5, true);
+            ControlExtension.Draggable(panel12, true);
+
 
         }
 
@@ -238,5 +253,24 @@ namespace Interfez
             this.Hide();
             rell.ShowDialog();
         }
+
+
+
+
+
+
+
+
+
+
+
+
+        ////////////////////////////////////////////////////////////////////
+        ///MESAS
+        ////////////////////////////////////////////////////////////////////
+        
+
+        
+
     }
     }

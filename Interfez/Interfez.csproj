@@ -48,6 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Control.Draggable, Version=1.0.5049.269, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Control.Draggable.1.0.5049.269\lib\net35-Client\Control.Draggable.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -110,6 +113,7 @@
     <EmbeddedResource Include="Stock.resx">
       <DependentUpon>Stock.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -156,6 +160,8 @@
     <None Include="Resources\login.jpg" />
     <None Include="Resources\login1.jpg" />
     <None Include="Resources\losBirreros.jpg" />
+    <None Include="Resources\MesaCuadrada.jpg" />
+    <None Include="Resources\MesaRedonda.jpg" />
     <Content Include="Testing.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
