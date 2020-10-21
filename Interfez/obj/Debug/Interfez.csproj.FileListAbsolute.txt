@@ -102,3 +102,9 @@ C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\
 C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.pdb
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Relleno.resources
 C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\Control.Draggable.dll
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.dll
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.dll
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.pdb
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.dll.config
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.xml
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.dll.config

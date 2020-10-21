@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaDatos;
 
 namespace Interfez
 {
@@ -14,6 +15,8 @@ namespace Interfez
         [STAThread]
         static void Main()
         {
+            ConexionGeneral cg = new ConexionGeneral();
+            cg.DBCreator();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
