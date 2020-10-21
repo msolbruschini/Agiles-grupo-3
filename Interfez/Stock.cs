@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
+using CapaNegocio2;
 
 namespace Interfez
 {
@@ -86,7 +87,12 @@ namespace Interfez
 
         private void Stock_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = Helper.DataTableFromTextFile(Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName, "Testing.txt"), '|');
+            /*dataGridView1.DataSource = Helper.DataTableFromTextFile(Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName, "Testing.txt"), '|');*/
+            DataSet DS = new DataSet();
+            Item i = new Item();
+            DS = i.MostrarItem();
+            dataGridView1.DataSource = DS.Tables[0];
+            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
