@@ -23,6 +23,8 @@ namespace CapaDatos
             
 
         }
+
+        //Devuelve un dataset para mostrar datos...
         public DataSet Consultor(string query)
         {
             DataSet DS = new DataSet();
@@ -47,6 +49,36 @@ namespace CapaDatos
             return DS;
 
         }
-        
+
+
+
+
+
+        //Vuelve vacío
+        public void Ejecutor(string query)
+        {
+            
+            try
+            {
+                //SQLiteCommand myCommand = new SQLiteCommand(query, miConexion);
+                miConexion.Open();
+                SQLiteDataAdapter sqlda = new SQLiteDataAdapter(query, miConexion);
+
+                
+
+
+            }
+            catch
+            {
+                MessageBox.Show("Hubo un problemingui...");
+            }
+            finally
+            {
+                miConexion.Close();
+            }
+            
+
+        }
+
     }
 }
