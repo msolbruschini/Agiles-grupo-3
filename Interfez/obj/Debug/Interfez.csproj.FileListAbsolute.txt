@@ -115,3 +115,11 @@ C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\Cap
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.dll.config
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.xml
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.dll
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\Control.Draggable.dll
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.dll
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.pdb
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.dll.config
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.xml
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Relleno.resources
