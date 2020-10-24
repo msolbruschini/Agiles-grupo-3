@@ -33,9 +33,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
@@ -57,26 +54,29 @@
             this.label2 = new System.Windows.Forms.Label();
             this.EliminarPedido = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -118,43 +118,6 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(384, 212);
             this.listBox1.TabIndex = 4;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.groupBox1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(792, 424);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Mapa de mesas";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.panel14);
-            this.groupBox1.Controls.Add(this.panel15);
-            this.groupBox1.Controls.Add(this.panel13);
-            this.groupBox1.Controls.Add(this.panel12);
-            this.groupBox1.Controls.Add(this.panel9);
-            this.groupBox1.Controls.Add(this.panel10);
-            this.groupBox1.Controls.Add(this.panel11);
-            this.groupBox1.Controls.Add(this.panel4);
-            this.groupBox1.Controls.Add(this.panel5);
-            this.groupBox1.Controls.Add(this.panel6);
-            this.groupBox1.Controls.Add(this.panel3);
-            this.groupBox1.Controls.Add(this.panel2);
-            this.groupBox1.Controls.Add(this.panel7);
-            this.groupBox1.Controls.Add(this.panel8);
-            this.groupBox1.Location = new System.Drawing.Point(0, 6);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(560, 410);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
             // 
             // panel1
             // 
@@ -418,41 +381,105 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Pedidos";
             // 
-            // panel7
+            // tabPage2
             // 
-            this.panel7.BackgroundImage = global::Interfez.Properties.Resources.MesaRedonda;
-            this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel7.Location = new System.Drawing.Point(276, 58);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(103, 88);
-            this.panel7.TabIndex = 11;
+            this.tabPage2.Controls.Add(this.groupBox1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(792, 424);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Mapa de mesas";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // panel8
+            // groupBox1
             // 
-            this.panel8.BackgroundImage = global::Interfez.Properties.Resources.MesaRedonda;
-            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel8.Location = new System.Drawing.Point(276, 164);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(103, 88);
-            this.panel8.TabIndex = 12;
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.panel14);
+            this.groupBox1.Controls.Add(this.panel15);
+            this.groupBox1.Controls.Add(this.panel13);
+            this.groupBox1.Controls.Add(this.panel12);
+            this.groupBox1.Controls.Add(this.panel9);
+            this.groupBox1.Controls.Add(this.panel10);
+            this.groupBox1.Controls.Add(this.panel11);
+            this.groupBox1.Controls.Add(this.panel4);
+            this.groupBox1.Controls.Add(this.panel5);
+            this.groupBox1.Controls.Add(this.panel6);
+            this.groupBox1.Controls.Add(this.panel3);
+            this.groupBox1.Controls.Add(this.panel2);
+            this.groupBox1.Controls.Add(this.panel7);
+            this.groupBox1.Controls.Add(this.panel8);
+            this.groupBox1.Location = new System.Drawing.Point(0, 6);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(560, 410);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
             // 
-            // panel2
+            // panel14
             // 
-            this.panel2.BackgroundImage = global::Interfez.Properties.Resources.MesaRedonda;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(276, 282);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(103, 88);
-            this.panel2.TabIndex = 13;
+            this.panel14.BackgroundImage = global::Interfez.Properties.Resources.MesaCuadrada;
+            this.panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel14.Location = new System.Drawing.Point(130, 307);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(66, 63);
+            this.panel14.TabIndex = 16;
             // 
-            // panel3
+            // panel15
             // 
-            this.panel3.BackgroundImage = global::Interfez.Properties.Resources.MesaCuadrada;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Location = new System.Drawing.Point(469, 21);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(91, 42);
-            this.panel3.TabIndex = 12;
+            this.panel15.BackgroundImage = global::Interfez.Properties.Resources.MesaCuadrada;
+            this.panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel15.Location = new System.Drawing.Point(130, 189);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(66, 63);
+            this.panel15.TabIndex = 16;
+            // 
+            // panel13
+            // 
+            this.panel13.BackgroundImage = global::Interfez.Properties.Resources.MesaCuadrada;
+            this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel13.Location = new System.Drawing.Point(28, 307);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(66, 63);
+            this.panel13.TabIndex = 15;
+            // 
+            // panel12
+            // 
+            this.panel12.BackgroundImage = global::Interfez.Properties.Resources.MesaCuadrada;
+            this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel12.Location = new System.Drawing.Point(28, 189);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(66, 63);
+            this.panel12.TabIndex = 14;
+            // 
+            // panel9
+            // 
+            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Location = new System.Drawing.Point(3, 19);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(145, 142);
+            this.panel9.TabIndex = 14;
+            // 
+            // panel10
+            // 
+            this.panel10.BackgroundImage = global::Interfez.Properties.Resources.MesaCuadrada;
+            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel10.Location = new System.Drawing.Point(469, 84);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(91, 42);
+            this.panel10.TabIndex = 13;
+            // 
+            // panel11
+            // 
+            this.panel11.BackgroundImage = global::Interfez.Properties.Resources.MesaCuadrada;
+            this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel11.Location = new System.Drawing.Point(469, 148);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(91, 42);
+            this.panel11.TabIndex = 13;
             // 
             // panel4
             // 
@@ -481,68 +508,41 @@
             this.panel6.Size = new System.Drawing.Size(91, 42);
             this.panel6.TabIndex = 13;
             // 
-            // panel10
+            // panel3
             // 
-            this.panel10.BackgroundImage = global::Interfez.Properties.Resources.MesaCuadrada;
-            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel10.Location = new System.Drawing.Point(469, 84);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(91, 42);
-            this.panel10.TabIndex = 13;
+            this.panel3.BackgroundImage = global::Interfez.Properties.Resources.MesaCuadrada;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Location = new System.Drawing.Point(469, 21);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(91, 42);
+            this.panel3.TabIndex = 12;
             // 
-            // panel11
+            // panel2
             // 
-            this.panel11.BackgroundImage = global::Interfez.Properties.Resources.MesaCuadrada;
-            this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel11.Location = new System.Drawing.Point(469, 148);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(91, 42);
-            this.panel11.TabIndex = 13;
+            this.panel2.BackgroundImage = global::Interfez.Properties.Resources.MesaRedonda;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(276, 282);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(103, 88);
+            this.panel2.TabIndex = 13;
             // 
-            // panel9
+            // panel7
             // 
-            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Location = new System.Drawing.Point(3, 19);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(145, 142);
-            this.panel9.TabIndex = 14;
+            this.panel7.BackgroundImage = global::Interfez.Properties.Resources.MesaRedonda;
+            this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel7.Location = new System.Drawing.Point(276, 58);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(103, 88);
+            this.panel7.TabIndex = 11;
             // 
-            // panel12
+            // panel8
             // 
-            this.panel12.BackgroundImage = global::Interfez.Properties.Resources.MesaCuadrada;
-            this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel12.Location = new System.Drawing.Point(28, 189);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(66, 63);
-            this.panel12.TabIndex = 14;
-            // 
-            // panel13
-            // 
-            this.panel13.BackgroundImage = global::Interfez.Properties.Resources.MesaCuadrada;
-            this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel13.Location = new System.Drawing.Point(28, 307);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(66, 63);
-            this.panel13.TabIndex = 15;
-            // 
-            // panel14
-            // 
-            this.panel14.BackgroundImage = global::Interfez.Properties.Resources.MesaCuadrada;
-            this.panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel14.Location = new System.Drawing.Point(130, 307);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(66, 63);
-            this.panel14.TabIndex = 16;
-            // 
-            // panel15
-            // 
-            this.panel15.BackgroundImage = global::Interfez.Properties.Resources.MesaCuadrada;
-            this.panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel15.Location = new System.Drawing.Point(130, 189);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(66, 63);
-            this.panel15.TabIndex = 16;
+            this.panel8.BackgroundImage = global::Interfez.Properties.Resources.MesaRedonda;
+            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel8.Location = new System.Drawing.Point(276, 164);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(103, 88);
+            this.panel8.TabIndex = 12;
             // 
             // Form1
             // 
@@ -550,19 +550,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Principal";
+            this.Text = "Los Birreros";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Resize += new System.EventHandler(this.Form1_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
