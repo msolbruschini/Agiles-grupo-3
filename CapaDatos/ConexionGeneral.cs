@@ -55,22 +55,21 @@ namespace CapaDatos
 
 
         //Vuelve vacío
-        public void Ejecutor(string query)
+        public bool Ejecutor(string query)
         {
-            
+            DataSet DS = new DataSet();
             try
             {
                 //SQLiteCommand myCommand = new SQLiteCommand(query, miConexion);
                 miConexion.Open();
                 SQLiteDataAdapter sqlda = new SQLiteDataAdapter(query, miConexion);
-
-                
-
+                sqlda.Fill(DS);
+                return true;
 
             }
             catch
             {
-                MessageBox.Show("Hubo un problemingui...");
+                return false;
             }
             finally
             {

@@ -94,7 +94,14 @@ namespace Interfez
                 PrecioCompraAux = float.Parse(PrecioCompra);
 
 
-                i.ModificarItem(IdAux, Codigo, Producto, Categoria, PrecioCompraAux, CantidadAux);
+                if (i.ModificarItem(IdAux, Codigo, Producto, Categoria, PrecioCompraAux, CantidadAux) == true )
+                { 
+                    MessageBox.Show("La modificacion se realizo con exito");
+                }
+                else
+                { 
+                    MessageBox.Show("La modificacion no se pudo realizar");
+                }
                 DataSet DS = new DataSet();
                 i = new Item();
                 DS = i.MostrarItem();

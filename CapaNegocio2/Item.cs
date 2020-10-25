@@ -38,13 +38,13 @@ namespace CapaNegocio2
             return DS;
         }
 
-        public String ModificarItem(int StockId , string codigo , string producto , string categoria , float precioCompra , int cantidad)
+        public bool ModificarItem(int StockId , string codigo , string producto , string categoria , float precioCompra , int cantidad)
         {
             ConexionGeneral CG = new ConexionGeneral();
-            CG.Consultor("UPDATE Stock SET codigo = '" + codigo + "',producto = '" + producto + "',categoria = '" + categoria + "', precioCompra = " + precioCompra + " ,cantidad = " + cantidad + " where StockId = " + StockId);
-            return null;
             
-            
+            return CG.Ejecutor("UPDATE Stock SET codigo = '" + codigo + "',producto = '" + producto + "',categoria = '" + categoria + "', precioCompra = " + precioCompra + " ,cantidad = " + cantidad + " where StockId = " + StockId);
+
+
         }
 
     }
