@@ -15,7 +15,7 @@ namespace CapaNegocio2
            
             DataSet DS = new DataSet();
             ConexionGeneral CG = new ConexionGeneral();
-            DS = CG.Consultor("SELECT * FROM Item I LEFT JOIN Cerveza C ON C.codItem = I.codItem");
+            DS = CG.Consultor("SELECT * FROM Stock");
             return DS;
         }
 
@@ -34,7 +34,7 @@ namespace CapaNegocio2
 
             DataSet DS = new DataSet();
             ConexionGeneral CG = new ConexionGeneral();
-            DS = CG.Consultor("SELECT * FROM Item I LEFT JOIN Cerveza C ON C.codItem = I.codItem where nombre like '%" + nombreBuscado + "%'");
+            DS = CG.Consultor("SELECT * FROM Stock where producto like '%" + nombreBuscado + "%'");
             return DS;
         }
 

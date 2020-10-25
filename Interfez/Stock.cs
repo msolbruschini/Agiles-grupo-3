@@ -74,7 +74,9 @@ namespace Interfez
                     {
                         dataGridView1.DataSource = DS.Tables[0];
                     }
-                    finally { }
+                    finally {
+                    
+                    }
                 }
 
             }
