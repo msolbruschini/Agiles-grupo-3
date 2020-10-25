@@ -29,3 +29,29 @@ C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\CapaNegocio2\bin\De
 C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\CapaNegocio2\bin\Debug\System.Data.SQLite.xml
 C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\CapaNegocio2\bin\Debug\System.Data.SQLite.dll.config
 C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\CapaNegocio2\obj\Debug\CapaNegocio2.csproj.CopyComplete
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\CapaNegocio2\bin\Debug\CapaNegocio2.dll
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\CapaNegocio2\bin\Debug\CapaNegocio2.pdb
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\CapaNegocio2\bin\Debug\CapaDatos.dll
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\CapaNegocio2\bin\Debug\System.Data.SQLite.dll
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\CapaNegocio2\bin\Debug\CapaDatos.pdb
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\CapaNegocio2\bin\Debug\CapaDatos.dll.config
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\CapaNegocio2\bin\Debug\System.Data.SQLite.xml
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\CapaNegocio2\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\CapaNegocio2\obj\Debug\CapaNegocio2.csprojAssemblyReference.cache
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\CapaNegocio2\obj\Debug\CapaNegocio2.csproj.CoreCompileInputs.cache
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\CapaNegocio2\obj\Debug\CapaNegocio2.csproj.CopyComplete
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\CapaNegocio2\obj\Debug\CapaNegocio2.dll
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\CapaNegocio2\obj\Debug\CapaNegocio2.pdb
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\CapaNegocio2\bin\Debug\CapaNegocio2.dll
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\CapaNegocio2\bin\Debug\CapaNegocio2.pdb
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\CapaNegocio2\bin\Debug\CapaDatos.dll
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\CapaNegocio2\bin\Debug\System.Data.SQLite.dll
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\CapaNegocio2\bin\Debug\CapaDatos.pdb
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\CapaNegocio2\bin\Debug\CapaDatos.dll.config
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\CapaNegocio2\bin\Debug\System.Data.SQLite.xml
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\CapaNegocio2\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\CapaNegocio2\obj\Debug\CapaNegocio2.csprojAssemblyReference.cache
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\CapaNegocio2\obj\Debug\CapaNegocio2.csproj.CoreCompileInputs.cache
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\CapaNegocio2\obj\Debug\CapaNegocio2.csproj.CopyComplete
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\CapaNegocio2\obj\Debug\CapaNegocio2.dll
+C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\CapaNegocio2\obj\Debug\CapaNegocio2.pdb

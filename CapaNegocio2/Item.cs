@@ -28,5 +28,15 @@ namespace CapaNegocio2
             DS = CG.Consultor("INSERT INTO Item (ItemNombre, ItemCant) VALUES (" + nombre + ", " + cantidad + "");
             return DS;
         }*/
+
+        public DataSet MostrarItemBuscado(string nombreBuscado)
+        {
+
+            DataSet DS = new DataSet();
+            ConexionGeneral CG = new ConexionGeneral();
+            DS = CG.Consultor("SELECT * FROM Item I LEFT JOIN Cerveza C ON C.codItem = I.codItem where nombre like '%" + nombreBuscado + "%'");
+            return DS;
+        }
+
     }
 }

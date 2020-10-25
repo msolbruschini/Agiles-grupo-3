@@ -81,8 +81,9 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Relleno";
-            this.Text = "Relleno";
+            this.Text = "Los Birreros";
             this.ResumeLayout(false);
 
         }

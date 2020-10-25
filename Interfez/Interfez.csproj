@@ -171,6 +171,7 @@
     <None Include="Resources\losBirreros.jpg" />
     <None Include="Resources\MesaCuadrada.jpg" />
     <None Include="Resources\MesaRedonda.jpg" />
+    <None Include="Resources\Inicio.jpeg" />
     <Content Include="Testing.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

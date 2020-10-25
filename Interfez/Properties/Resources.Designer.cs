@@ -63,6 +63,26 @@ namespace Interfez.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap borrarBlanco {
+            get {
+                object obj = ResourceManager.GetObject("borrarBlanco", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cerrar {
+            get {
+                object obj = ResourceManager.GetObject("cerrar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cerv {
             get {
                 object obj = ResourceManager.GetObject("cerv", resourceCulture);
@@ -96,6 +116,16 @@ namespace Interfez.Properties {
         internal static System.Drawing.Bitmap cervjp1 {
             get {
                 object obj = ResourceManager.GetObject("cervjp1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Inicio {
+            get {
+                object obj = ResourceManager.GetObject("Inicio", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
