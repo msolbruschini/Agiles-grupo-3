@@ -40,7 +40,7 @@ namespace CapaDatos
             }
             catch
             {
-                MessageBox.Show("Hubo un problemingui...");
+                MessageBox.Show("No se puede realizar esta consulta/modificacion");
             }
             finally
             {

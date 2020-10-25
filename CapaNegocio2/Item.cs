@@ -15,7 +15,7 @@ namespace CapaNegocio2
            
             DataSet DS = new DataSet();
             ConexionGeneral CG = new ConexionGeneral();
-            DS = CG.Consultor("SELECT * FROM Stock");
+            DS = CG.Consultor("SELECT StockId,codigo,producto,categoria,precioCompra,cantidad FROM Stock");
             return DS;
         }
 
@@ -34,8 +34,17 @@ namespace CapaNegocio2
 
             DataSet DS = new DataSet();
             ConexionGeneral CG = new ConexionGeneral();
-            DS = CG.Consultor("SELECT * FROM Stock where producto like '%" + nombreBuscado + "%'");
+            DS = CG.Consultor("SELECT StockId,codigo,producto,categoria,precioCompra,cantidad FROM Stock where producto like '%" + nombreBuscado + "%'");
             return DS;
+        }
+
+        public String ModificarItem(int StockId , string codigo , string producto , string categoria , float precioCompra , int cantidad)
+        {
+            ConexionGeneral CG = new ConexionGeneral();
+            CG.Consultor("UPDATE Stock SET codigo = '" + codigo + "',producto = '" + producto + "',categoria = '" + categoria + "', precioCompra = " + precioCompra + " ,cantidad = " + cantidad + " where StockId = " + StockId);
+            return null;
+            
+            
         }
 
     }
