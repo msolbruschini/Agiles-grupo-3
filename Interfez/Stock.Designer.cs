@@ -35,9 +35,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.AgregarNuevo = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.NuevoProducto = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -93,13 +94,13 @@
             this.contextMenuStrip2.Name = "contextMenuStrip2";
             this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
             // 
-            // textBox1
+            // AgregarNuevo
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 181);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(117, 20);
-            this.textBox1.TabIndex = 8;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.AgregarNuevo.Location = new System.Drawing.Point(13, 181);
+            this.AgregarNuevo.Name = "AgregarNuevo";
+            this.AgregarNuevo.Size = new System.Drawing.Size(117, 20);
+            this.AgregarNuevo.TabIndex = 8;
+            this.AgregarNuevo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button2
             // 
@@ -121,15 +122,26 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // NuevoProducto
+            // 
+            this.NuevoProducto.Location = new System.Drawing.Point(370, 181);
+            this.NuevoProducto.Name = "NuevoProducto";
+            this.NuevoProducto.Size = new System.Drawing.Size(105, 23);
+            this.NuevoProducto.TabIndex = 11;
+            this.NuevoProducto.Text = "Nuevo Producto";
+            this.NuevoProducto.UseVisualStyleBackColor = true;
+            this.NuevoProducto.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Stock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ClientSize = new System.Drawing.Size(1216, 634);
+            this.Controls.Add(this.NuevoProducto);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.AgregarNuevo);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
@@ -150,8 +162,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox AgregarNuevo;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button NuevoProducto;
     }
 }

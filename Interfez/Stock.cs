@@ -56,11 +56,11 @@ namespace Interfez
         private void button2_Click_1(object sender, EventArgs e)
         {
                 Refresh();
-                if (!textBox1.Text.Trim().Equals(""))
+                if (!AgregarNuevo.Text.Trim().Equals(""))
                 {
                     DataSet DS = new DataSet();
                     Item i = new Item();
-                    DS = i.MostrarItemBuscado(textBox1.Text.Trim());
+                    DS = i.MostrarItemBuscado(AgregarNuevo.Text.Trim());
                     try
                     {
                         dataGridView1.DataSource = DS.Tables[0];
@@ -114,6 +114,19 @@ namespace Interfez
                 MessageBox.Show("Seleccione la fila modificar");
             }
                 
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            NuevoProducto nuevo = new NuevoProducto();
+
+            this.Hide();
+            nuevo.ShowDialog();
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
 
         }
     }
