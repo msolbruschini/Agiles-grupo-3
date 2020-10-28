@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaNegocio2;
+
 
 namespace Interfez
 {
@@ -17,9 +19,37 @@ namespace Interfez
             InitializeComponent();
         }
 
+
+
+        // Función de carga de datos en tabla stock
         private void button1_Click(object sender, EventArgs e)
         {
 
+
+
+            string producto, codigo, categoria, descripcion, comentario;
+
+            producto = textBox2.Text;
+            codigo = textBox3.Text;
+            categoria = textBox6.Text;
+            descripcion = textBox4.Text;
+            comentario = textBox5.Text;
+            
+            int cantidad = Int32.Parse(textBox8.Text);
+            
+            
+            float precioCompra = float.Parse(textBox7.Text);
+
+            Item i = new Item();
+
+            if (i.AgregarItem(producto, codigo, categoria, descripcion, comentario, precioCompra, cantidad) == true)
+            {
+                MessageBox.Show("El producto fue cargado con éxito");
+            }
+            else
+            {
+                MessageBox.Show("Error al cargar");
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -30,6 +60,49 @@ namespace Interfez
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Stock stock = new Stock();
+
+            this.Hide();
+            stock.ShowDialog();
         }
     }
 }

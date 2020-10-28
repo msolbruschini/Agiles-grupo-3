@@ -20,14 +20,15 @@ namespace CapaNegocio2
         }
 
 
-        /*public DataSet AgregarItem(string nombre, int cantidad)
+        public bool AgregarItem(string producto, string codigo,string categoria, string descripcion, string comentario, float precioCompra, int cantidad)
         {
-            DataSet DS = new DataSet();
+           
             ConexionGeneral CG = new ConexionGeneral();
             
-            DS = CG.Consultor("INSERT INTO Item (ItemNombre, ItemCant) VALUES (" + nombre + ", " + cantidad + "");
-            return DS;
-        }*/
+            CG.Consultor("INSERT INTO Stock ( producto, codigo, categoria, descripcion, comentario, precioCompra, cantidad) " +
+                "VALUES ( " + producto + ", " + codigo + "," + categoria + "," + descripcion + ", " + comentario + "," + precioCompra + "," + cantidad + "");
+            return true;
+        }
 
         public DataSet MostrarItemBuscado(string nombreBuscado)
         {
