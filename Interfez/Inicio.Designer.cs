@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel4 = new System.Windows.Forms.Panel();
+            this.BtnMinimizar = new System.Windows.Forms.PictureBox();
+            this.BtnCerrar = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -39,25 +41,49 @@
             this.textUsu = new System.Windows.Forms.TextBox();
             this.pass = new System.Windows.Forms.Label();
             this.usu = new System.Windows.Forms.Label();
-            this.BtnMinimizar = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Black;
             this.panel4.Controls.Add(this.BtnMinimizar);
-            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Controls.Add(this.BtnCerrar);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(405, 23);
             this.panel4.TabIndex = 2;
+            // 
+            // BtnMinimizar
+            // 
+            this.BtnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMinimizar.Image = global::Interfez.Properties.Resources.borrarBlanco;
+            this.BtnMinimizar.Location = new System.Drawing.Point(357, 1);
+            this.BtnMinimizar.Name = "BtnMinimizar";
+            this.BtnMinimizar.Size = new System.Drawing.Size(20, 19);
+            this.BtnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnMinimizar.TabIndex = 4;
+            this.BtnMinimizar.TabStop = false;
+            this.BtnMinimizar.Click += new System.EventHandler(this.BtnMinimizar_Click);
+            // 
+            // BtnCerrar
+            // 
+            this.BtnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCerrar.Image = global::Interfez.Properties.Resources.cerrar;
+            this.BtnCerrar.Location = new System.Drawing.Point(382, 1);
+            this.BtnCerrar.Name = "BtnCerrar";
+            this.BtnCerrar.Size = new System.Drawing.Size(20, 19);
+            this.BtnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnCerrar.TabIndex = 5;
+            this.BtnCerrar.TabStop = false;
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
             // panel5
             // 
@@ -173,30 +199,6 @@
             this.usu.TabIndex = 15;
             this.usu.Text = "Usuario";
             // 
-            // BtnMinimizar
-            // 
-            this.BtnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMinimizar.Image = global::Interfez.Properties.Resources.borrarBlanco;
-            this.BtnMinimizar.Location = new System.Drawing.Point(357, 1);
-            this.BtnMinimizar.Name = "BtnMinimizar";
-            this.BtnMinimizar.Size = new System.Drawing.Size(20, 19);
-            this.BtnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnMinimizar.TabIndex = 4;
-            this.BtnMinimizar.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::Interfez.Properties.Resources.cerrar;
-            this.pictureBox1.Location = new System.Drawing.Point(382, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(20, 19);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -214,11 +216,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Los Birreros";
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -229,7 +231,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox BtnMinimizar;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox BtnCerrar;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label errorUsu;
