@@ -182,7 +182,7 @@
             // 
             this.pass.AutoSize = true;
             this.pass.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pass.ForeColor = System.Drawing.Color.Black;
+            this.pass.ForeColor = System.Drawing.Color.White;
             this.pass.Location = new System.Drawing.Point(15, 62);
             this.pass.Name = "pass";
             this.pass.Size = new System.Drawing.Size(117, 25);
@@ -193,7 +193,7 @@
             // 
             this.usu.AutoSize = true;
             this.usu.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usu.ForeColor = System.Drawing.Color.Black;
+            this.usu.ForeColor = System.Drawing.Color.White;
             this.usu.Location = new System.Drawing.Point(15, 8);
             this.usu.Name = "usu";
             this.usu.Size = new System.Drawing.Size(82, 25);

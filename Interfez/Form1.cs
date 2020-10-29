@@ -254,6 +254,22 @@ namespace Interfez
             rell.ShowDialog();
         }
 
+        private void BtnMinimizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnCerrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
+
+
+
+
+
 
 
 
@@ -268,9 +284,9 @@ namespace Interfez
         ////////////////////////////////////////////////////////////////////
         ///MESAS
         ////////////////////////////////////////////////////////////////////
-        
 
-        
+
+
 
     }
     }
