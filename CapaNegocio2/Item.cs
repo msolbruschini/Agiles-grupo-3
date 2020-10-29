@@ -24,10 +24,9 @@ namespace CapaNegocio2
         {
            
             ConexionGeneral CG = new ConexionGeneral();
+
+            return CG.Ejecutor("INSERT INTO Stock ( producto, codigo, categoria, descripcion, comentario, precioCompra, cantidad) VALUES ( '" + producto + "', '" + codigo + "','" + categoria + "','" + descripcion + "', '" + comentario + "'," + precioCompra + "," + cantidad + ")");
             
-            CG.Consultor("INSERT INTO Stock ( producto, codigo, categoria, descripcion, comentario, precioCompra, cantidad) " +
-                "VALUES ( " + producto + ", " + codigo + "," + categoria + "," + descripcion + ", " + comentario + "," + precioCompra + "," + cantidad + "");
-            return true;
         }
 
         public DataSet MostrarItemBuscado(string nombreBuscado)
