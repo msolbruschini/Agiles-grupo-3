@@ -35,7 +35,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.errorUsu = new System.Windows.Forms.Label();
+            this.errorMsg = new System.Windows.Forms.Label();
             this.IniciarSesion = new System.Windows.Forms.Button();
             this.textPass = new System.Windows.Forms.TextBox();
             this.textUsu = new System.Windows.Forms.TextBox();
@@ -100,7 +100,7 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.errorUsu);
+            this.panel1.Controls.Add(this.errorMsg);
             this.panel1.Controls.Add(this.IniciarSesion);
             this.panel1.Controls.Add(this.textPass);
             this.panel1.Controls.Add(this.textUsu);
@@ -127,17 +127,17 @@
             this.panel2.Size = new System.Drawing.Size(217, 3);
             this.panel2.TabIndex = 14;
             // 
-            // errorUsu
+            // errorMsg
             // 
-            this.errorUsu.AutoSize = true;
-            this.errorUsu.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.errorUsu.ForeColor = System.Drawing.Color.Firebrick;
-            this.errorUsu.Location = new System.Drawing.Point(16, 103);
-            this.errorUsu.Name = "errorUsu";
-            this.errorUsu.Size = new System.Drawing.Size(281, 21);
-            this.errorUsu.TabIndex = 20;
-            this.errorUsu.Text = "*El Usuario o Contraseña incorrecta";
-            this.errorUsu.Visible = false;
+            this.errorMsg.AutoSize = true;
+            this.errorMsg.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorMsg.ForeColor = System.Drawing.Color.Firebrick;
+            this.errorMsg.Location = new System.Drawing.Point(16, 103);
+            this.errorMsg.Name = "errorMsg";
+            this.errorMsg.Size = new System.Drawing.Size(281, 21);
+            this.errorMsg.TabIndex = 20;
+            this.errorMsg.Text = "*El Usuario o Contraseña incorrecta";
+            this.errorMsg.Visible = false;
             // 
             // IniciarSesion
             // 
@@ -151,9 +151,10 @@
             this.IniciarSesion.Location = new System.Drawing.Point(109, 138);
             this.IniciarSesion.Name = "IniciarSesion";
             this.IniciarSesion.Size = new System.Drawing.Size(148, 39);
-            this.IniciarSesion.TabIndex = 19;
+            this.IniciarSesion.TabIndex = 3;
             this.IniciarSesion.Text = "Iniciar Sesión";
             this.IniciarSesion.UseVisualStyleBackColor = false;
+            this.IniciarSesion.Click += new System.EventHandler(this.IniciarSesion_Click);
             // 
             // textPass
             // 
@@ -164,7 +165,7 @@
             this.textPass.Name = "textPass";
             this.textPass.PasswordChar = '*';
             this.textPass.Size = new System.Drawing.Size(217, 22);
-            this.textPass.TabIndex = 18;
+            this.textPass.TabIndex = 2;
             // 
             // textUsu
             // 
@@ -175,7 +176,7 @@
             this.textUsu.Location = new System.Drawing.Point(148, 11);
             this.textUsu.Name = "textUsu";
             this.textUsu.Size = new System.Drawing.Size(217, 22);
-            this.textUsu.TabIndex = 16;
+            this.textUsu.TabIndex = 1;
             // 
             // pass
             // 
@@ -234,7 +235,7 @@
         private System.Windows.Forms.PictureBox BtnCerrar;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label errorUsu;
+        private System.Windows.Forms.Label errorMsg;
         private System.Windows.Forms.Button IniciarSesion;
         private System.Windows.Forms.TextBox textPass;
         private System.Windows.Forms.TextBox textUsu;

@@ -79,5 +79,9 @@ namespace CapaDatos
 
         }
 
+        protected SQLiteConnection GetConnection()
+        {
+            return new SQLiteConnection(miConexion);
+        }
     }
 }

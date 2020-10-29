@@ -19,9 +19,9 @@ namespace Interfez
             cg.DBCreator();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-            Application.Run(new Stock());
-            Application.Run( new Inicio());
+            Inicio i = new Inicio();
+            i.ShowDialog();
+            Application.Run();
         }
     }
 }
