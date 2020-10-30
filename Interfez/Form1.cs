@@ -62,7 +62,7 @@ namespace Interfez
             if (ValidarProducto(textoProducto.Text, textoCantidad.Text, textoPrecio.Text))
             {
                 pedido.Rows.Add(textoProducto.Text, textoCantidad.Text, textoPrecio.Text);
-                listBox1.Items.Add(textoCantidad.Text + "  " + textoProducto.Text + "  " + textoPrecio.Text);
+                Items.Items.Add(textoCantidad.Text + "  " + textoProducto.Text + "  " + textoPrecio.Text);
                 textoPrecio.Text = "";
                 textoCantidad.Text = "";
                 textoProducto.Text = "";
@@ -254,6 +254,22 @@ namespace Interfez
             rell.ShowDialog();
         }
 
+        private void BtnMinimizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnCerrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
+
+
+
+
+
 
 
 
@@ -268,9 +284,9 @@ namespace Interfez
         ////////////////////////////////////////////////////////////////////
         ///MESAS
         ////////////////////////////////////////////////////////////////////
-        
 
-        
+
+
 
     }
     }

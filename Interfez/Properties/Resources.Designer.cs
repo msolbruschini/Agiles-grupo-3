@@ -123,6 +123,16 @@ namespace Interfez.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FondoPedidos {
+            get {
+                object obj = ResourceManager.GetObject("FondoPedidos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Inicio {
             get {
                 object obj = ResourceManager.GetObject("Inicio", resourceCulture);
@@ -206,6 +216,56 @@ namespace Interfez.Properties {
         internal static System.Drawing.Bitmap MesaRedonda {
             get {
                 object obj = ResourceManager.GetObject("MesaRedonda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NewLogo {
+            get {
+                object obj = ResourceManager.GetObject("NewLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Pedidos1 {
+            get {
+                object obj = ResourceManager.GetObject("Pedidos1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap STOCK {
+            get {
+                object obj = ResourceManager.GetObject("STOCK", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap STOCK_1 {
+            get {
+                object obj = ResourceManager.GetObject("STOCK 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2020_10_23_at_10_46_56_PM__1_ {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2020-10-23 at 10.46.56 PM (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
