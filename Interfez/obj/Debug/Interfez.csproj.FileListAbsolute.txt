@@ -1,150 +1,24 @@
-C:\Users\matia\source\repos\Los_birreros\Interfez\bin\Debug\Interfez.exe.config
-C:\Users\matia\source\repos\Los_birreros\Interfez\bin\Debug\Interfez.exe
-C:\Users\matia\source\repos\Los_birreros\Interfez\bin\Debug\Interfez.pdb
-C:\Users\matia\source\repos\Los_birreros\Interfez\obj\Debug\Interfez.Form1.resources
-C:\Users\matia\source\repos\Los_birreros\Interfez\obj\Debug\Interfez.Properties.Resources.resources
-C:\Users\matia\source\repos\Los_birreros\Interfez\obj\Debug\Interfez.csproj.GenerateResource.cache
-C:\Users\matia\source\repos\Los_birreros\Interfez\obj\Debug\Interfez.csproj.CoreCompileInputs.cache
-C:\Users\matia\source\repos\Los_birreros\Interfez\obj\Debug\Interfez.exe
-C:\Users\matia\source\repos\Los_birreros\Interfez\obj\Debug\Interfez.pdb
-C:\Users\matia\source\repos\Los_birreros\Interfez\bin\Debug\CapaNegocio2.dll
-C:\Users\matia\source\repos\Los_birreros\Interfez\bin\Debug\CapaNegocio2.pdb
-C:\Users\matia\source\repos\Los_birreros\Interfez\obj\Debug\Interfez.csprojAssemblyReference.cache
-C:\Users\matia\source\repos\Los_birreros\Interfez\obj\Debug\Interfez.csproj.CopyComplete
-C:\Users\matia\Desktop\CRUXTOTAL\aaaaaaaaa\Agiles-grupo-3\Interfez\bin\Debug\Interfez.exe.config
-C:\Users\matia\Desktop\CRUXTOTAL\aaaaaaaaa\Agiles-grupo-3\Interfez\bin\Debug\Interfez.exe
-C:\Users\matia\Desktop\CRUXTOTAL\aaaaaaaaa\Agiles-grupo-3\Interfez\bin\Debug\Interfez.pdb
-C:\Users\matia\Desktop\CRUXTOTAL\aaaaaaaaa\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.dll
-C:\Users\matia\Desktop\CRUXTOTAL\aaaaaaaaa\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.pdb
-C:\Users\matia\Desktop\CRUXTOTAL\aaaaaaaaa\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csprojAssemblyReference.cache
-C:\Users\matia\Desktop\CRUXTOTAL\aaaaaaaaa\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Form1.resources
-C:\Users\matia\Desktop\CRUXTOTAL\aaaaaaaaa\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Inicio.resources
-C:\Users\matia\Desktop\CRUXTOTAL\aaaaaaaaa\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Properties.Resources.resources
-C:\Users\matia\Desktop\CRUXTOTAL\aaaaaaaaa\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.GenerateResource.cache
-C:\Users\matia\Desktop\CRUXTOTAL\aaaaaaaaa\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CoreCompileInputs.cache
-C:\Users\matia\Desktop\CRUXTOTAL\aaaaaaaaa\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CopyComplete
-C:\Users\matia\Desktop\CRUXTOTAL\aaaaaaaaa\Agiles-grupo-3\Interfez\obj\Debug\Interfez.exe
-C:\Users\matia\Desktop\CRUXTOTAL\aaaaaaaaa\Agiles-grupo-3\Interfez\obj\Debug\Interfez.pdb
-C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\bin\Debug\Interfez.exe.config
-C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\bin\Debug\Interfez.exe
-C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\bin\Debug\Interfez.pdb
-C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.dll
-C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.pdb
-C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csprojAssemblyReference.cache
-C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Form1.resources
-C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Inicio.resources
-C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Properties.Resources.resources
-C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.GenerateResource.cache
-C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CoreCompileInputs.cache
-C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CopyComplete
-C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\obj\Debug\Interfez.exe
-C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\obj\Debug\Interfez.pdb
-C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\Interfez\bin\Debug\Interfez.exe.config
-C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\Interfez\bin\Debug\Interfez.exe
-C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\Interfez\bin\Debug\Interfez.pdb
-C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.dll
-C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.pdb
-C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csprojAssemblyReference.cache
-C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Form1.resources
-C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Inicio.resources
-C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Properties.Resources.resources
-C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.GenerateResource.cache
-C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CoreCompileInputs.cache
-C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CopyComplete
-C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\Interfez\obj\Debug\Interfez.exe
-C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\Interfez\obj\Debug\Interfez.pdb
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\Interfez.exe.config
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\Interfez.exe
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\Interfez.pdb
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.dll
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.pdb
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csprojAssemblyReference.cache
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Form1.resources
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Inicio.resources
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Properties.Resources.resources
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Stock.resources
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.GenerateResource.cache
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CoreCompileInputs.cache
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CopyComplete
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.exe
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.pdb
-C:\Users\matia\Desktop\CRUXTOTAL\Los Birreros\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Stock.resources
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\Interfez.exe.config
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\Interfez.exe
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\Interfez.pdb
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.dll
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.dll
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\Control.Draggable.dll
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.dll
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.pdb
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.dll.config
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.pdb
-C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csprojAssemblyReference.cache
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.xml
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.DetalleProducto.resources
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Form1.resources
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Inicio.resources
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.NuevoProducto.resources
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Properties.Resources.resources
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Relleno.resources
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Stock.resources
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.GenerateResource.cache
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CoreCompileInputs.cache
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CopyComplete
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.exe
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.pdb
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\Interfez.exe.config
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\Interfez.exe
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\Interfez.pdb
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.dll
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.pdb
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csprojAssemblyReference.cache
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Form1.resources
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Inicio.resources
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Properties.Resources.resources
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Relleno.resources
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Stock.resources
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.GenerateResource.cache
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CoreCompileInputs.cache
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CopyComplete
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.exe
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.pdb
-C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Relleno.resources
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\Control.Draggable.dll
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.dll
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.dll
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.pdb
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.dll.config
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.xml
-C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.dll.config
-C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.dll
-C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\Control.Draggable.dll
-C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.dll
-C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.pdb
-C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.dll.config
-C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.xml
-C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.dll.config
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.dll
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\Control.Draggable.dll
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.dll
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.pdb
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.dll.config
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.xml
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.dll.config
-C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Relleno.resources
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\Interfez.exe.config
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\Interfez.exe
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\Interfez.pdb
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.dll
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.dll
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\Control.Draggable.dll
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.dll
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.pdb
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.dll.config
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.pdb
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.xml
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.dll.config
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csprojAssemblyReference.cache
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Form1.resources
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Inicio.resources
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Properties.Resources.resources
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Relleno.resources
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Stock.resources
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.GenerateResource.cache
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CoreCompileInputs.cache
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CopyComplete
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.exe
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.pdb
-C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.NuevoProducto.resources
-C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.NuevoProducto.resources
