@@ -148,3 +148,13 @@ C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.exe
 C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.pdb
 C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.NuevoProducto.resources
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.NuevoProducto.resources
+C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.dll
+C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\bin\Debug\Control.Draggable.dll
+C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.dll
+C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.pdb
+C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.dll.config
+C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.xml
+C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\obj\Debug\Interfez.NuevoProducto.resources
+C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Relleno.resources
+C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Stock.resources
