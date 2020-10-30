@@ -62,7 +62,7 @@ namespace Interfez
             if (ValidarProducto(textoProducto.Text, textoCantidad.Text, textoPrecio.Text))
             {
                 pedido.Rows.Add(textoProducto.Text, textoCantidad.Text, textoPrecio.Text);
-                listBox1.Items.Add(textoCantidad.Text + "  " + textoProducto.Text + "  " + textoPrecio.Text);
+                Items.Items.Add(textoCantidad.Text + "  " + textoProducto.Text + "  " + textoPrecio.Text);
                 textoPrecio.Text = "";
                 textoCantidad.Text = "";
                 textoProducto.Text = "";
