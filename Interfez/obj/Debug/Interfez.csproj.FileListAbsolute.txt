@@ -148,3 +148,4 @@ C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.exe
 C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.pdb
 C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.NuevoProducto.resources
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.NuevoProducto.resources
+C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.DetalleProducto.resources

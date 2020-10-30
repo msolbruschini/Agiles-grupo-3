@@ -129,5 +129,23 @@ namespace Interfez
         {
 
         }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {  
+            // Envia el id del producto seleccionado a la vista de DetalleProducto
+            if (dataGridView1.SelectedRows.Count == 1)
+            {
+
+                
+                int Id = Int32.Parse(dataGridView1.CurrentRow.Cells["StockId"].Value.ToString());
+                DetalleProducto detalle = new DetalleProducto(Id);
+                this.Hide();
+                detalle.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione Una fila para ver el producto");
+            }
+        }
     }
 }

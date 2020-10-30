@@ -70,6 +70,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClasedePrueba.cs" />
+    <Compile Include="DetalleProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalleProducto.Designer.cs">
+      <DependentUpon>DetalleProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     <Compile Include="Stock.Designer.cs">
       <DependentUpon>Stock.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DetalleProducto.resx">
+      <DependentUpon>DetalleProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
