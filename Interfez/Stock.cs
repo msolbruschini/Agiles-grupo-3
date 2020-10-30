@@ -127,17 +127,28 @@ namespace Interfez
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
+           
 
         }
 
-<<<<<<< HEAD
-        private void button4_Click_1(object sender, EventArgs e)
-        {  
+        private void BtnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void BtnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+
+        private void Detalles_Click(object sender, EventArgs e)
+        {
             // Envia el id del producto seleccionado a la vista de DetalleProducto
             if (dataGridView1.SelectedRows.Count == 1)
             {
 
-                
+
                 int Id = Int32.Parse(dataGridView1.CurrentRow.Cells["StockId"].Value.ToString());
                 DetalleProducto detalle = new DetalleProducto(Id);
                 this.Hide();
@@ -147,16 +158,6 @@ namespace Interfez
             {
                 MessageBox.Show("Seleccione Una fila para ver el producto");
             }
-=======
-        private void BtnCerrar_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void BtnMinimizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
->>>>>>> db96bc73cae9bbacce3ab38b9558b49e7ee17889
         }
     }
 }
