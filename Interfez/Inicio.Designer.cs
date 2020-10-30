@@ -32,7 +32,10 @@
             this.BtnMinimizar = new System.Windows.Forms.PictureBox();
             this.BtnCerrar = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pMenu = new System.Windows.Forms.Panel();
+            this.BtnPedidos = new System.Windows.Forms.Button();
+            this.BtnStock = new System.Windows.Forms.Button();
+            this.pIngreso = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.errorMsg = new System.Windows.Forms.Label();
@@ -45,7 +48,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).BeginInit();
             this.panel5.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.pMenu.SuspendLayout();
+            this.pIngreso.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel4
@@ -89,27 +93,70 @@
             // 
             this.panel5.BackgroundImage = global::Interfez.Properties.Resources.Inicio;
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel5.Controls.Add(this.panel1);
+            this.panel5.Controls.Add(this.pIngreso);
             this.panel5.Location = new System.Drawing.Point(0, 23);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(405, 385);
             this.panel5.TabIndex = 3;
             // 
-            // panel1
+            // pMenu
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.errorMsg);
-            this.panel1.Controls.Add(this.IniciarSesion);
-            this.panel1.Controls.Add(this.textPass);
-            this.panel1.Controls.Add(this.textUsu);
-            this.panel1.Controls.Add(this.pass);
-            this.panel1.Controls.Add(this.usu);
-            this.panel1.Location = new System.Drawing.Point(12, 153);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(381, 184);
-            this.panel1.TabIndex = 0;
+            this.pMenu.BackColor = System.Drawing.Color.Transparent;
+            this.pMenu.Controls.Add(this.BtnPedidos);
+            this.pMenu.Controls.Add(this.BtnStock);
+            this.pMenu.ForeColor = System.Drawing.Color.White;
+            this.pMenu.Location = new System.Drawing.Point(0, 0);
+            this.pMenu.Name = "pMenu";
+            this.pMenu.Size = new System.Drawing.Size(381, 184);
+            this.pMenu.TabIndex = 0;
+            this.pMenu.Visible = false;
+            // 
+            // BtnPedidos
+            // 
+            this.BtnPedidos.BackColor = System.Drawing.Color.Black;
+            this.BtnPedidos.FlatAppearance.BorderSize = 0;
+            this.BtnPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPedidos.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPedidos.ForeColor = System.Drawing.Color.White;
+            this.BtnPedidos.Location = new System.Drawing.Point(212, 62);
+            this.BtnPedidos.Name = "BtnPedidos";
+            this.BtnPedidos.Size = new System.Drawing.Size(166, 37);
+            this.BtnPedidos.TabIndex = 16;
+            this.BtnPedidos.Text = "Pedidos";
+            this.BtnPedidos.UseVisualStyleBackColor = false;
+            this.BtnPedidos.Click += new System.EventHandler(this.BtnPedidos_Click);
+            // 
+            // BtnStock
+            // 
+            this.BtnStock.BackColor = System.Drawing.Color.Black;
+            this.BtnStock.FlatAppearance.BorderSize = 0;
+            this.BtnStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnStock.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnStock.ForeColor = System.Drawing.Color.White;
+            this.BtnStock.Location = new System.Drawing.Point(3, 62);
+            this.BtnStock.Name = "BtnStock";
+            this.BtnStock.Size = new System.Drawing.Size(166, 37);
+            this.BtnStock.TabIndex = 15;
+            this.BtnStock.Text = "Stock";
+            this.BtnStock.UseVisualStyleBackColor = false;
+            this.BtnStock.Click += new System.EventHandler(this.BtnStock_Click);
+            // 
+            // pIngreso
+            // 
+            this.pIngreso.BackColor = System.Drawing.Color.Transparent;
+            this.pIngreso.Controls.Add(this.pMenu);
+            this.pIngreso.Controls.Add(this.panel3);
+            this.pIngreso.Controls.Add(this.panel2);
+            this.pIngreso.Controls.Add(this.errorMsg);
+            this.pIngreso.Controls.Add(this.IniciarSesion);
+            this.pIngreso.Controls.Add(this.textPass);
+            this.pIngreso.Controls.Add(this.textUsu);
+            this.pIngreso.Controls.Add(this.pass);
+            this.pIngreso.Controls.Add(this.usu);
+            this.pIngreso.Location = new System.Drawing.Point(12, 153);
+            this.pIngreso.Name = "pIngreso";
+            this.pIngreso.Size = new System.Drawing.Size(381, 184);
+            this.pIngreso.TabIndex = 0;
             // 
             // panel3
             // 
@@ -220,8 +267,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).EndInit();
             this.panel5.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pMenu.ResumeLayout(false);
+            this.pIngreso.ResumeLayout(false);
+            this.pIngreso.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -230,7 +278,7 @@
 
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pIngreso;
         private System.Windows.Forms.PictureBox BtnMinimizar;
         private System.Windows.Forms.PictureBox BtnCerrar;
         private System.Windows.Forms.Panel panel3;
@@ -241,5 +289,8 @@
         private System.Windows.Forms.TextBox textUsu;
         private System.Windows.Forms.Label pass;
         private System.Windows.Forms.Label usu;
+        private System.Windows.Forms.Panel pMenu;
+        private System.Windows.Forms.Button BtnPedidos;
+        private System.Windows.Forms.Button BtnStock;
     }
 }

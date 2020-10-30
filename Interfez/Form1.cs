@@ -246,25 +246,34 @@ namespace Interfez
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        
+
+        private void BtnCerrar_Click(object sender, EventArgs e)
         {
-            Relleno rell = new Relleno();
-            
-            this.Hide();
-            rell.ShowDialog();
+            Application.Exit();
         }
 
         private void BtnMinimizar_Click(object sender, EventArgs e)
         {
-
+            this.WindowState = FormWindowState.Minimized;
         }
 
-        private void BtnCerrar_Click(object sender, EventArgs e)
+        private void BtnVolver_Click(object sender, EventArgs e)
         {
-
+            bool tx = true;
+            Inicio ini = new Inicio(tx);
+            this.Hide();
+            ini.ShowDialog();
         }
 
-       
+
+
+
+
+
+
+
+
 
 
 

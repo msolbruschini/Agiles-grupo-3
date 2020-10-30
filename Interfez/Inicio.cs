@@ -13,9 +13,13 @@ namespace Interfez
 {
     public partial class Inicio : Form
     {
-        public Inicio()
+        public Inicio(bool text)
         {
             InitializeComponent();
+            if(text == true )
+            {
+                pMenu.Visible = true;
+            }
         }
 
         
@@ -55,10 +59,11 @@ namespace Interfez
                     var validLogin = user.LoginUser(textUsu.Text, textPass.Text);
                     if (validLogin == true)
                     {
-                        Relleno rell = new Relleno();
+                        /*Relleno rell = new Relleno();
                         rell.Show();
-                        rell.FormClosed += Logout;
-                        this.Close();
+                        rell.FormClosed += Logout;*/
+                        pMenu.Visible = true;
+                        //this.Close();
                     }
                     else
                     {
@@ -92,6 +97,21 @@ namespace Interfez
             }*/
         }
 
-        
+        private void BtnStock_Click(object sender, EventArgs e)
+        {
+            Stock stock = new Stock();
+            stock.Show();
+            stock.FormClosed += Logout;
+            this.Hide();
+
+        }
+
+        private void BtnPedidos_Click(object sender, EventArgs e)
+        {
+            Form1 pedidos = new Form1();
+            pedidos.Show();
+            pedidos.FormClosed += Logout;
+            this.Hide();
+        }
     }
 }
