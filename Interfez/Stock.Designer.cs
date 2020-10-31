@@ -29,25 +29,28 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.AgregarNuevo = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.NuevoProducto = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.BtnMinimizar = new System.Windows.Forms.PictureBox();
             this.BtnCerrar = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.Detalles = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.DetallesProducto = new System.Windows.Forms.Button();
+            this.BtnVolver = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.AgregarNuevo = new System.Windows.Forms.TextBox();
+            this.BtnBuscar = new System.Windows.Forms.Button();
+            this.EditarProducto = new System.Windows.Forms.Button();
+            this.CrearProducto = new System.Windows.Forms.Button();
+            this.panel16 = new System.Windows.Forms.Panel();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -55,95 +58,10 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.MenuHighlight;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 302);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(690, 245);
-            this.dataGridView1.TabIndex = 4;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(26, 575);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 48);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Volver";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // contextMenuStrip2
             // 
             this.contextMenuStrip2.Name = "contextMenuStrip2";
             this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
-            // 
-            // AgregarNuevo
-            // 
-            this.AgregarNuevo.Font = new System.Drawing.Font("Microsoft JhengHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AgregarNuevo.Location = new System.Drawing.Point(408, 261);
-            this.AgregarNuevo.Name = "AgregarNuevo";
-            this.AgregarNuevo.Size = new System.Drawing.Size(171, 32);
-            this.AgregarNuevo.TabIndex = 8;
-            this.AgregarNuevo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Black;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft JhengHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(585, 254);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 42);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Buscar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Black;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Microsoft JhengHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(384, 575);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(132, 48);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Modificar";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // NuevoProducto
-            // 
-            this.NuevoProducto.BackColor = System.Drawing.Color.Black;
-            this.NuevoProducto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.NuevoProducto.Font = new System.Drawing.Font("Microsoft JhengHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NuevoProducto.ForeColor = System.Drawing.Color.White;
-            this.NuevoProducto.Location = new System.Drawing.Point(187, 575);
-            this.NuevoProducto.Name = "NuevoProducto";
-            this.NuevoProducto.Size = new System.Drawing.Size(171, 48);
-            this.NuevoProducto.TabIndex = 11;
-            this.NuevoProducto.Text = "Nuevo Producto";
-            this.NuevoProducto.UseVisualStyleBackColor = false;
-            this.NuevoProducto.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel4
             // 
@@ -182,37 +100,142 @@
             this.BtnCerrar.TabStop = false;
             this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
-            // panel1
+            // tabControl1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::Interfez.Properties.Resources.STOCK_1;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.Detalles);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Controls.Add(this.AgregarNuevo);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.NuevoProducto);
-            this.panel1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(0, 23);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(700, 717);
-            this.panel1.TabIndex = 13;
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
+            this.tabControl1.Location = new System.Drawing.Point(0, 23);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(700, 720);
+            this.tabControl1.TabIndex = 13;
             // 
-            // Detalles
+            // tabPage1
             // 
-            this.Detalles.BackColor = System.Drawing.Color.Black;
-            this.Detalles.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Detalles.Font = new System.Drawing.Font("Microsoft JhengHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Detalles.ForeColor = System.Drawing.Color.White;
-            this.Detalles.Location = new System.Drawing.Point(540, 575);
-            this.Detalles.Name = "Detalles";
-            this.Detalles.Size = new System.Drawing.Size(132, 48);
-            this.Detalles.TabIndex = 12;
-            this.Detalles.Text = "Detalles";
-            this.Detalles.UseVisualStyleBackColor = false;
-            this.Detalles.Click += new System.EventHandler(this.Detalles_Click);
+            this.tabPage1.BackgroundImage = global::Interfez.Properties.Resources.STOCK_1;
+            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage1.Controls.Add(this.panel16);
+            this.tabPage1.Controls.Add(this.DetallesProducto);
+            this.tabPage1.Controls.Add(this.BtnVolver);
+            this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Controls.Add(this.AgregarNuevo);
+            this.tabPage1.Controls.Add(this.BtnBuscar);
+            this.tabPage1.Controls.Add(this.EditarProducto);
+            this.tabPage1.Controls.Add(this.CrearProducto);
+            this.tabPage1.Location = new System.Drawing.Point(4, 34);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(692, 682);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Stock";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // DetallesProducto
+            // 
+            this.DetallesProducto.BackColor = System.Drawing.Color.Black;
+            this.DetallesProducto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.DetallesProducto.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
+            this.DetallesProducto.ForeColor = System.Drawing.Color.White;
+            this.DetallesProducto.Location = new System.Drawing.Point(510, 628);
+            this.DetallesProducto.Name = "DetallesProducto";
+            this.DetallesProducto.Size = new System.Drawing.Size(166, 37);
+            this.DetallesProducto.TabIndex = 19;
+            this.DetallesProducto.Text = "Detalles";
+            this.DetallesProducto.UseVisualStyleBackColor = false;
+            this.DetallesProducto.Click += new System.EventHandler(this.DetallesProducto_Click);
+            // 
+            // BtnVolver
+            // 
+            this.BtnVolver.BackColor = System.Drawing.Color.Black;
+            this.BtnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnVolver.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
+            this.BtnVolver.ForeColor = System.Drawing.Color.White;
+            this.BtnVolver.Location = new System.Drawing.Point(17, 628);
+            this.BtnVolver.Name = "BtnVolver";
+            this.BtnVolver.Size = new System.Drawing.Size(92, 37);
+            this.BtnVolver.TabIndex = 14;
+            this.BtnVolver.Text = "Volver";
+            this.BtnVolver.UseVisualStyleBackColor = false;
+            this.BtnVolver.Click += new System.EventHandler(this.BtnVolver_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 256);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(680, 329);
+            this.dataGridView1.TabIndex = 13;
+            // 
+            // AgregarNuevo
+            // 
+            this.AgregarNuevo.BackColor = System.Drawing.Color.White;
+            this.AgregarNuevo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AgregarNuevo.Font = new System.Drawing.Font("Microsoft JhengHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AgregarNuevo.Location = new System.Drawing.Point(197, 190);
+            this.AgregarNuevo.Name = "AgregarNuevo";
+            this.AgregarNuevo.Size = new System.Drawing.Size(301, 25);
+            this.AgregarNuevo.TabIndex = 15;
+            // 
+            // BtnBuscar
+            // 
+            this.BtnBuscar.BackColor = System.Drawing.Color.Black;
+            this.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnBuscar.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
+            this.BtnBuscar.ForeColor = System.Drawing.Color.White;
+            this.BtnBuscar.Location = new System.Drawing.Point(504, 183);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(166, 37);
+            this.BtnBuscar.TabIndex = 16;
+            this.BtnBuscar.Text = "Buscar";
+            this.BtnBuscar.UseVisualStyleBackColor = false;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
+            // 
+            // EditarProducto
+            // 
+            this.EditarProducto.BackColor = System.Drawing.Color.Black;
+            this.EditarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.EditarProducto.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
+            this.EditarProducto.ForeColor = System.Drawing.Color.White;
+            this.EditarProducto.Location = new System.Drawing.Point(319, 628);
+            this.EditarProducto.Name = "EditarProducto";
+            this.EditarProducto.Size = new System.Drawing.Size(170, 37);
+            this.EditarProducto.TabIndex = 17;
+            this.EditarProducto.Text = "Editar Producto";
+            this.EditarProducto.UseVisualStyleBackColor = false;
+            this.EditarProducto.Click += new System.EventHandler(this.EditarProducto_Click);
+            // 
+            // CrearProducto
+            // 
+            this.CrearProducto.BackColor = System.Drawing.Color.Black;
+            this.CrearProducto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CrearProducto.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
+            this.CrearProducto.ForeColor = System.Drawing.Color.White;
+            this.CrearProducto.Location = new System.Drawing.Point(129, 628);
+            this.CrearProducto.Name = "CrearProducto";
+            this.CrearProducto.Size = new System.Drawing.Size(166, 37);
+            this.CrearProducto.TabIndex = 18;
+            this.CrearProducto.Text = "Crear Producto";
+            this.CrearProducto.UseVisualStyleBackColor = false;
+            this.CrearProducto.Click += new System.EventHandler(this.CrearProducto_Click);
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.Black;
+            this.panel16.Location = new System.Drawing.Point(197, 212);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(301, 3);
+            this.panel16.TabIndex = 25;
             // 
             // Stock
             // 
@@ -220,35 +243,39 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ClientSize = new System.Drawing.Size(700, 740);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Stock";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Los Birreros";
             this.Load += new System.EventHandler(this.Stock_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
-        private System.Windows.Forms.TextBox AgregarNuevo;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button NuevoProducto;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox BtnMinimizar;
         private System.Windows.Forms.PictureBox BtnCerrar;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button Detalles;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Button DetallesProducto;
+        private System.Windows.Forms.Button BtnVolver;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox AgregarNuevo;
+        private System.Windows.Forms.Button BtnBuscar;
+        private System.Windows.Forms.Button EditarProducto;
+        private System.Windows.Forms.Button CrearProducto;
+        private System.Windows.Forms.Panel panel16;
     }
 }

@@ -15,10 +15,10 @@ C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Int
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Inicio.resources
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.NuevoProducto.resources
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Properties.Resources.resources
-C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Relleno.resources
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Stock.resources
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.GenerateResource.cache
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CoreCompileInputs.cache
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CopyComplete
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.exe
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.pdb
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csprojAssemblyReference.cache

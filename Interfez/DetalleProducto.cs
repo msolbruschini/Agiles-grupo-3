@@ -22,16 +22,13 @@ namespace Interfez
             dataGridView1.DataSource = DS.Tables[0];
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        
+
+        private void BtnVolver_Click_1(object sender, EventArgs e)
         {
             Stock stock = new Stock();
-
             this.Hide();
             stock.ShowDialog();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
         }
     }

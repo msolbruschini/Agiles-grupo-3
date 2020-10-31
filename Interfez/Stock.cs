@@ -34,50 +34,59 @@ namespace Interfez
             
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+
+        private void BtnCerrar_Click(object sender, EventArgs e)
         {
-           
+            Application.Exit();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void BtnMinimizar_Click(object sender, EventArgs e)
         {
-            Relleno rell = new Relleno();
-            this.Close();
-            this.Dispose();
-            rell.Show();
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+
+        private void BtnVolver_Click(object sender, EventArgs e)
+        {
+            bool tx = true;
+            Inicio ini = new Inicio(tx);
+            this.Hide();
+            ini.ShowDialog();
             
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void CrearProducto_Click(object sender, EventArgs e)
         {
-
+            NuevoProducto nuevo = new NuevoProducto();
+            this.Hide();
+            nuevo.ShowDialog();
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void BtnBuscar_Click(object sender, EventArgs e)
         {
-                Refresh();
-                if (!AgregarNuevo.Text.Trim().Equals(""))
-                {
-                    DataSet DS = new DataSet();
-                    Item i = new Item();
-                    DS = i.MostrarItemBuscado(AgregarNuevo.Text.Trim());
-                    try
-                    {
-                        dataGridView1.DataSource = DS.Tables[0];
-                    }
-                    finally {
-                    
-                    }
-                }
-
-            }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-            if (dataGridView1.SelectedRows.Count > 0 )
+            Refresh();
+            if (!AgregarNuevo.Text.Trim().Equals(""))
             {
-                string Categoria , Codigo , Producto , Cantidad , PrecioCompra , Id;
+                DataSet DS = new DataSet();
+                Item i = new Item();
+                DS = i.MostrarItemBuscado(AgregarNuevo.Text.Trim());
+                try
+                {
+                    dataGridView1.DataSource = DS.Tables[0];
+                }
+                finally
+                {
+
+                }
+            }
+        }
+
+        private void EditarProducto_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                string Categoria, Codigo, Producto, Cantidad, PrecioCompra, Id;
                 int IdAux, CantidadAux;
                 float PrecioCompraAux;
 
@@ -94,12 +103,12 @@ namespace Interfez
                 PrecioCompraAux = float.Parse(PrecioCompra);
 
 
-                if (i.ModificarItem(IdAux, Codigo, Producto, Categoria, PrecioCompraAux, CantidadAux) == true )
-                { 
+                if (i.ModificarItem(IdAux, Codigo, Producto, Categoria, PrecioCompraAux, CantidadAux) == true)
+                {
                     MessageBox.Show("La modificacion se realizo con exito");
                 }
                 else
-                { 
+                {
                     MessageBox.Show("La modificacion no se pudo realizar");
                 }
                 DataSet DS = new DataSet();
@@ -107,42 +116,16 @@ namespace Interfez
                 DS = i.MostrarItem();
                 dataGridView1.DataSource = DS.Tables[0];
 
-                
+
             }
             else
             {
                 MessageBox.Show("Seleccione la fila modificar");
             }
-                
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            NuevoProducto nuevo = new NuevoProducto();
-
-            this.Hide();
-            nuevo.ShowDialog();
-        }
-
-        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
-        {
-           
-
-        }
-
-        private void BtnCerrar_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void BtnMinimizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-
-        private void Detalles_Click(object sender, EventArgs e)
+        private void DetallesProducto_Click(object sender, EventArgs e)
         {
             // Envia el id del producto seleccionado a la vista de DetalleProducto
             if (dataGridView1.SelectedRows.Count == 1)
