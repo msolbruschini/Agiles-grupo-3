@@ -29,6 +29,16 @@ namespace CapaDatos
                     SQLiteDataReader reader = command.ExecuteReader();
                     if (reader.HasRows)
                     {
+                        while (reader.Read())
+                        {
+                           DatosUsuario.usuarioId = reader.GetInt32(0);
+                           DatosUsuario.usuarioNom = reader.GetString(1);                           
+                           DatosUsuario.usuarioPass = reader.GetString(2);
+                           DatosUsuario.usuarioEmail = reader.GetString(3);
+                           DatosUsuario.usuarioTipo = reader.GetString(4);
+                           
+                           
+                        }
                         return true;
                     }
                     else
@@ -38,6 +48,16 @@ namespace CapaDatos
                 }
             }
         }
+
+        public static class DatosUsuario
+        {
+            public static int usuarioId { get; set; }
+            public static string usuarioNom { get; set; }
+            public static string usuarioPass { get; set; }
+            public static string usuarioTipo { get; set; }
+            public static string usuarioEmail { get; set; }
+        }
+
 
     }
 }

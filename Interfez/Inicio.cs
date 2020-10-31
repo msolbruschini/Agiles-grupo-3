@@ -57,12 +57,18 @@ namespace Interfez
                 {
                     IniciarSesionUsuario user = new IniciarSesionUsuario();
                     var validLogin = user.LoginUser(textUsu.Text, textPass.Text);
+                    
                     if (validLogin == true)
                     {
                         /*Relleno rell = new Relleno();
                         rell.Show();
                         rell.FormClosed += Logout;*/
                         pMenu.Visible = true;
+                        if (textUsu.Text == "Natalia") 
+                        {
+                            BtnStock.Enabled = false;                        
+                        }
+
                         //this.Close();
                     }
                     else

@@ -99,3 +99,4 @@ C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\CapaDatos\obj\Debug\CapaDatos.cspr
 C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
 C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache

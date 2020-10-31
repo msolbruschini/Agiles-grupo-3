@@ -67,7 +67,7 @@
             this.button1.Location = new System.Drawing.Point(555, 470);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(166, 37);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 8;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -165,7 +165,7 @@
             this.textBox8.Location = new System.Drawing.Point(267, 268);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(395, 25);
-            this.textBox8.TabIndex = 17;
+            this.textBox8.TabIndex = 7;
             // 
             // textBox6
             // 
@@ -174,7 +174,7 @@
             this.textBox6.Location = new System.Drawing.Point(267, 118);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(395, 25);
-            this.textBox6.TabIndex = 16;
+            this.textBox6.TabIndex = 3;
             // 
             // textBox7
             // 
@@ -183,7 +183,7 @@
             this.textBox7.Location = new System.Drawing.Point(267, 231);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(395, 25);
-            this.textBox7.TabIndex = 13;
+            this.textBox7.TabIndex = 6;
             // 
             // textBox5
             // 
@@ -192,7 +192,7 @@
             this.textBox5.Location = new System.Drawing.Point(267, 194);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(395, 25);
-            this.textBox5.TabIndex = 11;
+            this.textBox5.TabIndex = 5;
             // 
             // textBox4
             // 
@@ -201,7 +201,7 @@
             this.textBox4.Location = new System.Drawing.Point(267, 156);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(395, 25);
-            this.textBox4.TabIndex = 10;
+            this.textBox4.TabIndex = 4;
             // 
             // textBox3
             // 
@@ -210,7 +210,7 @@
             this.textBox3.Location = new System.Drawing.Point(267, 80);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(395, 25);
-            this.textBox3.TabIndex = 9;
+            this.textBox3.TabIndex = 2;
             // 
             // textBox2
             // 
@@ -219,7 +219,7 @@
             this.textBox2.Location = new System.Drawing.Point(267, 42);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(395, 25);
-            this.textBox2.TabIndex = 8;
+            this.textBox2.TabIndex = 1;
             // 
             // label7
             // 
@@ -301,7 +301,7 @@
             this.button2.Location = new System.Drawing.Point(259, 470);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(166, 37);
-            this.button2.TabIndex = 3;
+            this.button2.TabIndex = 9;
             this.button2.Text = "Volver";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
