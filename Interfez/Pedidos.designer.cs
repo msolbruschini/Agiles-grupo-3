@@ -1,6 +1,6 @@
 ﻿namespace Interfez
 {
-    partial class Form1
+    partial class Pedidos
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pedidos));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -80,6 +81,15 @@
             this.barra = new System.Windows.Forms.Panel();
             this.BtnMinimizar = new System.Windows.Forms.PictureBox();
             this.BtnCerrar = new System.Windows.Forms.PictureBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.DetallesProducto = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.AgregarNuevo = new System.Windows.Forms.TextBox();
+            this.BtnBuscar = new System.Windows.Forms.Button();
+            this.EditarProducto = new System.Windows.Forms.Button();
+            this.CrearProducto = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -90,6 +100,8 @@
             this.barra.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -97,6 +109,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
             this.tabControl1.Location = new System.Drawing.Point(0, 23);
             this.tabControl1.Name = "tabControl1";
@@ -631,7 +644,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(692, 721);
+            this.tabPage3.Size = new System.Drawing.Size(692, 682);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Lista de Pedidos";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -681,6 +694,126 @@
             this.BtnCerrar.TabStop = false;
             this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.panel22);
+            this.tabPage4.Controls.Add(this.DetallesProducto);
+            this.tabPage4.Controls.Add(this.button1);
+            this.tabPage4.Controls.Add(this.dataGridView2);
+            this.tabPage4.Controls.Add(this.AgregarNuevo);
+            this.tabPage4.Controls.Add(this.BtnBuscar);
+            this.tabPage4.Controls.Add(this.EditarProducto);
+            this.tabPage4.Controls.Add(this.CrearProducto);
+            this.tabPage4.Location = new System.Drawing.Point(4, 34);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(692, 682);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Menu";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // panel22
+            // 
+            this.panel22.BackColor = System.Drawing.Color.Black;
+            this.panel22.Location = new System.Drawing.Point(195, 201);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(301, 3);
+            this.panel22.TabIndex = 33;
+            // 
+            // DetallesProducto
+            // 
+            this.DetallesProducto.BackColor = System.Drawing.Color.Black;
+            this.DetallesProducto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.DetallesProducto.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
+            this.DetallesProducto.ForeColor = System.Drawing.Color.White;
+            this.DetallesProducto.Location = new System.Drawing.Point(508, 617);
+            this.DetallesProducto.Name = "DetallesProducto";
+            this.DetallesProducto.Size = new System.Drawing.Size(166, 37);
+            this.DetallesProducto.TabIndex = 32;
+            this.DetallesProducto.Text = "Detalles";
+            this.DetallesProducto.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(15, 617);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(92, 37);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "Volver";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.GridColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dataGridView2.Location = new System.Drawing.Point(4, 245);
+            this.dataGridView2.MultiSelect = false;
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(680, 329);
+            this.dataGridView2.TabIndex = 26;
+            // 
+            // AgregarNuevo
+            // 
+            this.AgregarNuevo.BackColor = System.Drawing.Color.White;
+            this.AgregarNuevo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AgregarNuevo.Font = new System.Drawing.Font("Microsoft JhengHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AgregarNuevo.Location = new System.Drawing.Point(195, 179);
+            this.AgregarNuevo.Name = "AgregarNuevo";
+            this.AgregarNuevo.Size = new System.Drawing.Size(301, 25);
+            this.AgregarNuevo.TabIndex = 28;
+            // 
+            // BtnBuscar
+            // 
+            this.BtnBuscar.BackColor = System.Drawing.Color.Black;
+            this.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnBuscar.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
+            this.BtnBuscar.ForeColor = System.Drawing.Color.White;
+            this.BtnBuscar.Location = new System.Drawing.Point(502, 172);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(166, 37);
+            this.BtnBuscar.TabIndex = 29;
+            this.BtnBuscar.Text = "Buscar";
+            this.BtnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // EditarProducto
+            // 
+            this.EditarProducto.BackColor = System.Drawing.Color.Black;
+            this.EditarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.EditarProducto.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
+            this.EditarProducto.ForeColor = System.Drawing.Color.White;
+            this.EditarProducto.Location = new System.Drawing.Point(317, 617);
+            this.EditarProducto.Name = "EditarProducto";
+            this.EditarProducto.Size = new System.Drawing.Size(170, 37);
+            this.EditarProducto.TabIndex = 30;
+            this.EditarProducto.Text = "Editar Producto";
+            this.EditarProducto.UseVisualStyleBackColor = false;
+            // 
+            // CrearProducto
+            // 
+            this.CrearProducto.BackColor = System.Drawing.Color.Black;
+            this.CrearProducto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CrearProducto.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
+            this.CrearProducto.ForeColor = System.Drawing.Color.White;
+            this.CrearProducto.Location = new System.Drawing.Point(127, 617);
+            this.CrearProducto.Name = "CrearProducto";
+            this.CrearProducto.Size = new System.Drawing.Size(166, 37);
+            this.CrearProducto.TabIndex = 31;
+            this.CrearProducto.Text = "Crear Producto";
+            this.CrearProducto.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -707,6 +840,9 @@
             this.barra.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -763,6 +899,15 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button EliminarPedido;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.Button DetallesProducto;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.TextBox AgregarNuevo;
+        private System.Windows.Forms.Button BtnBuscar;
+        private System.Windows.Forms.Button EditarProducto;
+        private System.Windows.Forms.Button CrearProducto;
     }
 }
 

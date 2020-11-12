@@ -114,7 +114,7 @@ namespace Interfez
 
         private void BtnPedidos_Click(object sender, EventArgs e)
         {
-            Form1 pedidos = new Form1();
+            Pedidos pedidos = new Pedidos();
             pedidos.Show();
             pedidos.FormClosed += Logout;
             this.Hide();
