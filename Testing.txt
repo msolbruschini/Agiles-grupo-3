@@ -1,4 +1,0 @@
-fname| sname| age
-deepak| sharma| 23
-Gaurav| sharma| 32
-Alok| Kumar| 33
