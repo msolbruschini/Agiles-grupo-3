@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Interfez
 {
-    public partial class Pedidos : Form
+    public partial class Form1 : Form
     {
         string texto = "Cerveza";
         int cantidad = 7;
@@ -19,7 +19,7 @@ namespace Interfez
         
         
         
-        public Pedidos()
+        public Form1()
         {
             InitializeComponent();
             pedido.Columns.Add("Producto");
@@ -264,26 +264,6 @@ namespace Interfez
             Inicio ini = new Inicio(tx);
             this.Hide();
             ini.ShowDialog();
-        }
-
-        private void DetallesProducto_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnBuscar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void EditarProducto_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CrearProducto_Click(object sender, EventArgs e)
-        {
-
         }
 
 
