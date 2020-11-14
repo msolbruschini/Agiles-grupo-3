@@ -16,6 +16,7 @@ namespace Interfez
         int cantidad = 7;
         bool valido = true;
         DataTable pedido = new DataTable();
+        int mesaSeleccionada = 0;
         
         
         
@@ -250,6 +251,16 @@ namespace Interfez
                 textoPrecio.Text = i.MostrarPrecio(textoProducto.Text).ToString();
             }
         }
+
+
+        private void seleccionarMesa(int numero)
+        {
+            
+            mesaSeleccionada = numero;
+
+        }
+
+      
 
 
 

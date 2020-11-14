@@ -192,6 +192,8 @@
     <None Include="Resources\Pedidos1.jpeg" />
     <None Include="Resources\STOCK.png" />
     <None Include="Resources\STOCK 1.png" />
+    <None Include="Resources\MesaRedonda1.jpg" />
+    <None Include="Resources\MesaCuadrada2.jpg" />
     <Content Include="Testing.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

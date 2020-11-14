@@ -213,9 +213,29 @@ namespace Interfez.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MesaCuadrada1 {
+            get {
+                object obj = ResourceManager.GetObject("MesaCuadrada1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MesaRedonda {
             get {
                 object obj = ResourceManager.GetObject("MesaRedonda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MesaRedonda1 {
+            get {
+                object obj = ResourceManager.GetObject("MesaRedonda1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
