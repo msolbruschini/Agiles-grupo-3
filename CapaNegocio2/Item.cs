@@ -56,5 +56,14 @@ namespace CapaNegocio2
             return DS;
         }
 
+        public string MostrarPrecio(string nombre)
+        {
+            string precio = "0";
+            string consulta = "SELECT precio FROM ItemStock WHERE nombre = '" + nombre + "'";
+            ConexionGeneral CG = new ConexionGeneral();
+            precio = CG.ValorUnico(consulta).ToString();
+            return precio;
+        }
+
     }
 }

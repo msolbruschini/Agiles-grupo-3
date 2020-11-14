@@ -22,3 +22,27 @@ C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Int
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.exe
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.pdb
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csprojAssemblyReference.cache
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csprojAssemblyReference.cache
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.DetalleProducto.resources
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Form1.resources
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Inicio.resources
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.NuevoProducto.resources
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Properties.Resources.resources
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Stock.resources
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.GenerateResource.cache
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CoreCompileInputs.cache
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.exe
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.pdb
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\Interfez.exe.config
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\Interfez.exe
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\Interfez.pdb
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.dll
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.dll
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\Control.Draggable.dll
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.dll
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.pdb
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.dll.config
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.pdb
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.xml
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CopyComplete

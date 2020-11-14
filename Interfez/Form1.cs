@@ -30,31 +30,7 @@ namespace Interfez
 
 
 
-        /*private void BotonCrearPedido_Click(object sender, EventArgs e)
-        {
-            
-            if (label1.Text == "Nuevo texto")
-            {
-                label1.Text = "otro texto";
-            }
-            else
-            {
-                label1.Text = "Nuevo texto";
-            }
-
-
-
-            //int numero = Int32.Parse( textoNombre.Text );
-
-            ClasedePrueba cdp = new ClasedePrueba();
-            Class1 claseP = new Class1();
-
-            label2.Text = cdp.Calcular(numero).ToString();
-            label3.Text = claseP.Calculadora(numero).ToString();
-
-
-
-        }*/
+        
         //BOTONES
         //Agrega un producto al mismo pedido
         private void AgregarProducto_Click(object sender, EventArgs e)
@@ -264,6 +240,15 @@ namespace Interfez
             Inicio ini = new Inicio(tx);
             this.Hide();
             ini.ShowDialog();
+        }
+
+        private void textoProducto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(textoProducto.SelectedIndex != -1)
+            {
+                Item i = new Item();
+                textoPrecio.Text = i.MostrarPrecio(textoProducto.Text).ToString();
+            }
         }
 
 

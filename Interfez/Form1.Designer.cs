@@ -351,21 +351,15 @@
             this.textoProducto.FormattingEnabled = true;
             this.textoProducto.Items.AddRange(new object[] {
             "Cerveza Negra",
-            "Cerveza Rubia",
-            "Cerveza Honey",
-            "Fernet",
-            "Coca Cola",
-            "Campari",
-            "Gancia",
-            "Papas fritas",
-            "Rabas",
-            "Pizza",
-            "Hamburguesas",
-            "Pancho"});
+            "Cerveza rubia",
+            "Papas fritas con ajo",
+            "Hamburguesa completa",
+            "UltraShot"});
             this.textoProducto.Location = new System.Drawing.Point(274, 242);
             this.textoProducto.Name = "textoProducto";
             this.textoProducto.Size = new System.Drawing.Size(234, 28);
             this.textoProducto.TabIndex = 11;
+            this.textoProducto.SelectedIndexChanged += new System.EventHandler(this.textoProducto_SelectedIndexChanged);
             // 
             // textoNombre
             // 
@@ -631,7 +625,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(692, 721);
+            this.tabPage3.Size = new System.Drawing.Size(692, 682);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Lista de Pedidos";
             this.tabPage3.UseVisualStyleBackColor = true;

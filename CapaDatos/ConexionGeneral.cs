@@ -83,5 +83,30 @@ namespace CapaDatos
         {
             return new SQLiteConnection(miConexion);
         }
+
+
+        public string ValorUnico(string consulta)
+        {
+            string precio = "0";
+            using (miConexion)
+            {
+                SQLiteCommand cmd = new SQLiteCommand(consulta, miConexion);
+                try
+                {
+                    miConexion.Open();
+                    precio = (string)cmd.ExecuteScalar().ToString();
+                }
+                catch(Exception e)
+                {
+                    MessageBox.Show("" + e);
+                }
+                finally
+                {
+                    
+                }
+            }
+
+            return precio;
+        }
     }
 }
