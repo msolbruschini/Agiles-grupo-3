@@ -27,6 +27,7 @@ namespace Interfez
             pedido.Columns.Add("Producto");
             pedido.Columns.Add("Cantidad");
             pedido.Columns.Add("Precio");
+            labelMesaVacia.Visible = false;
 
         }
 
@@ -257,22 +258,26 @@ namespace Interfez
         {
             // Cuando selecciono una mesa, des-selecciono la mesa anterior y selecciono la nueva
             labelMesaVacia.Visible = false;
-            if (p != null)
+            if(p != null)
             {
                 p.BorderStyle = BorderStyle.None;
-                p = (Panel)sender;
-                p.BorderStyle = BorderStyle.FixedSingle;
-                //Chequeo si la mesa está ocupada o no(false -> vacía ; true -> ocupada)
-                Mesa m = new Mesa();
-                if ( m.MesaEstado(Int32.Parse(p.Tag.ToString())) == false)
-                {
-                    labelMesaVacia.Visible = true;
-                }
-                else
-                {
-                    
-                }
             }
+            
+            p = (Panel)sender;
+                
+                
+            p.BorderStyle = BorderStyle.FixedSingle;
+            //Chequeo si la mesa está ocupada o no(false -> vacía ; true -> ocupada)
+            Mesa m = new Mesa();
+            if ( m.MesaEstado(Int32.Parse(p.Tag.ToString())) == false)
+            {
+                labelMesaVacia.Visible = true;
+            }
+            else
+            {
+                    
+            }
+            
             
         }
 
