@@ -17,6 +17,7 @@ namespace Interfez
         bool valido = true;
         DataTable pedido = new DataTable();
         int mesaSeleccionada = 0;
+        Panel p = null;
         
         
         
@@ -181,19 +182,19 @@ namespace Interfez
             /*groupBox1.Width = (int)(this.Width * 0.6);
             //groupBox1.Width = 30;*/
             textDireccion.Enabled = false;
-            ControlExtension.Draggable(panel3, true);
-            ControlExtension.Draggable(panel10, true);
-            ControlExtension.Draggable(panel11, true);
-            ControlExtension.Draggable(panel4, true);
-            ControlExtension.Draggable(panel5, true);
-            ControlExtension.Draggable(panel6, true);
-            ControlExtension.Draggable(panel7, true);
-            ControlExtension.Draggable(panel8, true);
-            ControlExtension.Draggable(panel2, true);
-            ControlExtension.Draggable(panel3, true);
-            ControlExtension.Draggable(panel4, true);
-            ControlExtension.Draggable(panel5, true);
-            ControlExtension.Draggable(panel12, true);
+            ControlExtension.Draggable(p8, true);
+            ControlExtension.Draggable(p9, true);
+            ControlExtension.Draggable(p10, true);
+            ControlExtension.Draggable(p11, true);
+            ControlExtension.Draggable(p12, true);
+            ControlExtension.Draggable(p13, true);
+            ControlExtension.Draggable(p5, true);
+            ControlExtension.Draggable(p6, true);
+            ControlExtension.Draggable(p7, true);
+            ControlExtension.Draggable(p8, true);
+            ControlExtension.Draggable(p11, true);
+            ControlExtension.Draggable(p12, true);
+            ControlExtension.Draggable(p1, true);
 
 
         }
@@ -252,15 +253,35 @@ namespace Interfez
             }
         }
 
-
-        private void seleccionarMesa(int numero)
+        private void p1_Click(object sender, EventArgs e)
         {
+            // Cuando selecciono una mesa, des-selecciono la mesa anterior y selecciono la nueva
+            labelMesaVacia.Visible = false;
+            if (p != null)
+            {
+                p.BorderStyle = BorderStyle.None;
+                p = (Panel)sender;
+                p.BorderStyle = BorderStyle.FixedSingle;
+                //Chequeo si la mesa está ocupada o no(false -> vacía ; true -> ocupada)
+                Mesa m = new Mesa();
+                if ( m.MesaEstado(Int32.Parse(p.Tag.ToString())) == false)
+                {
+                    labelMesaVacia.Visible = true;
+                }
+                else
+                {
+                    
+                }
+            }
             
-            mesaSeleccionada = numero;
-
         }
 
-      
+
+
+
+
+
+
 
 
 

@@ -31,15 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.barra = new System.Windows.Forms.Panel();
-            this.BtnMinimizar = new System.Windows.Forms.PictureBox();
-            this.BtnCerrar = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel21 = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
@@ -67,26 +58,38 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.EliminarPedido = new System.Windows.Forms.Button();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.botonAbrirMesa = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
+            this.botonAbrirMesa = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.p4 = new System.Windows.Forms.Panel();
+            this.p2 = new System.Windows.Forms.Panel();
+            this.p3 = new System.Windows.Forms.Panel();
+            this.p1 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.p9 = new System.Windows.Forms.Panel();
+            this.p10 = new System.Windows.Forms.Panel();
+            this.p11 = new System.Windows.Forms.Panel();
+            this.p12 = new System.Windows.Forms.Panel();
+            this.p13 = new System.Windows.Forms.Panel();
+            this.p8 = new System.Windows.Forms.Panel();
+            this.p7 = new System.Windows.Forms.Panel();
+            this.p5 = new System.Windows.Forms.Panel();
+            this.p6 = new System.Windows.Forms.Panel();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.barra = new System.Windows.Forms.Panel();
+            this.BtnMinimizar = new System.Windows.Forms.PictureBox();
+            this.BtnCerrar = new System.Windows.Forms.PictureBox();
+            this.labelMesaVacia = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel9.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -94,8 +97,6 @@
             this.barra.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -120,113 +121,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Pedidos";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.tabPage2.Controls.Add(this.button1);
-            this.tabPage2.Controls.Add(this.botonAbrirMesa);
-            this.tabPage2.Controls.Add(this.dataGridView2);
-            this.tabPage2.Controls.Add(this.groupBox1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 34);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(692, 682);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Mapa de mesas";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.panel14);
-            this.groupBox1.Controls.Add(this.panel15);
-            this.groupBox1.Controls.Add(this.panel13);
-            this.groupBox1.Controls.Add(this.panel12);
-            this.groupBox1.Controls.Add(this.panel9);
-            this.groupBox1.Controls.Add(this.panel10);
-            this.groupBox1.Controls.Add(this.panel11);
-            this.groupBox1.Controls.Add(this.panel4);
-            this.groupBox1.Controls.Add(this.panel5);
-            this.groupBox1.Controls.Add(this.panel6);
-            this.groupBox1.Controls.Add(this.panel3);
-            this.groupBox1.Controls.Add(this.panel2);
-            this.groupBox1.Controls.Add(this.panel7);
-            this.groupBox1.Controls.Add(this.panel8);
-            this.groupBox1.Location = new System.Drawing.Point(8, 6);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(566, 402);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Mapa de mesas";
-            // 
-            // panel9
-            // 
-            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.label1);
-            this.panel9.Location = new System.Drawing.Point(3, 19);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(145, 142);
-            this.panel9.TabIndex = 14;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.dataGridView1);
-            this.tabPage3.Location = new System.Drawing.Point(4, 34);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(692, 682);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Lista de Pedidos";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 147);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(680, 357);
-            this.dataGridView1.TabIndex = 4;
-            // 
-            // barra
-            // 
-            this.barra.BackColor = System.Drawing.Color.Black;
-            this.barra.Controls.Add(this.BtnMinimizar);
-            this.barra.Controls.Add(this.BtnCerrar);
-            this.barra.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barra.Location = new System.Drawing.Point(0, 0);
-            this.barra.Name = "barra";
-            this.barra.Size = new System.Drawing.Size(700, 23);
-            this.barra.TabIndex = 0;
-            // 
-            // BtnMinimizar
-            // 
-            this.BtnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMinimizar.Image = global::Interfez.Properties.Resources.borrarBlanco;
-            this.BtnMinimizar.Location = new System.Drawing.Point(651, 1);
-            this.BtnMinimizar.Name = "BtnMinimizar";
-            this.BtnMinimizar.Size = new System.Drawing.Size(20, 19);
-            this.BtnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnMinimizar.TabIndex = 4;
-            this.BtnMinimizar.TabStop = false;
-            this.BtnMinimizar.Click += new System.EventHandler(this.BtnMinimizar_Click);
-            // 
-            // BtnCerrar
-            // 
-            this.BtnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnCerrar.Image = global::Interfez.Properties.Resources.cerrar;
-            this.BtnCerrar.Location = new System.Drawing.Point(677, 1);
-            this.BtnCerrar.Name = "BtnCerrar";
-            this.BtnCerrar.Size = new System.Drawing.Size(20, 19);
-            this.BtnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnCerrar.TabIndex = 5;
-            this.BtnCerrar.TabStop = false;
-            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
             // panel1
             // 
@@ -568,142 +462,31 @@
             this.EliminarPedido.Text = "Eliminar Pedido";
             this.EliminarPedido.UseVisualStyleBackColor = false;
             // 
-            // panel14
+            // tabPage2
             // 
-            this.panel14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel14.BackgroundImage")));
-            this.panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel14.Location = new System.Drawing.Point(130, 307);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(66, 63);
-            this.panel14.TabIndex = 16;
+            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.tabPage2.Controls.Add(this.labelMesaVacia);
+            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.botonAbrirMesa);
+            this.tabPage2.Controls.Add(this.dataGridView2);
+            this.tabPage2.Controls.Add(this.groupBox1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 34);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(692, 682);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Mapa de mesas";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // panel15
+            // button1
             // 
-            this.panel15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel15.BackgroundImage")));
-            this.panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel15.Location = new System.Drawing.Point(130, 189);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(66, 63);
-            this.panel15.TabIndex = 16;
-            // 
-            // panel13
-            // 
-            this.panel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel13.BackgroundImage")));
-            this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel13.Location = new System.Drawing.Point(28, 307);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(66, 63);
-            this.panel13.TabIndex = 15;
-            // 
-            // panel12
-            // 
-            this.panel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel12.BackgroundImage")));
-            this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel12.Location = new System.Drawing.Point(28, 189);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(66, 63);
-            this.panel12.TabIndex = 14;
-            // 
-            // panel10
-            // 
-            this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
-            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel10.Location = new System.Drawing.Point(469, 84);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(91, 42);
-            this.panel10.TabIndex = 13;
-            // 
-            // panel11
-            // 
-            this.panel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel11.BackgroundImage")));
-            this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel11.Location = new System.Drawing.Point(469, 148);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(91, 42);
-            this.panel11.TabIndex = 13;
-            // 
-            // panel4
-            // 
-            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Location = new System.Drawing.Point(469, 210);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(91, 42);
-            this.panel4.TabIndex = 13;
-            // 
-            // panel5
-            // 
-            this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
-            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel5.Location = new System.Drawing.Point(469, 271);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(91, 42);
-            this.panel5.TabIndex = 13;
-            // 
-            // panel6
-            // 
-            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel6.Location = new System.Drawing.Point(469, 338);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(91, 42);
-            this.panel6.TabIndex = 13;
-            // 
-            // panel3
-            // 
-            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Location = new System.Drawing.Point(469, 21);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(91, 42);
-            this.panel3.TabIndex = 12;
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(276, 282);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(103, 88);
-            this.panel2.TabIndex = 13;
-            // 
-            // panel7
-            // 
-            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
-            this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel7.Location = new System.Drawing.Point(276, 58);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(103, 88);
-            this.panel7.TabIndex = 11;
-            // 
-            // panel8
-            // 
-            this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
-            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel8.Location = new System.Drawing.Point(276, 168);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(103, 88);
-            this.panel8.TabIndex = 12;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 20F);
-            this.label1.Location = new System.Drawing.Point(18, 54);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 34);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Cocina";
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.GridColor = System.Drawing.Color.Black;
-            this.dataGridView2.Location = new System.Drawing.Point(11, 424);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(563, 247);
-            this.dataGridView2.TabIndex = 4;
+            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 11F);
+            this.button1.Location = new System.Drawing.Point(582, 90);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(104, 53);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Cerrar mesa";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // botonAbrirMesa
             // 
@@ -715,15 +498,258 @@
             this.botonAbrirMesa.Text = "Abrir Mesa";
             this.botonAbrirMesa.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // dataGridView2
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 11F);
-            this.button1.Location = new System.Drawing.Point(582, 90);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 53);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Cerrar mesa";
-            this.button1.UseVisualStyleBackColor = true;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.GridColor = System.Drawing.Color.Black;
+            this.dataGridView2.Location = new System.Drawing.Point(11, 424);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(563, 247);
+            this.dataGridView2.TabIndex = 4;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.p4);
+            this.groupBox1.Controls.Add(this.p2);
+            this.groupBox1.Controls.Add(this.p3);
+            this.groupBox1.Controls.Add(this.p1);
+            this.groupBox1.Controls.Add(this.panel9);
+            this.groupBox1.Controls.Add(this.p9);
+            this.groupBox1.Controls.Add(this.p10);
+            this.groupBox1.Controls.Add(this.p11);
+            this.groupBox1.Controls.Add(this.p12);
+            this.groupBox1.Controls.Add(this.p13);
+            this.groupBox1.Controls.Add(this.p8);
+            this.groupBox1.Controls.Add(this.p7);
+            this.groupBox1.Controls.Add(this.p5);
+            this.groupBox1.Controls.Add(this.p6);
+            this.groupBox1.Location = new System.Drawing.Point(8, 6);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(566, 402);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Mapa de mesas";
+            // 
+            // p4
+            // 
+            this.p4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("p4.BackgroundImage")));
+            this.p4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.p4.Location = new System.Drawing.Point(130, 307);
+            this.p4.Name = "p4";
+            this.p4.Size = new System.Drawing.Size(66, 63);
+            this.p4.TabIndex = 16;
+            this.p4.Tag = "4";
+            // 
+            // p2
+            // 
+            this.p2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("p2.BackgroundImage")));
+            this.p2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.p2.Location = new System.Drawing.Point(130, 189);
+            this.p2.Name = "p2";
+            this.p2.Size = new System.Drawing.Size(66, 63);
+            this.p2.TabIndex = 16;
+            this.p2.Tag = "2";
+            // 
+            // p3
+            // 
+            this.p3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("p3.BackgroundImage")));
+            this.p3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.p3.Location = new System.Drawing.Point(28, 307);
+            this.p3.Name = "p3";
+            this.p3.Size = new System.Drawing.Size(66, 63);
+            this.p3.TabIndex = 15;
+            this.p3.Tag = "3";
+            // 
+            // p1
+            // 
+            this.p1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("p1.BackgroundImage")));
+            this.p1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.p1.Location = new System.Drawing.Point(28, 189);
+            this.p1.Name = "p1";
+            this.p1.Size = new System.Drawing.Size(66, 63);
+            this.p1.TabIndex = 14;
+            this.p1.Tag = "1";
+            this.p1.Click += new System.EventHandler(this.p1_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Controls.Add(this.label1);
+            this.panel9.Location = new System.Drawing.Point(3, 19);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(145, 142);
+            this.panel9.TabIndex = 14;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 20F);
+            this.label1.Location = new System.Drawing.Point(18, 54);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 34);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Cocina";
+            // 
+            // p9
+            // 
+            this.p9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("p9.BackgroundImage")));
+            this.p9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.p9.Location = new System.Drawing.Point(469, 84);
+            this.p9.Name = "p9";
+            this.p9.Size = new System.Drawing.Size(91, 42);
+            this.p9.TabIndex = 13;
+            this.p9.Tag = "9";
+            // 
+            // p10
+            // 
+            this.p10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("p10.BackgroundImage")));
+            this.p10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.p10.Location = new System.Drawing.Point(469, 148);
+            this.p10.Name = "p10";
+            this.p10.Size = new System.Drawing.Size(91, 42);
+            this.p10.TabIndex = 13;
+            this.p10.Tag = "10";
+            // 
+            // p11
+            // 
+            this.p11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("p11.BackgroundImage")));
+            this.p11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.p11.Location = new System.Drawing.Point(469, 210);
+            this.p11.Name = "p11";
+            this.p11.Size = new System.Drawing.Size(91, 42);
+            this.p11.TabIndex = 13;
+            this.p11.Tag = "11";
+            // 
+            // p12
+            // 
+            this.p12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("p12.BackgroundImage")));
+            this.p12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.p12.Location = new System.Drawing.Point(469, 271);
+            this.p12.Name = "p12";
+            this.p12.Size = new System.Drawing.Size(91, 42);
+            this.p12.TabIndex = 13;
+            this.p12.Tag = "12";
+            // 
+            // p13
+            // 
+            this.p13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("p13.BackgroundImage")));
+            this.p13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.p13.Location = new System.Drawing.Point(469, 338);
+            this.p13.Name = "p13";
+            this.p13.Size = new System.Drawing.Size(91, 42);
+            this.p13.TabIndex = 13;
+            this.p13.Tag = "13";
+            // 
+            // p8
+            // 
+            this.p8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("p8.BackgroundImage")));
+            this.p8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.p8.Location = new System.Drawing.Point(469, 21);
+            this.p8.Name = "p8";
+            this.p8.Size = new System.Drawing.Size(91, 42);
+            this.p8.TabIndex = 12;
+            this.p8.Tag = "8";
+            // 
+            // p7
+            // 
+            this.p7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("p7.BackgroundImage")));
+            this.p7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.p7.Location = new System.Drawing.Point(276, 282);
+            this.p7.Name = "p7";
+            this.p7.Size = new System.Drawing.Size(103, 88);
+            this.p7.TabIndex = 13;
+            this.p7.Tag = "7";
+            // 
+            // p5
+            // 
+            this.p5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("p5.BackgroundImage")));
+            this.p5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.p5.Location = new System.Drawing.Point(276, 58);
+            this.p5.Name = "p5";
+            this.p5.Size = new System.Drawing.Size(103, 88);
+            this.p5.TabIndex = 11;
+            this.p5.Tag = "5";
+            // 
+            // p6
+            // 
+            this.p6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("p6.BackgroundImage")));
+            this.p6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.p6.Location = new System.Drawing.Point(276, 168);
+            this.p6.Name = "p6";
+            this.p6.Size = new System.Drawing.Size(103, 88);
+            this.p6.TabIndex = 12;
+            this.p6.Tag = "6";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.dataGridView1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 34);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(692, 682);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Lista de Pedidos";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 147);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(680, 357);
+            this.dataGridView1.TabIndex = 4;
+            // 
+            // barra
+            // 
+            this.barra.BackColor = System.Drawing.Color.Black;
+            this.barra.Controls.Add(this.BtnMinimizar);
+            this.barra.Controls.Add(this.BtnCerrar);
+            this.barra.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barra.Location = new System.Drawing.Point(0, 0);
+            this.barra.Name = "barra";
+            this.barra.Size = new System.Drawing.Size(700, 23);
+            this.barra.TabIndex = 0;
+            // 
+            // BtnMinimizar
+            // 
+            this.BtnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMinimizar.Image = global::Interfez.Properties.Resources.borrarBlanco;
+            this.BtnMinimizar.Location = new System.Drawing.Point(651, 1);
+            this.BtnMinimizar.Name = "BtnMinimizar";
+            this.BtnMinimizar.Size = new System.Drawing.Size(20, 19);
+            this.BtnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnMinimizar.TabIndex = 4;
+            this.BtnMinimizar.TabStop = false;
+            this.BtnMinimizar.Click += new System.EventHandler(this.BtnMinimizar_Click);
+            // 
+            // BtnCerrar
+            // 
+            this.BtnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCerrar.Image = global::Interfez.Properties.Resources.cerrar;
+            this.BtnCerrar.Location = new System.Drawing.Point(677, 1);
+            this.BtnCerrar.Name = "BtnCerrar";
+            this.BtnCerrar.Size = new System.Drawing.Size(20, 19);
+            this.BtnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnCerrar.TabIndex = 5;
+            this.BtnCerrar.TabStop = false;
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
+            // 
+            // labelMesaVacia
+            // 
+            this.labelMesaVacia.AutoSize = true;
+            this.labelMesaVacia.Font = new System.Drawing.Font("Microsoft JhengHei Light", 56F);
+            this.labelMesaVacia.Location = new System.Drawing.Point(84, 495);
+            this.labelMesaVacia.Name = "labelMesaVacia";
+            this.labelMesaVacia.Size = new System.Drawing.Size(419, 95);
+            this.labelMesaVacia.TabIndex = 7;
+            this.labelMesaVacia.Text = "Mesa Vacía";
             // 
             // Form1
             // 
@@ -742,7 +768,11 @@
             this.Resize += new System.EventHandler(this.Form1_Resize);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
@@ -751,9 +781,6 @@
             this.barra.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -763,21 +790,21 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel p6;
+        private System.Windows.Forms.Panel p5;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel p9;
+        private System.Windows.Forms.Panel p10;
+        private System.Windows.Forms.Panel p11;
+        private System.Windows.Forms.Panel p12;
+        private System.Windows.Forms.Panel p13;
+        private System.Windows.Forms.Panel p8;
+        private System.Windows.Forms.Panel p7;
+        private System.Windows.Forms.Panel p1;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel p4;
+        private System.Windows.Forms.Panel p2;
+        private System.Windows.Forms.Panel p3;
         private System.Windows.Forms.Panel barra;
         private System.Windows.Forms.PictureBox BtnMinimizar;
         private System.Windows.Forms.PictureBox BtnCerrar;
@@ -814,6 +841,7 @@
         private System.Windows.Forms.Button botonAbrirMesa;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelMesaVacia;
     }
 }
 
