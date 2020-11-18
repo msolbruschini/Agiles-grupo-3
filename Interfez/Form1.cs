@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 //using System.Windows;
 using System.Windows.Forms;
+using CapaNegocio2;
+
 
 
 namespace Interfez
@@ -81,6 +83,8 @@ namespace Interfez
             
             string nombre = textoNombre.Text;
             string direccion;
+            int codPedido;
+            
             if (checkBox2.Checked)
             {
                 direccion = textDireccion.Text;
@@ -114,7 +118,7 @@ namespace Interfez
 
                     productosTexto = String.Concat(pedido.Rows[i]["Producto"].ToString() + " ");
                 }
-                
+
 
                 MessageBox.Show("PEDIDO CREADO \n"
                     + "Nombre: "
@@ -135,11 +139,25 @@ namespace Interfez
                     + productosPrecioFinal
 
                     );
+                // Agrego los datos del pedido a la facturaciòn
+                Factura f = new Factura();
+                DateTime fecha = DateTime.Today;
+
+                //agrego un int cualquiera al codigo pedido 
+                codPedido = productosPrecioFinal + 1000;
+
+                if (f.AgregarFactura(codPedido, productosPrecioFinal, fecha) == true)
+                {
+                    MessageBox.Show("Factura creada con exito");
+                }
+                else
+                {
+                    MessageBox.Show("Error al generar la factura");
+                }
+
+
+
             }
-
-            
-
-
 
         }
 
