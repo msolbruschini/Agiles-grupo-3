@@ -14,7 +14,6 @@ namespace Interfez
 {
 
 
-
     public partial class Menu : Form
     {
 
@@ -28,7 +27,7 @@ namespace Interfez
         {
           
             DataSet DS = new DataSet();
-            Item i = new Item();
+            ItemMenu i = new ItemMenu();
             DS = i.MostrarItem();
             dataGridView1.DataSource = DS.Tables[0];
             
@@ -47,14 +46,6 @@ namespace Interfez
         }
 
 
-        private void BtnVolver_Click(object sender, EventArgs e)
-        {
-            bool tx = true;
-            Inicio ini = new Inicio(tx);
-            this.Hide();
-            ini.ShowDialog();
-            
-        }
 
         private void CrearProducto_Click(object sender, EventArgs e)
         {
@@ -69,7 +60,7 @@ namespace Interfez
             if (!AgregarNuevo.Text.Trim().Equals(""))
             {
                 DataSet DS = new DataSet();
-                Item i = new Item();
+                ItemMenu i = new ItemMenu();
                 DS = i.MostrarItemBuscado(AgregarNuevo.Text.Trim());
                 try
                 {
@@ -86,24 +77,23 @@ namespace Interfez
         {
             if (dataGridView1.SelectedRows.Count > 0)
             {
-                string Categoria, Codigo, Producto, Cantidad, PrecioCompra, Id;
+                string descripcion, nombre, Cantidad, PrecioCompra, Id;
                 int IdAux, CantidadAux;
-                float PrecioCompraAux;
+                float PrecioAux;
 
 
-                Item i = new Item();
+                ItemMenu i = new ItemMenu();
                 Cantidad = dataGridView1.CurrentRow.Cells["cantidad"].Value.ToString();
-                PrecioCompra = dataGridView1.CurrentRow.Cells["precioCompra"].Value.ToString();
-                Categoria = dataGridView1.CurrentRow.Cells["categoria"].Value.ToString();
-                Codigo = dataGridView1.CurrentRow.Cells["codigo"].Value.ToString();
-                Producto = dataGridView1.CurrentRow.Cells["producto"].Value.ToString();
-                Id = dataGridView1.CurrentRow.Cells["StockId"].Value.ToString();
+                PrecioCompra = dataGridView1.CurrentRow.Cells["precio"].Value.ToString();
+                nombre = dataGridView1.CurrentRow.Cells["nombre"].Value.ToString();
+                descripcion = dataGridView1.CurrentRow.Cells["descripcion"].Value.ToString();
+                Id = dataGridView1.CurrentRow.Cells["codItem"].Value.ToString();
                 IdAux = int.Parse(Id);
                 CantidadAux = int.Parse(Cantidad);
-                PrecioCompraAux = float.Parse(PrecioCompra);
+                PrecioAux = float.Parse(PrecioCompra);
 
 
-                if (i.ModificarItem(IdAux, Codigo, Producto, Categoria, PrecioCompraAux, CantidadAux) == true)
+                if (i.ModificarItem(IdAux, nombre, descripcion, PrecioAux, CantidadAux) == true)
                 {
                     MessageBox.Show("La modificacion se realizo con exito");
                 }
@@ -112,7 +102,7 @@ namespace Interfez
                     MessageBox.Show("La modificacion no se pudo realizar");
                 }
                 DataSet DS = new DataSet();
-                i = new Item();
+                i = new ItemMenu();
                 DS = i.MostrarItem();
                 dataGridView1.DataSource = DS.Tables[0];
 
@@ -125,25 +115,13 @@ namespace Interfez
 
         }
 
-        private void DetallesProducto_Click(object sender, EventArgs e)
-        {
-            // Envia el id del producto seleccionado a la vista de DetalleProducto
-            if (dataGridView1.SelectedRows.Count == 1)
-            {
-
-
-                int Id = Int32.Parse(dataGridView1.CurrentRow.Cells["StockId"].Value.ToString());
-                DetalleProducto detalle = new DetalleProducto(Id);
-                this.Hide();
-                detalle.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("Seleccione Una fila para ver el producto");
-            }
-        }
 
         private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
