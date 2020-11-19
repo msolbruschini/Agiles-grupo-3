@@ -289,5 +289,15 @@ namespace Interfez.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2020_11_19_at_12_27_12_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2020-11-19 at 12.27.12 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

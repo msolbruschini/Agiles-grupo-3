@@ -100,3 +100,20 @@ C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\CapaDatos\obj\Debug\CapaDatos.cspr
 C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\Natalia\Desktop\Agile\Agiles-grupo-3\CapaDatos\obj\Debug\CapaDatos.pdb
 C:\Users\solch\Desktop\Cursada 2020\Agiles\Agiles-grupo-3\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\solch\Desktop\Facultad\Cursada 2020\Agiles\Agiles-grupo-3\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\solch\Desktop\Facultad\Cursada 2020\Agiles\Agiles-grupo-3\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\solch\Desktop\Facultad\Cursada 2020\Agiles\Agiles-grupo-3\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\solch\Desktop\Facultad\Cursada 2020\Agiles\Agiles-grupo-3\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\solch\Desktop\Facultad\Cursada 2020\Agiles\Agiles-grupo-3\CapaDatos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\solch\Desktop\Facultad\Cursada 2020\Agiles\Agiles-grupo-3\CapaDatos\bin\Debug\System.Data.SQLite.dll
+C:\Users\solch\Desktop\Facultad\Cursada 2020\Agiles\Agiles-grupo-3\CapaDatos\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\solch\Desktop\Facultad\Cursada 2020\Agiles\Agiles-grupo-3\CapaDatos\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\solch\Desktop\Facultad\Cursada 2020\Agiles\Agiles-grupo-3\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\solch\Desktop\Facultad\Cursada 2020\Agiles\Agiles-grupo-3\CapaDatos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\solch\Desktop\Facultad\Cursada 2020\Agiles\Agiles-grupo-3\CapaDatos\bin\Debug\System.Data.SQLite.xml
+C:\Users\solch\Desktop\Facultad\Cursada 2020\Agiles\Agiles-grupo-3\CapaDatos\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\solch\Desktop\Facultad\Cursada 2020\Agiles\Agiles-grupo-3\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\solch\Desktop\Facultad\Cursada 2020\Agiles\Agiles-grupo-3\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\solch\Desktop\Facultad\Cursada 2020\Agiles\Agiles-grupo-3\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\solch\Desktop\Facultad\Cursada 2020\Agiles\Agiles-grupo-3\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\solch\Desktop\Facultad\Cursada 2020\Agiles\Agiles-grupo-3\CapaDatos\obj\Debug\CapaDatos.pdb

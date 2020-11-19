@@ -119,5 +119,14 @@ namespace Interfez
             pedidos.FormClosed += Logout;
             this.Hide();
         }
+
+        private void BtnEmpleados_Click(object sender, EventArgs e)
+        {
+            ABMempleados emp = new ABMempleados(); 
+            emp = new ABMempleados();
+            emp.Show();
+            emp.FormClosed += Logout;
+            this.Hide();
+        }
     }
 }

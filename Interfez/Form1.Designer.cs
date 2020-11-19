@@ -59,6 +59,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.EliminarPedido = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.labelMesaVacia = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.botonAbrirMesa = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -84,7 +85,6 @@
             this.barra = new System.Windows.Forms.Panel();
             this.BtnMinimizar = new System.Windows.Forms.PictureBox();
             this.BtnCerrar = new System.Windows.Forms.PictureBox();
-            this.labelMesaVacia = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -478,6 +478,16 @@
             this.tabPage2.Text = "Mapa de mesas";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // labelMesaVacia
+            // 
+            this.labelMesaVacia.AutoSize = true;
+            this.labelMesaVacia.Font = new System.Drawing.Font("Microsoft JhengHei Light", 56F);
+            this.labelMesaVacia.Location = new System.Drawing.Point(84, 495);
+            this.labelMesaVacia.Name = "labelMesaVacia";
+            this.labelMesaVacia.Size = new System.Drawing.Size(419, 95);
+            this.labelMesaVacia.TabIndex = 7;
+            this.labelMesaVacia.Text = "Mesa Vacía";
+            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 11F);
@@ -714,6 +724,7 @@
             this.barra.Name = "barra";
             this.barra.Size = new System.Drawing.Size(700, 23);
             this.barra.TabIndex = 0;
+          
             // 
             // BtnMinimizar
             // 
@@ -740,16 +751,6 @@
             this.BtnCerrar.TabIndex = 5;
             this.BtnCerrar.TabStop = false;
             this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
-            // 
-            // labelMesaVacia
-            // 
-            this.labelMesaVacia.AutoSize = true;
-            this.labelMesaVacia.Font = new System.Drawing.Font("Microsoft JhengHei Light", 56F);
-            this.labelMesaVacia.Location = new System.Drawing.Point(84, 495);
-            this.labelMesaVacia.Name = "labelMesaVacia";
-            this.labelMesaVacia.Size = new System.Drawing.Size(419, 95);
-            this.labelMesaVacia.TabIndex = 7;
-            this.labelMesaVacia.Text = "Mesa Vacía";
             // 
             // Form1
             // 
