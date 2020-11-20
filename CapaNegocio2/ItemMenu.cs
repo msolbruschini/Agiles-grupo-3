@@ -20,12 +20,12 @@ namespace CapaNegocio2
         }
 
 
-        public bool AgregarItem(string producto, string codigo,string categoria, string descripcion, string comentario, float precioCompra, int cantidad)
+        public bool AgregarItem(string nombre, string descripcion, float precio, int cantidad)
         {
            
             ConexionGeneral CG = new ConexionGeneral();
 
-            return CG.Ejecutor("INSERT INTO ItemStock ( nombre,descripcion,cantidad,precio ) VALUES ( '" + producto + "', '" + codigo + "','" + categoria + "','" + descripcion + "', '" + comentario + "'," + precioCompra + "," + cantidad + ")");
+            return CG.Ejecutor("INSERT INTO ItemStock ( nombre,descripcion,cantidad,precio ) VALUES ( '" + nombre + "', '" + descripcion + "','" + cantidad + "','" + precio + "')");
             
         }
 
@@ -43,6 +43,16 @@ namespace CapaNegocio2
             ConexionGeneral CG = new ConexionGeneral();
             
             return CG.Ejecutor("UPDATE ItemStock SET nombre = '" + nombre + "',descripcion = '" + descripcion + "', precio = " + precio + " ,cantidad = " + cantidad + " where codItem = " + codItem);
+
+
+        }
+
+
+        public bool EliminarItem(int codItem)
+        {
+            ConexionGeneral CG = new ConexionGeneral();
+
+            return CG.Ejecutor("DELETE from ItemStock where codItem = " + codItem);
 
 
         }

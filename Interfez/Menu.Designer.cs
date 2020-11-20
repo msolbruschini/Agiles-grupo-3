@@ -43,6 +43,7 @@
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.EditarProducto = new System.Windows.Forms.Button();
             this.CrearProducto = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).BeginInit();
@@ -112,6 +113,7 @@
             // 
             this.tabPage1.BackgroundImage = global::Interfez.Properties.Resources.STOCK_1;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.panel16);
             this.tabPage1.Controls.Add(this.dataGridView1);
             this.tabPage1.Controls.Add(this.AgregarNuevo);
@@ -185,7 +187,7 @@
             this.EditarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.EditarProducto.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
             this.EditarProducto.ForeColor = System.Drawing.Color.White;
-            this.EditarProducto.Location = new System.Drawing.Point(319, 628);
+            this.EditarProducto.Location = new System.Drawing.Point(272, 616);
             this.EditarProducto.Name = "EditarProducto";
             this.EditarProducto.Size = new System.Drawing.Size(170, 37);
             this.EditarProducto.TabIndex = 17;
@@ -199,13 +201,27 @@
             this.CrearProducto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CrearProducto.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
             this.CrearProducto.ForeColor = System.Drawing.Color.White;
-            this.CrearProducto.Location = new System.Drawing.Point(129, 628);
+            this.CrearProducto.Location = new System.Drawing.Point(68, 616);
             this.CrearProducto.Name = "CrearProducto";
             this.CrearProducto.Size = new System.Drawing.Size(166, 37);
             this.CrearProducto.TabIndex = 18;
             this.CrearProducto.Text = "Agregar Item";
             this.CrearProducto.UseVisualStyleBackColor = false;
             this.CrearProducto.Click += new System.EventHandler(this.CrearProducto_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(481, 616);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(166, 37);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Eliminar Item";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Menu
             // 
@@ -245,5 +261,6 @@
         private System.Windows.Forms.Button EditarProducto;
         private System.Windows.Forms.Button CrearProducto;
         private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Button button1;
     }
 }

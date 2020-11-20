@@ -49,7 +49,7 @@ namespace Interfez
 
         private void CrearProducto_Click(object sender, EventArgs e)
         {
-            NuevoProducto nuevo = new NuevoProducto();
+            NuevoItem nuevo = new NuevoItem();
             this.Hide();
             nuevo.ShowDialog();
         }
@@ -123,6 +123,38 @@ namespace Interfez
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            if (dataGridView1.SelectedRows.Count > 0) 
+            {
+                string Id;
+                int IdAux;
+                Id = dataGridView1.CurrentRow.Cells["codItem"].Value.ToString();
+                IdAux = int.Parse(Id);
+                ItemMenu i = new ItemMenu();
+                if (i.EliminarItem(IdAux) == true)
+                {
+                    MessageBox.Show("La modificacion se realizo con exito");
+                }
+                else
+                {
+                    MessageBox.Show("La modificacion no se pudo realizar");
+                }
+                DataSet DS = new DataSet();
+                i = new ItemMenu();
+                DS = i.MostrarItem();
+                dataGridView1.DataSource = DS.Tables[0];
+
+
+            }
+            else
+            {
+                MessageBox.Show("Seleccione la fila a eliminar");
+            }
 
         }
     }
