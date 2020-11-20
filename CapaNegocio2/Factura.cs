@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CapaDatos;
+using System.Data;
+
 
 namespace CapaNegocio2
 {
@@ -23,6 +25,14 @@ namespace CapaNegocio2
             DataSet DS = new DataSet();
             ConexionGeneral CG = new ConexionGeneral();
             DS = CG.Consultor("SELECT codPedido, totalFact, fecha FROM Factura");
+            return DS;
+        }
+        public DataSet MostrarFacturaDesde(string fechaDesde)
+        {
+
+            DataSet DS = new DataSet();
+            ConexionGeneral CG = new ConexionGeneral();
+            DS = CG.Consultor("SELECT codPedido, totalFact, fecha FROM Factura WHERE f.fecha >= '" + fechaDesde + "'");
             return DS;
         }
     }

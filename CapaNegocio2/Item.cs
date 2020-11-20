@@ -55,6 +55,14 @@ namespace CapaNegocio2
             DS = CG.Consultor("SELECT producto,descripcion,precioCompra FROM Stock WHERE StockID =  " + id );
             return DS;
         }
+        public DataSet MostrarItemBajo()
+        {
+
+            DataSet DS = new DataSet();
+            ConexionGeneral CG = new ConexionGeneral();
+            DS = CG.Consultor("SELECT StockId,codigo,producto,categoria,precioCompra,cantidad FROM Stock where cantidad < 10 ");
+            return DS;
+        }
 
     }
 }

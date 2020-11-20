@@ -142,5 +142,15 @@ namespace Interfez
                 MessageBox.Show("Seleccione Una fila para ver el producto");
             }
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

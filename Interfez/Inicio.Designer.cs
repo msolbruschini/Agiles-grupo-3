@@ -32,10 +32,10 @@
             this.BtnMinimizar = new System.Windows.Forms.PictureBox();
             this.BtnCerrar = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.pIngreso = new System.Windows.Forms.Panel();
             this.pMenu = new System.Windows.Forms.Panel();
             this.BtnPedidos = new System.Windows.Forms.Button();
             this.BtnStock = new System.Windows.Forms.Button();
-            this.pIngreso = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.errorMsg = new System.Windows.Forms.Label();
@@ -44,12 +44,13 @@
             this.textUsu = new System.Windows.Forms.TextBox();
             this.pass = new System.Windows.Forms.Label();
             this.usu = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).BeginInit();
             this.panel5.SuspendLayout();
-            this.pMenu.SuspendLayout();
             this.pIngreso.SuspendLayout();
+            this.pMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel4
@@ -98,10 +99,29 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(405, 385);
             this.panel5.TabIndex = 3;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            // 
+            // pIngreso
+            // 
+            this.pIngreso.BackColor = System.Drawing.Color.Transparent;
+            this.pIngreso.Controls.Add(this.pMenu);
+            this.pIngreso.Controls.Add(this.panel3);
+            this.pIngreso.Controls.Add(this.panel2);
+            this.pIngreso.Controls.Add(this.errorMsg);
+            this.pIngreso.Controls.Add(this.IniciarSesion);
+            this.pIngreso.Controls.Add(this.textPass);
+            this.pIngreso.Controls.Add(this.textUsu);
+            this.pIngreso.Controls.Add(this.pass);
+            this.pIngreso.Controls.Add(this.usu);
+            this.pIngreso.Location = new System.Drawing.Point(12, 153);
+            this.pIngreso.Name = "pIngreso";
+            this.pIngreso.Size = new System.Drawing.Size(381, 184);
+            this.pIngreso.TabIndex = 0;
             // 
             // pMenu
             // 
             this.pMenu.BackColor = System.Drawing.Color.Transparent;
+            this.pMenu.Controls.Add(this.button1);
             this.pMenu.Controls.Add(this.BtnPedidos);
             this.pMenu.Controls.Add(this.BtnStock);
             this.pMenu.ForeColor = System.Drawing.Color.White;
@@ -140,23 +160,6 @@
             this.BtnStock.Text = "Stock";
             this.BtnStock.UseVisualStyleBackColor = false;
             this.BtnStock.Click += new System.EventHandler(this.BtnStock_Click);
-            // 
-            // pIngreso
-            // 
-            this.pIngreso.BackColor = System.Drawing.Color.Transparent;
-            this.pIngreso.Controls.Add(this.pMenu);
-            this.pIngreso.Controls.Add(this.panel3);
-            this.pIngreso.Controls.Add(this.panel2);
-            this.pIngreso.Controls.Add(this.errorMsg);
-            this.pIngreso.Controls.Add(this.IniciarSesion);
-            this.pIngreso.Controls.Add(this.textPass);
-            this.pIngreso.Controls.Add(this.textUsu);
-            this.pIngreso.Controls.Add(this.pass);
-            this.pIngreso.Controls.Add(this.usu);
-            this.pIngreso.Location = new System.Drawing.Point(12, 153);
-            this.pIngreso.Name = "pIngreso";
-            this.pIngreso.Size = new System.Drawing.Size(381, 184);
-            this.pIngreso.TabIndex = 0;
             // 
             // panel3
             // 
@@ -247,6 +250,21 @@
             this.usu.TabIndex = 15;
             this.usu.Text = "Usuario";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(0, 127);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(381, 37);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Administrar Compra y venta";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -267,9 +285,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).EndInit();
             this.panel5.ResumeLayout(false);
-            this.pMenu.ResumeLayout(false);
             this.pIngreso.ResumeLayout(false);
             this.pIngreso.PerformLayout();
+            this.pMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -292,5 +310,6 @@
         private System.Windows.Forms.Panel pMenu;
         private System.Windows.Forms.Button BtnPedidos;
         private System.Windows.Forms.Button BtnStock;
+        private System.Windows.Forms.Button button1;
     }
 }

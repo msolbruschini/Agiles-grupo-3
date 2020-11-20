@@ -46,3 +46,7 @@ C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.pd
 C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.xml
 C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.dll.config
 C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CopyComplete
+C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.CompraVenta.resources
+C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.CompraInsumo.resources
+C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Facturascs.resources
+C:\Users\Fernanda\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Gastos.resources
