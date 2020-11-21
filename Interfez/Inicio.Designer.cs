@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.panel4 = new System.Windows.Forms.Panel();
             this.BtnMinimizar = new System.Windows.Forms.PictureBox();
             this.BtnCerrar = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pIngreso = new System.Windows.Forms.Panel();
             this.pMenu = new System.Windows.Forms.Panel();
+            this.BtnMenu = new System.Windows.Forms.Button();
             this.BtnEmpleados = new System.Windows.Forms.Button();
             this.BtnPedidos = new System.Windows.Forms.Button();
             this.BtnStock = new System.Windows.Forms.Button();
+            this.pIngreso = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.errorMsg = new System.Windows.Forms.Label();
@@ -45,12 +47,13 @@
             this.textUsu = new System.Windows.Forms.TextBox();
             this.pass = new System.Windows.Forms.Label();
             this.usu = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).BeginInit();
             this.panel5.SuspendLayout();
-            this.pIngreso.SuspendLayout();
             this.pMenu.SuspendLayout();
+            this.pIngreso.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel4
@@ -101,6 +104,81 @@
             this.panel5.Size = new System.Drawing.Size(405, 385);
             this.panel5.TabIndex = 3;
             // 
+            // pMenu
+            // 
+            this.pMenu.BackColor = System.Drawing.Color.Transparent;
+            this.pMenu.Controls.Add(this.button1);
+            this.pMenu.Controls.Add(this.BtnMenu);
+            this.pMenu.Controls.Add(this.BtnEmpleados);
+            this.pMenu.Controls.Add(this.BtnPedidos);
+            this.pMenu.Controls.Add(this.BtnStock);
+            this.pMenu.ForeColor = System.Drawing.Color.White;
+            this.pMenu.Location = new System.Drawing.Point(12, 153);
+            this.pMenu.Name = "pMenu";
+            this.pMenu.Size = new System.Drawing.Size(381, 184);
+            this.pMenu.TabIndex = 0;
+            this.pMenu.Visible = false;
+            // 
+            // BtnMenu
+            // 
+            this.BtnMenu.BackColor = System.Drawing.Color.Black;
+            this.BtnMenu.FlatAppearance.BorderSize = 0;
+            this.BtnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMenu.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMenu.ForeColor = System.Drawing.Color.White;
+            this.BtnMenu.Location = new System.Drawing.Point(0, 8);
+            this.BtnMenu.Name = "BtnMenu";
+            this.BtnMenu.Size = new System.Drawing.Size(166, 37);
+            this.BtnMenu.TabIndex = 18;
+            this.BtnMenu.Text = "Menú";
+            this.BtnMenu.UseVisualStyleBackColor = false;
+            this.BtnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
+            // 
+            // BtnEmpleados
+            // 
+            this.BtnEmpleados.BackColor = System.Drawing.Color.Black;
+            this.BtnEmpleados.FlatAppearance.BorderSize = 0;
+            this.BtnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEmpleados.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12.5F);
+            this.BtnEmpleados.ForeColor = System.Drawing.Color.White;
+            this.BtnEmpleados.Location = new System.Drawing.Point(192, 87);
+            this.BtnEmpleados.Name = "BtnEmpleados";
+            this.BtnEmpleados.Size = new System.Drawing.Size(186, 37);
+            this.BtnEmpleados.TabIndex = 17;
+            this.BtnEmpleados.Text = "Gestión Empleados";
+            this.BtnEmpleados.UseVisualStyleBackColor = false;
+            this.BtnEmpleados.Click += new System.EventHandler(this.BtnEmpleados_Click);
+            // 
+            // BtnPedidos
+            // 
+            this.BtnPedidos.BackColor = System.Drawing.Color.Black;
+            this.BtnPedidos.FlatAppearance.BorderSize = 0;
+            this.BtnPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPedidos.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPedidos.ForeColor = System.Drawing.Color.White;
+            this.BtnPedidos.Location = new System.Drawing.Point(91, 147);
+            this.BtnPedidos.Name = "BtnPedidos";
+            this.BtnPedidos.Size = new System.Drawing.Size(166, 37);
+            this.BtnPedidos.TabIndex = 16;
+            this.BtnPedidos.Text = "Pedidos";
+            this.BtnPedidos.UseVisualStyleBackColor = false;
+            this.BtnPedidos.Click += new System.EventHandler(this.BtnPedidos_Click);
+            // 
+            // BtnStock
+            // 
+            this.BtnStock.BackColor = System.Drawing.Color.Black;
+            this.BtnStock.FlatAppearance.BorderSize = 0;
+            this.BtnStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnStock.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnStock.ForeColor = System.Drawing.Color.White;
+            this.BtnStock.Location = new System.Drawing.Point(0, 84);
+            this.BtnStock.Name = "BtnStock";
+            this.BtnStock.Size = new System.Drawing.Size(166, 37);
+            this.BtnStock.TabIndex = 15;
+            this.BtnStock.Text = "Stock";
+            this.BtnStock.UseVisualStyleBackColor = false;
+            this.BtnStock.Click += new System.EventHandler(this.BtnStock_Click);
+            // 
             // pIngreso
             // 
             this.pIngreso.BackColor = System.Drawing.Color.Transparent;
@@ -116,64 +194,6 @@
             this.pIngreso.Name = "pIngreso";
             this.pIngreso.Size = new System.Drawing.Size(381, 184);
             this.pIngreso.TabIndex = 0;
-            // 
-            // pMenu
-            // 
-            this.pMenu.BackColor = System.Drawing.Color.Transparent;
-            this.pMenu.Controls.Add(this.BtnEmpleados);
-            this.pMenu.Controls.Add(this.BtnPedidos);
-            this.pMenu.Controls.Add(this.BtnStock);
-            this.pMenu.ForeColor = System.Drawing.Color.White;
-            this.pMenu.Location = new System.Drawing.Point(12, 153);
-            this.pMenu.Name = "pMenu";
-            this.pMenu.Size = new System.Drawing.Size(381, 184);
-            this.pMenu.TabIndex = 0;
-            this.pMenu.Visible = false;
-            // 
-            // BtnEmpleados
-            // 
-            this.BtnEmpleados.BackColor = System.Drawing.Color.Black;
-            this.BtnEmpleados.FlatAppearance.BorderSize = 0;
-            this.BtnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEmpleados.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEmpleados.ForeColor = System.Drawing.Color.White;
-            this.BtnEmpleados.Location = new System.Drawing.Point(86, 127);
-            this.BtnEmpleados.Name = "BtnEmpleados";
-            this.BtnEmpleados.Size = new System.Drawing.Size(201, 37);
-            this.BtnEmpleados.TabIndex = 17;
-            this.BtnEmpleados.Text = "Gestión Empleados";
-            this.BtnEmpleados.UseVisualStyleBackColor = false;
-            this.BtnEmpleados.Click += new System.EventHandler(this.BtnEmpleados_Click);
-            // 
-            // BtnPedidos
-            // 
-            this.BtnPedidos.BackColor = System.Drawing.Color.Black;
-            this.BtnPedidos.FlatAppearance.BorderSize = 0;
-            this.BtnPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPedidos.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPedidos.ForeColor = System.Drawing.Color.White;
-            this.BtnPedidos.Location = new System.Drawing.Point(212, 62);
-            this.BtnPedidos.Name = "BtnPedidos";
-            this.BtnPedidos.Size = new System.Drawing.Size(166, 37);
-            this.BtnPedidos.TabIndex = 16;
-            this.BtnPedidos.Text = "Pedidos";
-            this.BtnPedidos.UseVisualStyleBackColor = false;
-            this.BtnPedidos.Click += new System.EventHandler(this.BtnPedidos_Click);
-            // 
-            // BtnStock
-            // 
-            this.BtnStock.BackColor = System.Drawing.Color.Black;
-            this.BtnStock.FlatAppearance.BorderSize = 0;
-            this.BtnStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnStock.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnStock.ForeColor = System.Drawing.Color.White;
-            this.BtnStock.Location = new System.Drawing.Point(3, 62);
-            this.BtnStock.Name = "BtnStock";
-            this.BtnStock.Size = new System.Drawing.Size(166, 37);
-            this.BtnStock.TabIndex = 15;
-            this.BtnStock.Text = "Stock";
-            this.BtnStock.UseVisualStyleBackColor = false;
-            this.BtnStock.Click += new System.EventHandler(this.BtnStock_Click);
             // 
             // panel3
             // 
@@ -264,6 +284,21 @@
             this.usu.TabIndex = 15;
             this.usu.Text = "Usuario";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(192, 8);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(189, 37);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Compras y ventas";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -276,6 +311,7 @@
             this.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -284,9 +320,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).EndInit();
             this.panel5.ResumeLayout(false);
+            this.pMenu.ResumeLayout(false);
             this.pIngreso.ResumeLayout(false);
             this.pIngreso.PerformLayout();
-            this.pMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -310,5 +346,7 @@
         private System.Windows.Forms.Button BtnPedidos;
         private System.Windows.Forms.Button BtnStock;
         private System.Windows.Forms.Button BtnEmpleados;
+        private System.Windows.Forms.Button BtnMenu;
+        private System.Windows.Forms.Button button1;
     }
 }

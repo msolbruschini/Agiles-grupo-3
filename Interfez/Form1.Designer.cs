@@ -345,7 +345,7 @@
             this.EditarPedido.Name = "EditarPedido";
             this.EditarPedido.Size = new System.Drawing.Size(166, 37);
             this.EditarPedido.TabIndex = 13;
-            this.EditarPedido.Text = "Editar Pedido";
+            this.EditarPedido.Text = "Editar";
             this.EditarPedido.UseVisualStyleBackColor = false;
             // 
             // CrearPedido
@@ -359,7 +359,7 @@
             this.CrearPedido.Name = "CrearPedido";
             this.CrearPedido.Size = new System.Drawing.Size(166, 37);
             this.CrearPedido.TabIndex = 12;
-            this.CrearPedido.Text = "Crear Pedido";
+            this.CrearPedido.Text = "Agregar";
             this.CrearPedido.UseVisualStyleBackColor = false;
             this.CrearPedido.Click += new System.EventHandler(this.CrearPedido_Click);
             // 
@@ -471,7 +471,7 @@
             this.EliminarPedido.Name = "EliminarPedido";
             this.EliminarPedido.Size = new System.Drawing.Size(166, 37);
             this.EliminarPedido.TabIndex = 0;
-            this.EliminarPedido.Text = "Eliminar Pedido";
+            this.EliminarPedido.Text = "Eliminar";
             this.EliminarPedido.UseVisualStyleBackColor = false;
             // 
             // tabPage2
@@ -908,6 +908,7 @@
             this.Controls.Add(this.barra);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

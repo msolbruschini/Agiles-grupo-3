@@ -64,6 +64,14 @@ namespace CapaNegocio2
             precio = CG.ValorUnico(consulta).ToString();
             return precio;
         }
+        public DataSet MostrarItemBajo()
+        {
+
+            DataSet DS = new DataSet();
+            ConexionGeneral CG = new ConexionGeneral();
+            DS = CG.Consultor("SELECT StockId,codigo,producto,categoria,precioCompra,cantidad FROM Stock where cantidad < 10 ");
+            return DS;
+        }
 
         public DataTable MostrarNombres()
         {

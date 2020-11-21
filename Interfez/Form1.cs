@@ -115,6 +115,22 @@ namespace Interfez
                     + productosPrecioFinal
 
                     );
+                // Agrego los datos del pedido a la facturaciòn
+                Factura f = new Factura();
+                DateTime fecha = DateTime.Today;
+                string fechaParametro = fecha.ToString();
+
+                //agrego un int cualquiera al codigo pedido 
+                int codPedido = productosPrecioFinal + 1000;
+
+                if (f.AgregarFactura(codPedido, productosPrecioFinal, fechaParametro) == true)
+                {
+                    MessageBox.Show("Factura creada con exito");
+                }
+                else
+                {
+                    MessageBox.Show("Error al generar la factura");
+                }
             }
 
             

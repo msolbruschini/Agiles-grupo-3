@@ -157,5 +157,13 @@ namespace Interfez
             }
 
         }
+
+        private void BtnVolver_Click(object sender, EventArgs e)
+        {
+            bool tx = true;
+            Inicio ini = new Inicio(tx);
+            this.Hide();
+            ini.ShowDialog();
+        }
     }
 }

@@ -99,6 +99,46 @@ C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.C
 C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.exe
 C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.pdb
 C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.NuevoItem.resources
+<<<<<<< HEAD
 C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.ABMempleados.resources
 C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Menu.resources
 C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.NuevoItem.resources
+=======
+C:\Users\solch\Desktop\Facultad\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.NuevoEmpleado.resources
+C:\Users\solch\Desktop\Facultad\Cursada 2020\Agiles\Agiles-grupo-3\Interfez\obj\Debug\Interfez.NuevoItem.resources
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\bin\Debug\Interfez.exe.config
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\bin\Debug\Interfez.exe
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\bin\Debug\Interfez.pdb
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.dll
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.dll
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\bin\Debug\Control.Draggable.dll
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.dll
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.pdb
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\bin\Debug\CapaDatos.dll.config
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\bin\Debug\CapaNegocio2.pdb
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.xml
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csprojAssemblyReference.cache
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\obj\Debug\Interfez.ABMempleados.resources
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\obj\Debug\Interfez.ComprarInsumo.resources
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\obj\Debug\Interfez.CompraVenta.resources
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\obj\Debug\Interfez.DetalleProducto.resources
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Facturas.resources
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Form1.resources
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Inicio.resources
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Menu.resources
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\obj\Debug\Interfez.NuevoEmpleado.resources
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\obj\Debug\Interfez.NuevoItem.resources
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\obj\Debug\Interfez.NuevoProducto.resources
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Properties.Resources.resources
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Stock.resources
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.GenerateResource.cache
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CoreCompileInputs.cache
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.CopyComplete
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\obj\Debug\Interfez.exe
+C:\Users\Fernanda\Source\Repos\AGIL\Agiles-grupo-3\Interfez\obj\Debug\Interfez.pdb
+>>>>>>> refs/remotes/origin/master
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.ComprarInsumo.resources
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.CompraVenta.resources
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Facturas.resources
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.NuevoEmpleado.resources

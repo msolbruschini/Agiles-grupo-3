@@ -76,11 +76,29 @@
       <DependentUpon>ABMempleados.cs</DependentUpon>
     </Compile>
     <Compile Include="ClasedePrueba.cs" />
+    <Compile Include="ComprarInsumo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComprarInsumo.Designer.cs">
+      <DependentUpon>ComprarInsumo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompraVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompraVenta.Designer.cs">
+      <DependentUpon>CompraVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="DetalleProducto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DetalleProducto.Designer.cs">
       <DependentUpon>DetalleProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturas.Designer.cs">
+      <DependentUpon>Facturas.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -93,6 +111,12 @@
     </Compile>
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoEmpleado.Designer.cs">
+      <DependentUpon>NuevoEmpleado.cs</DependentUpon>
     </Compile>
     <Compile Include="NuevoItem.cs">
       <SubType>Form</SubType>
@@ -128,9 +152,18 @@
     <EmbeddedResource Include="ABMempleados.resx">
       <DependentUpon>ABMempleados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ComprarInsumo.resx">
+      <DependentUpon>ComprarInsumo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompraVenta.resx">
+      <DependentUpon>CompraVenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DetalleProducto.resx">
       <DependentUpon>DetalleProducto.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturas.resx">
+      <DependentUpon>Facturas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -142,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoEmpleado.resx">
+      <DependentUpon>NuevoEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NuevoItem.resx">
       <DependentUpon>NuevoItem.cs</DependentUpon>
@@ -223,6 +259,7 @@
     <None Include="Resources\MesaRedonda1.jpg" />
     <None Include="Resources\MesaCuadrada2.jpg" />
     <None Include="Resources\WhatsApp Image 2020-11-19 at 12.27.12 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2020-11-19 at 11.43.06 AM.jpeg" />
     <Content Include="Testing.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
