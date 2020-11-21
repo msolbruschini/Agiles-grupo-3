@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
@@ -44,6 +45,7 @@
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.EditarProducto = new System.Windows.Forms.Button();
             this.CrearProducto = new System.Windows.Forms.Button();
+            this.BtnVolver = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).BeginInit();
@@ -113,6 +115,7 @@
             // 
             this.tabPage1.BackgroundImage = global::Interfez.Properties.Resources.WhatsApp_Image_2020_11_19_at_11_43_06_AM;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage1.Controls.Add(this.BtnVolver);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.panel16);
             this.tabPage1.Controls.Add(this.dataGridView1);
@@ -135,7 +138,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(481, 616);
+            this.button1.Location = new System.Drawing.Point(510, 628);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(166, 37);
             this.button1.TabIndex = 26;
@@ -154,14 +157,14 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.MenuHighlight;
             this.dataGridView1.Location = new System.Drawing.Point(6, 256);
@@ -201,7 +204,7 @@
             this.EditarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.EditarProducto.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
             this.EditarProducto.ForeColor = System.Drawing.Color.White;
-            this.EditarProducto.Location = new System.Drawing.Point(272, 616);
+            this.EditarProducto.Location = new System.Drawing.Point(319, 628);
             this.EditarProducto.Name = "EditarProducto";
             this.EditarProducto.Size = new System.Drawing.Size(170, 37);
             this.EditarProducto.TabIndex = 17;
@@ -215,13 +218,27 @@
             this.CrearProducto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CrearProducto.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
             this.CrearProducto.ForeColor = System.Drawing.Color.White;
-            this.CrearProducto.Location = new System.Drawing.Point(68, 616);
+            this.CrearProducto.Location = new System.Drawing.Point(129, 628);
             this.CrearProducto.Name = "CrearProducto";
             this.CrearProducto.Size = new System.Drawing.Size(166, 37);
             this.CrearProducto.TabIndex = 18;
             this.CrearProducto.Text = "Agregar";
             this.CrearProducto.UseVisualStyleBackColor = false;
             this.CrearProducto.Click += new System.EventHandler(this.CrearProducto_Click);
+            // 
+            // BtnVolver
+            // 
+            this.BtnVolver.BackColor = System.Drawing.Color.Black;
+            this.BtnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnVolver.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
+            this.BtnVolver.ForeColor = System.Drawing.Color.White;
+            this.BtnVolver.Location = new System.Drawing.Point(17, 628);
+            this.BtnVolver.Name = "BtnVolver";
+            this.BtnVolver.Size = new System.Drawing.Size(92, 37);
+            this.BtnVolver.TabIndex = 27;
+            this.BtnVolver.Text = "Volver";
+            this.BtnVolver.UseVisualStyleBackColor = false;
+            this.BtnVolver.Click += new System.EventHandler(this.BtnVolver_Click);
             // 
             // Menu
             // 
@@ -232,6 +249,7 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Los Birreros";
@@ -262,5 +280,6 @@
         private System.Windows.Forms.Button CrearProducto;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnVolver;
     }
 }

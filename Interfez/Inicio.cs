@@ -66,7 +66,9 @@ namespace Interfez
                         pMenu.Visible = true;
                         if (textUsu.Text == "Natalia") 
                         {
-                            BtnStock.Enabled = false;                        
+                            BtnStock.Enabled = false;
+                            BtnEmpleados.Enabled = false;
+
                         }
 
                         //this.Close();
@@ -123,9 +125,18 @@ namespace Interfez
         private void BtnEmpleados_Click(object sender, EventArgs e)
         {
             ABMempleados emp = new ABMempleados(); 
-            emp = new ABMempleados();
+            
             emp.Show();
             emp.FormClosed += Logout;
+            this.Hide();
+        }
+
+        private void BtnMenu_Click(object sender, EventArgs e)
+        {
+            Menu m = new Menu();
+            
+            m.Show();
+            m.FormClosed += Logout;
             this.Hide();
         }
     }

@@ -28,8 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NuevoEmpleado));
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.textBoxSueldo = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBoxVhs = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -45,12 +52,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.textBoxVhs = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.textBoxSueldo = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,6 +96,62 @@
             this.groupBox1.Size = new System.Drawing.Size(686, 337);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Location = new System.Drawing.Point(267, 299);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(395, 3);
+            this.panel3.TabIndex = 33;
+            // 
+            // textBoxSueldo
+            // 
+            this.textBoxSueldo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.textBoxSueldo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxSueldo.Font = new System.Drawing.Font("Microsoft JhengHei Light", 14F, System.Drawing.FontStyle.Bold);
+            this.textBoxSueldo.Location = new System.Drawing.Point(267, 275);
+            this.textBoxSueldo.Name = "textBoxSueldo";
+            this.textBoxSueldo.Size = new System.Drawing.Size(395, 25);
+            this.textBoxSueldo.TabIndex = 32;
+            this.textBoxSueldo.TextChanged += new System.EventHandler(this.textBoxSueldo_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft JhengHei Light", 14F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(23, 278);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(75, 24);
+            this.label3.TabIndex = 31;
+            this.label3.Text = "Sueldo";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Location = new System.Drawing.Point(267, 210);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(395, 3);
+            this.panel1.TabIndex = 30;
+            // 
+            // textBoxVhs
+            // 
+            this.textBoxVhs.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxVhs.Font = new System.Drawing.Font("Microsoft JhengHei Light", 14F, System.Drawing.FontStyle.Bold);
+            this.textBoxVhs.Location = new System.Drawing.Point(267, 186);
+            this.textBoxVhs.Name = "textBoxVhs";
+            this.textBoxVhs.Size = new System.Drawing.Size(395, 25);
+            this.textBoxVhs.TabIndex = 29;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei Light", 14F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(23, 189);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(141, 24);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "Valor de hora";
             // 
             // panel6
             // 
@@ -238,62 +295,6 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Agregar un nuevo Empleado";
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(267, 210);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(395, 3);
-            this.panel1.TabIndex = 30;
-            // 
-            // textBoxVhs
-            // 
-            this.textBoxVhs.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxVhs.Font = new System.Drawing.Font("Microsoft JhengHei Light", 14F, System.Drawing.FontStyle.Bold);
-            this.textBoxVhs.Location = new System.Drawing.Point(267, 186);
-            this.textBoxVhs.Name = "textBoxVhs";
-            this.textBoxVhs.Size = new System.Drawing.Size(395, 25);
-            this.textBoxVhs.TabIndex = 29;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei Light", 14F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(23, 189);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 24);
-            this.label2.TabIndex = 28;
-            this.label2.Text = "Valor de hora";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(267, 299);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(395, 3);
-            this.panel3.TabIndex = 33;
-            // 
-            // textBoxSueldo
-            // 
-            this.textBoxSueldo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.textBoxSueldo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxSueldo.Font = new System.Drawing.Font("Microsoft JhengHei Light", 14F, System.Drawing.FontStyle.Bold);
-            this.textBoxSueldo.Location = new System.Drawing.Point(267, 275);
-            this.textBoxSueldo.Name = "textBoxSueldo";
-            this.textBoxSueldo.Size = new System.Drawing.Size(395, 25);
-            this.textBoxSueldo.TabIndex = 32;
-            this.textBoxSueldo.TextChanged += new System.EventHandler(this.textBoxSueldo_TextChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft JhengHei Light", 14F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(23, 278);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 24);
-            this.label3.TabIndex = 31;
-            this.label3.Text = "Sueldo";
-            // 
             // NuevoEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -306,7 +307,9 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "NuevoEmpleado";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
