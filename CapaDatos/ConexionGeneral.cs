@@ -38,9 +38,9 @@ namespace CapaDatos
                 
 
             }
-            catch
+            catch(Exception e)
             {
-                MessageBox.Show("No se puede realizar esta consulta/modificacion");
+                MessageBox.Show("No se puede realizar esta consulta/modificacion" + e.Message);
             }
             finally
             {
@@ -67,8 +67,9 @@ namespace CapaDatos
                 return true;
 
             }
-            catch
+            catch(Exception e)
             {
+                MessageBox.Show("Ups, hubo un error" + e);
                 return false;
             }
             finally
@@ -98,11 +99,11 @@ namespace CapaDatos
                 }
                 catch(Exception e)
                 {
-                    MessageBox.Show("" + e);
+                    MessageBox.Show("" + e.Message);
                 }
                 finally
                 {
-                    
+                    miConexion.Close();
                 }
             }
 

@@ -20,8 +20,10 @@ namespace Interfez
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             bool tx = false;
-            Inicio i = new Inicio(tx);
-            i.ShowDialog();
+            Form1 f = new Form1();
+            f.ShowDialog();
+            //Inicio i = new Inicio(tx);
+            //i.ShowDialog();
             //Menu f = new Menu();
             //f.ShowDialog();
             Application.Run();

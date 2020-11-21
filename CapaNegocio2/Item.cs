@@ -65,5 +65,16 @@ namespace CapaNegocio2
             return precio;
         }
 
+        public DataTable MostrarNombres()
+        {
+            DataTable tb = new DataTable();
+            DataSet DDSS = new DataSet();
+            ConexionGeneral CG = new ConexionGeneral();
+            DDSS = CG.Consultor("SELECT nombre FROM ItemStock");
+            tb = DDSS.Tables[0];
+            return tb;
+            
+        }
+
     }
 }

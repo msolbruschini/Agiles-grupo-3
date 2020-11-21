@@ -52,6 +52,8 @@
     <Compile Include="ItemMenu.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Mesa.cs" />
+    <Compile Include="Pedido.cs" />
+    <Compile Include="PedidoItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

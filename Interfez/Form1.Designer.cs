@@ -59,8 +59,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.EliminarPedido = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.comboBoxItem = new System.Windows.Forms.ComboBox();
+            this.mesaTextoPrecio = new System.Windows.Forms.TextBox();
+            this.mesaTextCantidad = new System.Windows.Forms.TextBox();
+            this.botonMesaAgregar = new System.Windows.Forms.Button();
             this.labelMesaVacia = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.botonCerrarMesa = new System.Windows.Forms.Button();
             this.botonAbrirMesa = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -85,6 +89,12 @@
             this.barra = new System.Windows.Forms.Panel();
             this.BtnMinimizar = new System.Windows.Forms.PictureBox();
             this.BtnCerrar = new System.Windows.Forms.PictureBox();
+            this.panelMesaCerrada = new System.Windows.Forms.Panel();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.labelMesaCerrada = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.labelMesaTotal = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -97,6 +107,8 @@
             this.barra.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).BeginInit();
+            this.panelMesaCerrada.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -465,11 +477,16 @@
             // tabPage2
             // 
             this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.tabPage2.Controls.Add(this.panelMesaCerrada);
+            this.tabPage2.Controls.Add(this.groupBox1);
+            this.tabPage2.Controls.Add(this.comboBoxItem);
+            this.tabPage2.Controls.Add(this.mesaTextoPrecio);
+            this.tabPage2.Controls.Add(this.mesaTextCantidad);
+            this.tabPage2.Controls.Add(this.botonMesaAgregar);
             this.tabPage2.Controls.Add(this.labelMesaVacia);
-            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.botonCerrarMesa);
             this.tabPage2.Controls.Add(this.botonAbrirMesa);
             this.tabPage2.Controls.Add(this.dataGridView2);
-            this.tabPage2.Controls.Add(this.groupBox1);
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -478,25 +495,67 @@
             this.tabPage2.Text = "Mapa de mesas";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // comboBoxItem
+            // 
+            this.comboBoxItem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxItem.FormattingEnabled = true;
+            this.comboBoxItem.Location = new System.Drawing.Point(11, 415);
+            this.comboBoxItem.Name = "comboBoxItem";
+            this.comboBoxItem.Size = new System.Drawing.Size(237, 33);
+            this.comboBoxItem.TabIndex = 12;
+            this.comboBoxItem.Visible = false;
+            this.comboBoxItem.SelectedIndexChanged += new System.EventHandler(this.comboBoxItem_SelectedIndexChanged);
+            // 
+            // mesaTextoPrecio
+            // 
+            this.mesaTextoPrecio.Enabled = false;
+            this.mesaTextoPrecio.Location = new System.Drawing.Point(410, 414);
+            this.mesaTextoPrecio.Name = "mesaTextoPrecio";
+            this.mesaTextoPrecio.Size = new System.Drawing.Size(166, 34);
+            this.mesaTextoPrecio.TabIndex = 11;
+            this.mesaTextoPrecio.Visible = false;
+            // 
+            // mesaTextCantidad
+            // 
+            this.mesaTextCantidad.ForeColor = System.Drawing.Color.Black;
+            this.mesaTextCantidad.Location = new System.Drawing.Point(273, 414);
+            this.mesaTextCantidad.Name = "mesaTextCantidad";
+            this.mesaTextCantidad.Size = new System.Drawing.Size(110, 34);
+            this.mesaTextCantidad.TabIndex = 10;
+            this.mesaTextCantidad.Visible = false;
+            this.mesaTextCantidad.TextChanged += new System.EventHandler(this.mesaTextCantidad_TextChanged);
+            // 
+            // botonMesaAgregar
+            // 
+            this.botonMesaAgregar.Enabled = false;
+            this.botonMesaAgregar.Location = new System.Drawing.Point(582, 413);
+            this.botonMesaAgregar.Name = "botonMesaAgregar";
+            this.botonMesaAgregar.Size = new System.Drawing.Size(102, 34);
+            this.botonMesaAgregar.TabIndex = 8;
+            this.botonMesaAgregar.Text = "Agregar";
+            this.botonMesaAgregar.UseVisualStyleBackColor = true;
+            this.botonMesaAgregar.Click += new System.EventHandler(this.button1_Click);
+            // 
             // labelMesaVacia
             // 
             this.labelMesaVacia.AutoSize = true;
             this.labelMesaVacia.Font = new System.Drawing.Font("Microsoft JhengHei Light", 56F);
-            this.labelMesaVacia.Location = new System.Drawing.Point(84, 495);
+            this.labelMesaVacia.Location = new System.Drawing.Point(86, 518);
             this.labelMesaVacia.Name = "labelMesaVacia";
             this.labelMesaVacia.Size = new System.Drawing.Size(419, 95);
             this.labelMesaVacia.TabIndex = 7;
             this.labelMesaVacia.Text = "Mesa Vacía";
             // 
-            // button1
+            // botonCerrarMesa
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 11F);
-            this.button1.Location = new System.Drawing.Point(582, 90);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 53);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Cerrar mesa";
-            this.button1.UseVisualStyleBackColor = true;
+            this.botonCerrarMesa.Font = new System.Drawing.Font("Microsoft JhengHei Light", 11F);
+            this.botonCerrarMesa.Location = new System.Drawing.Point(582, 90);
+            this.botonCerrarMesa.Name = "botonCerrarMesa";
+            this.botonCerrarMesa.Size = new System.Drawing.Size(104, 53);
+            this.botonCerrarMesa.TabIndex = 6;
+            this.botonCerrarMesa.Text = "Cerrar mesa";
+            this.botonCerrarMesa.UseVisualStyleBackColor = true;
+            this.botonCerrarMesa.Click += new System.EventHandler(this.botonCerrarMesa_Click);
             // 
             // botonAbrirMesa
             // 
@@ -507,15 +566,26 @@
             this.botonAbrirMesa.TabIndex = 5;
             this.botonAbrirMesa.Text = "Abrir Mesa";
             this.botonAbrirMesa.UseVisualStyleBackColor = true;
+            this.botonAbrirMesa.Click += new System.EventHandler(this.botonAbrirMesa_Click);
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.AllowUserToResizeColumns = false;
+            this.dataGridView2.AllowUserToResizeRows = false;
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.GridColor = System.Drawing.Color.Black;
-            this.dataGridView2.Location = new System.Drawing.Point(11, 424);
+            this.dataGridView2.GridColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dataGridView2.Location = new System.Drawing.Point(11, 457);
+            this.dataGridView2.MultiSelect = false;
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(563, 247);
+            this.dataGridView2.RowHeadersVisible = false;
+            this.dataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dataGridView2.RowTemplate.DividerHeight = 3;
+            this.dataGridView2.RowTemplate.Height = 28;
+            this.dataGridView2.Size = new System.Drawing.Size(563, 214);
             this.dataGridView2.TabIndex = 4;
             // 
             // groupBox1
@@ -553,6 +623,7 @@
             this.p4.Size = new System.Drawing.Size(66, 63);
             this.p4.TabIndex = 16;
             this.p4.Tag = "4";
+            this.p4.Click += new System.EventHandler(this.p1_Click);
             // 
             // p2
             // 
@@ -563,6 +634,7 @@
             this.p2.Size = new System.Drawing.Size(66, 63);
             this.p2.TabIndex = 16;
             this.p2.Tag = "2";
+            this.p2.Click += new System.EventHandler(this.p1_Click);
             // 
             // p3
             // 
@@ -573,6 +645,7 @@
             this.p3.Size = new System.Drawing.Size(66, 63);
             this.p3.TabIndex = 15;
             this.p3.Tag = "3";
+            this.p3.Click += new System.EventHandler(this.p1_Click);
             // 
             // p1
             // 
@@ -614,6 +687,7 @@
             this.p9.Size = new System.Drawing.Size(91, 42);
             this.p9.TabIndex = 13;
             this.p9.Tag = "9";
+            this.p9.Click += new System.EventHandler(this.p1_Click);
             // 
             // p10
             // 
@@ -624,6 +698,7 @@
             this.p10.Size = new System.Drawing.Size(91, 42);
             this.p10.TabIndex = 13;
             this.p10.Tag = "10";
+            this.p10.Click += new System.EventHandler(this.p1_Click);
             // 
             // p11
             // 
@@ -634,6 +709,7 @@
             this.p11.Size = new System.Drawing.Size(91, 42);
             this.p11.TabIndex = 13;
             this.p11.Tag = "11";
+            this.p11.Click += new System.EventHandler(this.p1_Click);
             // 
             // p12
             // 
@@ -644,6 +720,7 @@
             this.p12.Size = new System.Drawing.Size(91, 42);
             this.p12.TabIndex = 13;
             this.p12.Tag = "12";
+            this.p12.Click += new System.EventHandler(this.p1_Click);
             // 
             // p13
             // 
@@ -654,6 +731,7 @@
             this.p13.Size = new System.Drawing.Size(91, 42);
             this.p13.TabIndex = 13;
             this.p13.Tag = "13";
+            this.p13.Click += new System.EventHandler(this.p1_Click);
             // 
             // p8
             // 
@@ -664,6 +742,7 @@
             this.p8.Size = new System.Drawing.Size(91, 42);
             this.p8.TabIndex = 12;
             this.p8.Tag = "8";
+            this.p8.Click += new System.EventHandler(this.p1_Click);
             // 
             // p7
             // 
@@ -674,6 +753,7 @@
             this.p7.Size = new System.Drawing.Size(103, 88);
             this.p7.TabIndex = 13;
             this.p7.Tag = "7";
+            this.p7.Click += new System.EventHandler(this.p1_Click);
             // 
             // p5
             // 
@@ -684,6 +764,7 @@
             this.p5.Size = new System.Drawing.Size(103, 88);
             this.p5.TabIndex = 11;
             this.p5.Tag = "5";
+            this.p5.Click += new System.EventHandler(this.p1_Click);
             // 
             // p6
             // 
@@ -694,6 +775,7 @@
             this.p6.Size = new System.Drawing.Size(103, 88);
             this.p6.TabIndex = 12;
             this.p6.Tag = "6";
+            this.p6.Click += new System.EventHandler(this.p1_Click);
             // 
             // tabPage3
             // 
@@ -724,7 +806,6 @@
             this.barra.Name = "barra";
             this.barra.Size = new System.Drawing.Size(700, 23);
             this.barra.TabIndex = 0;
-          
             // 
             // BtnMinimizar
             // 
@@ -751,6 +832,72 @@
             this.BtnCerrar.TabIndex = 5;
             this.BtnCerrar.TabStop = false;
             this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
+            // 
+            // panelMesaCerrada
+            // 
+            this.panelMesaCerrada.BackColor = System.Drawing.Color.White;
+            this.panelMesaCerrada.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMesaCerrada.Controls.Add(this.button1);
+            this.panelMesaCerrada.Controls.Add(this.labelMesaTotal);
+            this.panelMesaCerrada.Controls.Add(this.label8);
+            this.panelMesaCerrada.Controls.Add(this.labelMesaCerrada);
+            this.panelMesaCerrada.Controls.Add(this.dataGridView3);
+            this.panelMesaCerrada.Location = new System.Drawing.Point(3, 72);
+            this.panelMesaCerrada.Name = "panelMesaCerrada";
+            this.panelMesaCerrada.Size = new System.Drawing.Size(681, 379);
+            this.panelMesaCerrada.TabIndex = 17;
+            this.panelMesaCerrada.Visible = false;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AllowDrop = true;
+            this.dataGridView3.AllowUserToAddRows = false;
+            this.dataGridView3.AllowUserToDeleteRows = false;
+            this.dataGridView3.AllowUserToOrderColumns = true;
+            this.dataGridView3.AllowUserToResizeColumns = false;
+            this.dataGridView3.AllowUserToResizeRows = false;
+            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(44, 66);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.ReadOnly = true;
+            this.dataGridView3.Size = new System.Drawing.Size(598, 209);
+            this.dataGridView3.TabIndex = 0;
+            // 
+            // labelMesaCerrada
+            // 
+            this.labelMesaCerrada.AutoSize = true;
+            this.labelMesaCerrada.Location = new System.Drawing.Point(14, 17);
+            this.labelMesaCerrada.Name = "labelMesaCerrada";
+            this.labelMesaCerrada.Size = new System.Drawing.Size(0, 25);
+            this.labelMesaCerrada.TabIndex = 1;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(372, 312);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(54, 25);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Total";
+            // 
+            // labelMesaTotal
+            // 
+            this.labelMesaTotal.AutoSize = true;
+            this.labelMesaTotal.Location = new System.Drawing.Point(453, 312);
+            this.labelMesaTotal.Name = "labelMesaTotal";
+            this.labelMesaTotal.Size = new System.Drawing.Size(0, 25);
+            this.labelMesaTotal.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(44, 307);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(146, 45);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Cerrar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 
@@ -782,6 +929,9 @@
             this.barra.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).EndInit();
+            this.panelMesaCerrada.ResumeLayout(false);
+            this.panelMesaCerrada.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -838,11 +988,21 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button EliminarPedido;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button botonCerrarMesa;
         private System.Windows.Forms.Button botonAbrirMesa;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelMesaVacia;
+        private System.Windows.Forms.ComboBox comboBoxItem;
+        private System.Windows.Forms.TextBox mesaTextoPrecio;
+        private System.Windows.Forms.TextBox mesaTextCantidad;
+        private System.Windows.Forms.Button botonMesaAgregar;
+        private System.Windows.Forms.Panel panelMesaCerrada;
+        private System.Windows.Forms.Label labelMesaTotal;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label labelMesaCerrada;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -99,3 +99,6 @@ C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.csproj.C
 C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.exe
 C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.pdb
 C:\Users\Nahuel\Source\Repos\Agiles-grupo-3\Interfez\obj\Debug\Interfez.NuevoItem.resources
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.ABMempleados.resources
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.Menu.resources
+C:\Users\matia\Desktop\CRUXTOTAL\LosBirreros2\Agiles-grupo-3\Interfez\obj\Debug\Interfez.NuevoItem.resources
