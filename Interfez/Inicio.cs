@@ -139,5 +139,13 @@ namespace Interfez
             m.FormClosed += Logout;
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CompraVenta compra = new CompraVenta();
+            compra.Show();
+            compra.FormClosed += Logout;
+            this.Hide();
+        }
     }
 }

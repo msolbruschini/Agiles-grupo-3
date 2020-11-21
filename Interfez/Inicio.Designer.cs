@@ -47,6 +47,7 @@
             this.textUsu = new System.Windows.Forms.TextBox();
             this.pass = new System.Windows.Forms.Label();
             this.usu = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).BeginInit();
@@ -106,6 +107,7 @@
             // pMenu
             // 
             this.pMenu.BackColor = System.Drawing.Color.Transparent;
+            this.pMenu.Controls.Add(this.button1);
             this.pMenu.Controls.Add(this.BtnMenu);
             this.pMenu.Controls.Add(this.BtnEmpleados);
             this.pMenu.Controls.Add(this.BtnPedidos);
@@ -124,7 +126,7 @@
             this.BtnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMenu.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMenu.ForeColor = System.Drawing.Color.White;
-            this.BtnMenu.Location = new System.Drawing.Point(0, 47);
+            this.BtnMenu.Location = new System.Drawing.Point(0, 8);
             this.BtnMenu.Name = "BtnMenu";
             this.BtnMenu.Size = new System.Drawing.Size(166, 37);
             this.BtnMenu.TabIndex = 18;
@@ -139,9 +141,9 @@
             this.BtnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEmpleados.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12.5F);
             this.BtnEmpleados.ForeColor = System.Drawing.Color.White;
-            this.BtnEmpleados.Location = new System.Drawing.Point(209, 47);
+            this.BtnEmpleados.Location = new System.Drawing.Point(192, 87);
             this.BtnEmpleados.Name = "BtnEmpleados";
-            this.BtnEmpleados.Size = new System.Drawing.Size(169, 37);
+            this.BtnEmpleados.Size = new System.Drawing.Size(186, 37);
             this.BtnEmpleados.TabIndex = 17;
             this.BtnEmpleados.Text = "Gestión Empleados";
             this.BtnEmpleados.UseVisualStyleBackColor = false;
@@ -154,7 +156,7 @@
             this.BtnPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPedidos.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPedidos.ForeColor = System.Drawing.Color.White;
-            this.BtnPedidos.Location = new System.Drawing.Point(209, 100);
+            this.BtnPedidos.Location = new System.Drawing.Point(91, 147);
             this.BtnPedidos.Name = "BtnPedidos";
             this.BtnPedidos.Size = new System.Drawing.Size(166, 37);
             this.BtnPedidos.TabIndex = 16;
@@ -169,7 +171,7 @@
             this.BtnStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnStock.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnStock.ForeColor = System.Drawing.Color.White;
-            this.BtnStock.Location = new System.Drawing.Point(0, 100);
+            this.BtnStock.Location = new System.Drawing.Point(0, 84);
             this.BtnStock.Name = "BtnStock";
             this.BtnStock.Size = new System.Drawing.Size(166, 37);
             this.BtnStock.TabIndex = 15;
@@ -282,6 +284,21 @@
             this.usu.TabIndex = 15;
             this.usu.Text = "Usuario";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(192, 8);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(189, 37);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Compras y ventas";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -330,5 +347,6 @@
         private System.Windows.Forms.Button BtnStock;
         private System.Windows.Forms.Button BtnEmpleados;
         private System.Windows.Forms.Button BtnMenu;
+        private System.Windows.Forms.Button button1;
     }
 }
