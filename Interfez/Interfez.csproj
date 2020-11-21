@@ -94,6 +94,12 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="NuevoEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoEmpleado.Designer.cs">
+      <DependentUpon>NuevoEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="NuevoItem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoEmpleado.resx">
+      <DependentUpon>NuevoEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NuevoItem.resx">
       <DependentUpon>NuevoItem.cs</DependentUpon>
@@ -223,6 +232,7 @@
     <None Include="Resources\MesaRedonda1.jpg" />
     <None Include="Resources\MesaCuadrada2.jpg" />
     <None Include="Resources\WhatsApp Image 2020-11-19 at 12.27.12 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2020-11-19 at 11.43.06 AM.jpeg" />
     <Content Include="Testing.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -37,13 +37,13 @@
             this.BtnCerrar = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel16 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.AgregarNuevo = new System.Windows.Forms.TextBox();
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.EditarProducto = new System.Windows.Forms.Button();
             this.CrearProducto = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).BeginInit();
@@ -111,7 +111,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackgroundImage = global::Interfez.Properties.Resources.STOCK_1;
+            this.tabPage1.BackgroundImage = global::Interfez.Properties.Resources.WhatsApp_Image_2020_11_19_at_11_43_06_AM;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.panel16);
@@ -128,6 +128,20 @@
             this.tabPage1.Text = "Menu";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(481, 616);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(166, 37);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Eliminar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel16
             // 
@@ -191,7 +205,7 @@
             this.EditarProducto.Name = "EditarProducto";
             this.EditarProducto.Size = new System.Drawing.Size(170, 37);
             this.EditarProducto.TabIndex = 17;
-            this.EditarProducto.Text = "Editar Item";
+            this.EditarProducto.Text = "Editar";
             this.EditarProducto.UseVisualStyleBackColor = false;
             this.EditarProducto.Click += new System.EventHandler(this.EditarProducto_Click);
             // 
@@ -205,23 +219,9 @@
             this.CrearProducto.Name = "CrearProducto";
             this.CrearProducto.Size = new System.Drawing.Size(166, 37);
             this.CrearProducto.TabIndex = 18;
-            this.CrearProducto.Text = "Agregar Item";
+            this.CrearProducto.Text = "Agregar";
             this.CrearProducto.UseVisualStyleBackColor = false;
             this.CrearProducto.Click += new System.EventHandler(this.CrearProducto_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 15F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(481, 616);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(166, 37);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "Eliminar Item";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Menu
             // 
