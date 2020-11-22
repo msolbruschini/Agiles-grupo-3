@@ -46,6 +46,7 @@ namespace CapaNegocio2
 
 
         }
+
         public DataSet MostrarDetalle(int id)
         {
 
@@ -82,6 +83,15 @@ namespace CapaNegocio2
             tb = DDSS.Tables[0];
             return tb;
             
+        }
+
+
+        public int DevolverID (string nombre)
+        {
+            int identificador = 0;
+            ConexionGeneral CG = new ConexionGeneral();
+            identificador = int.Parse(CG.ValorUnico("SELECT codItem FROM ItemStock WHERE nombre = '" + nombre + "'"));
+            return identificador;
         }
 
     }

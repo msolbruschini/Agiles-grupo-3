@@ -448,7 +448,9 @@ namespace Interfez
                 Mesa mesita = new Mesa();
                 int numPedido = mesita.MesaVerPedido(int.Parse(p.Tag.ToString()));
                 PedidoItem pi = new PedidoItem();
-                pi.PedidoItemCrear(comboBoxItem.SelectedIndex + 1, int.Parse(mesaTextCantidad.Text), int.Parse(mesaTextoPrecio.Text), numPedido);
+                Item ite = new Item();
+                int codigoItem = ite.DevolverID(comboBoxItem.Text);
+                pi.PedidoItemCrear(codigoItem, int.Parse(mesaTextCantidad.Text), int.Parse(mesaTextoPrecio.Text), numPedido);
 
                 //Vacío los campos
                 comboBoxItem.SelectedIndex = -1;
